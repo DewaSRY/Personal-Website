@@ -9,7 +9,10 @@ const font = Karma({
 interface H2Props extends ComponentProps<"h2">, PropsWithChildren {}
 export default function H2({ children, ...resProps }: H2Props) {
   return (
-    <h2 className={cn(font.className, resProps.className)} {...resProps}>
+    <h2
+      className={cn(font.className, resProps.className, "text-[38px]")}
+      {...resProps}
+    >
       {children}
     </h2>
   );

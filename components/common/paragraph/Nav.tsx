@@ -9,7 +9,10 @@ const font = Lustria({
 interface NavProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function Nav({ children, ...resProps }: NavProps) {
   return (
-    <p className={cn(font.className, resProps.className)} {...resProps}>
+    <p
+      className={cn(font.className, resProps.className, "text-[20px]")}
+      {...resProps}
+    >
       {children}
     </p>
   );

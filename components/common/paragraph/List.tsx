@@ -9,7 +9,10 @@ const font = Lora({
 interface ListProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function List({ children, ...resProps }: ListProps) {
   return (
-    <p className={cn(font.className, resProps.className)} {...resProps}>
+    <p
+      className={cn(font.className, resProps.className, "text-[18px]")}
+      {...resProps}
+    >
       {children}
     </p>
   );

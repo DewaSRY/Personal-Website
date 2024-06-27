@@ -9,7 +9,10 @@ const font = Maitree({
 interface DateProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function Date({ children, ...resProps }: DateProps) {
   return (
-    <p className={cn(font.className, resProps.className)} {...resProps}>
+    <p
+      className={cn(font.className, resProps.className, "text-[16px]")}
+      {...resProps}
+    >
       {children}
     </p>
   );

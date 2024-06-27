@@ -6,4 +6,4 @@ dependency
 - shadcn-ui
 - frame motions
 
-paragraph
+- [ ] specify font size

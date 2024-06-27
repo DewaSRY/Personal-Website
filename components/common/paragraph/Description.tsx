@@ -12,7 +12,10 @@ export default function Description({
   ...resProps
 }: DescriptionProps) {
   return (
-    <p className={cn(font.className, resProps.className)} {...resProps}>
+    <p
+      className={cn(font.className, resProps.className, "text-[20px]")}
+      {...resProps}
+    >
       {children}
     </p>
   );
