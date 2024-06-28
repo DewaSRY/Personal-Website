@@ -20,6 +20,7 @@ const config = {
     extend: {
       colors: {
         "primary-one": "var(--primary-one)",
+        "primary-one-alfa": "var(--primary-one-alfa)",
         "primary-two": "var(--primary-two)",
         "primary-three": "var(--primary-three)",
         "primary-four": "var(--primary-four)",

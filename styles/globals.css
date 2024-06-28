@@ -7,10 +7,12 @@ Base layer doesn't realey importent for now.
 */
 @layer base {
   :root {
-    --primary-one: #000;
+    --primary-one: #000000;
+    --primary-one-alfa: rgba(0, 0, 0, 0.3);
     --primary-two: #f4dfc8;
     --primary-three: #f4eae0;
-    --primary--four: #faf6f0;
+    --primary-four: #faf6f0;
+    --radius: 10px;
   }
 }
 
