@@ -10,7 +10,13 @@ interface H4Props extends ComponentProps<"h4">, PropsWithChildren {}
 export default function H4({ children, ...resProps }: H4Props) {
   return (
     <h4
-      className={cn(font.className, resProps.className, "text-[24px]")}
+      className={cn(
+        font.className,
+        resProps.className,
+        "text-[16px]",
+        "md:text-[20px]",
+        "xl:text-[24px]"
+      )}
       {...resProps}
     >
       {children}

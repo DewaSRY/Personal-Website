@@ -10,7 +10,13 @@ interface ListProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function List({ children, ...resProps }: ListProps) {
   return (
     <p
-      className={cn(font.className, resProps.className, "text-[18px]")}
+      className={cn(
+        font.className,
+        resProps.className,
+        "text-[10px]",
+        "text-[12px]",
+        "text-[14px]"
+      )}
       {...resProps}
     >
       {children}

@@ -10,7 +10,13 @@ interface DateProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function Date({ children, ...resProps }: DateProps) {
   return (
     <p
-      className={cn(font.className, resProps.className, "text-[16px]")}
+      className={cn(
+        font.className,
+        resProps.className,
+        "text-[6px]",
+        "md:text-[8px]",
+        "xl:text-[10px]"
+      )}
       {...resProps}
     >
       {children}

@@ -13,7 +13,13 @@ export default function Description({
 }: DescriptionProps) {
   return (
     <p
-      className={cn(font.className, resProps.className, "text-[20px]")}
+      className={cn(
+        font.className,
+        resProps.className,
+        "text-[10px]",
+        "md:text-[12px]",
+        "xl:text-[14px]"
+      )}
       {...resProps}
     >
       {children}

@@ -10,7 +10,13 @@ interface NavProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function Nav({ children, ...resProps }: NavProps) {
   return (
     <p
-      className={cn(font.className, resProps.className, "text-[20px]")}
+      className={cn(
+        font.className,
+        resProps.className,
+        "text-[10px]",
+        "md:text-[16px]",
+        "xl:text-[20px]"
+      )}
       {...resProps}
     >
       {children}

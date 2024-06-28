@@ -10,7 +10,13 @@ interface H3Props extends ComponentProps<"h3">, PropsWithChildren {}
 export default function H3({ children, ...resProps }: H3Props) {
   return (
     <h3
-      className={cn(font.className, resProps.className, "text-[34px]")}
+      className={cn(
+        font.className,
+        resProps.className,
+        "text-[18px]",
+        "md:text-[24px]",
+        "xl:text-[34px]"
+      )}
       {...resProps}
     >
       {children}
