@@ -34,7 +34,7 @@ export default function NavItem({
       </Link>
       <hr
         className={cn(
-          "absolute left-0 bottom-0 h-1 w-full bg-white rounded-xl",
+          "absolute left-0 bottom-0 h-1 w-full bg-primary-two rounded-xl",
           "scale-x-0 origin-right duration-500 transition-transform",
           `${isActive ? "scale-x-100 origin-left" : ""}`
         )}

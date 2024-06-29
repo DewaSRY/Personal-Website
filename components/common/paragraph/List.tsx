@@ -13,7 +13,7 @@ export default function List({ children, ...resProps }: ListProps) {
       className={cn(
         font.className,
         resProps.className,
-        "text-[10px]",
+        "text-[10px] text-primary-three",
         "text-[12px]",
         "text-[14px]"
       )}

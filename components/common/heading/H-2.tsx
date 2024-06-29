@@ -13,7 +13,7 @@ export default function H2({ children, ...resProps }: H2Props) {
       className={cn(
         font.className,
         resProps.className,
-        "text-[20px]",
+        "text-[20px] text-primary-four",
         "md:text-[24px]",
         "xl:text-[28px]"
       )}

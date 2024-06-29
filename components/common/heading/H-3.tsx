@@ -13,7 +13,7 @@ export default function H3({ children, ...resProps }: H3Props) {
       className={cn(
         font.className,
         resProps.className,
-        "text-[18px]",
+        "text-[18px] text-primary-four",
         "md:text-[24px]",
         "xl:text-[34px]"
       )}

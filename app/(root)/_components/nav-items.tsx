@@ -15,7 +15,6 @@ interface NavItemsProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function NavItems({ children, ...resProps }: NavItemsProps) {
   const activeSection = useNavActiveState();
-  console.log(activeSection == "works");
   return (
     <nav
       className={cn(

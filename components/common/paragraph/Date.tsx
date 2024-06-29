@@ -13,7 +13,7 @@ export default function Date({ children, ...resProps }: DateProps) {
       className={cn(
         font.className,
         resProps.className,
-        "text-[6px]",
+        "text-[6px] text-primary-three",
         "md:text-[8px]",
         "xl:text-[10px]"
       )}

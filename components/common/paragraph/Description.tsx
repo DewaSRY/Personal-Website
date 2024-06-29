@@ -16,7 +16,7 @@ export default function Description({
       className={cn(
         font.className,
         resProps.className,
-        "text-[10px]",
+        "text-[10px] text-primary-three",
         "md:text-[12px]",
         "xl:text-[14px]"
       )}
