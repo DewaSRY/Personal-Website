@@ -21,11 +21,11 @@ Base layer doesn't realey importent for now.
   }
 
   html {
-    --main-bg: linear-gradient(180deg, #939df9 30%, #81c3ff 70%);
+    --main-bg: linear-gradient(180deg, #939df9 0%, #81c3ff 100%);
   }
 
   html[date-theme="dark"] {
-    --main-bg: linear-gradient(180deg, #171522 30%, #78a0e0 70%);
+    --main-bg: linear-gradient(180deg, #171522 0%, #78a0e0 100%);
   }
 }
 
