@@ -7,4 +7,7 @@ dependency
 - svgr
 - frame motions
 
-- [ ] specify font size
+- [x] specify font size
+- [x] create navigation section
+- [x] create internationalization
+- [x] specify font siz

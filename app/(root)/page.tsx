@@ -1,13 +1,21 @@
 import Image from "next/image";
 
-import Heading from "@/components/common/heading";
-import Paragraph from "@/components/common/paragraph";
-
 import Headers from "./_containers/headers";
-export default function Home() {
+import Home from "./_containers/home";
+import Works from "./_containers/works";
+import Skills from "./_containers/skills";
+import Project from "./_containers/project";
+import Profile from "./_containers/profile";
+
+export default function Portfolio() {
   return (
     <main className="">
+      <Home />
       <Headers />
+      <Works />
+      <Skills />
+      <Project />
+      <Profile />
     </main>
   );
 }

@@ -14,14 +14,26 @@ Base layer doesn't realey importent for now.
     --primary-three: #f4eae0;
     --primary-four: #faf6f0;
     --radius: 10px;
+    --main-bg: #93c6ff;
+  }
+
+  .dark {
+    --main-bg: linear-gradient(
+      180deg,
+      rgba(23, 21, 34, 1) 10%,
+      rgba(147, 198, 255, 1) 70%
+    );
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background: linear-gradient(
-    180deg,
-    rgba(23, 21, 34, 1) 10%,
-    rgba(147, 198, 255, 1) 70%
-  );
+  background: var(--main-bg);
   height: 3000px;
+}
+
+.colors-svg {
+  color: red;
 }

@@ -1,9 +1,10 @@
-.nav-items > hr {
+/* .nav-items > hr {
   transition-property: transform;
   transition-duration: 0.5s;
-  transform-origin: bottom;
+  transform-origin: right;
   transform: scaleX(0);
 }
-.nav-items:hover > hr {
+.active > hr {
   transform: scaleX(1);
-}
+  transform-origin: left;
+} */
