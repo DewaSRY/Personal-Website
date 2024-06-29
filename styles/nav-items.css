@@ -1,0 +1,9 @@
+.nav-items > hr {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform-origin: bottom;
+  transform: scaleX(0);
+}
+.nav-items:hover > hr {
+  transform: scaleX(1);
+}
