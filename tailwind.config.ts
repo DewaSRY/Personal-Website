@@ -14,6 +14,7 @@ const config = {
       colors: {
         "primary-one": "var(--primary-one)",
         "primary-one-alfa": "var(--primary-one-alfa)",
+        "primary-one-beta": "var(--primary-one-beta)",
         "primary-two": "var(--primary-two)",
         "primary-three": "var(--primary-three)",
         "primary-four": "var(--primary-four)",
