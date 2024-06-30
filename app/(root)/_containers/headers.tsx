@@ -1,9 +1,9 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import { Lora } from "next/font/google";
 
-import NavItems from "../_components/nav-items";
-import SocialNav from "../_components/social-nav";
-import SettingsNav from "../_components/settings-nav";
+import NavItems from "../_components/navigation/nav-items";
+import SocialNav from "../_components/navigation/social-nav";
+import SettingsNav from "../_components/navigation/settings-nav";
 import { cn } from "@/lib/utils";
 const font = Lora({
   weight: "700",
