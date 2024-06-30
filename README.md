@@ -11,3 +11,5 @@ dependency
 - [x] create navigation section
 - [x] create internationalization
 - [x] specify font siz
+
+- [] animate section header
