@@ -26,7 +26,7 @@ export default function ModeButton({ children, ...resProps }: ModeButtonProps) {
           <ActiveMode
             className={cn(
               "absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]",
-              `${currentTheme == "dark" && "hidden"}`
+              `${currentTheme === "dark" && "hidden"}`
             )}
           />
         </span>

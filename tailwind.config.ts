@@ -24,6 +24,7 @@ const config = {
         "primary-two": "var(--primary-two)",
         "primary-three": "var(--primary-three)",
         "primary-four": "var(--primary-four)",
+        "hero-bg": "var(--hero-bg)",
       },
       borderRadius: {
         lg: "var(--radius)",

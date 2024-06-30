@@ -18,7 +18,6 @@ export default function NavItem({
   isActive,
   ...resProps
 }: NavItemProps) {
-  console.log(`${to} is active ${isActive}}`);
   return (
     <div
       className={cn(

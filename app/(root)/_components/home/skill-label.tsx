@@ -23,7 +23,7 @@ export default function SkillLabel({
     <div
       className={cn(
         "flex flex-col items-center",
-        "md:flex-row gap-2",
+        "xl:flex-row gap-2",
         resProps.className
       )}
     >
