@@ -31,9 +31,9 @@ Base layer doesn't realey importent for now.
   }
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 body {
   background: var(--main-bg);
   height: 3000px;

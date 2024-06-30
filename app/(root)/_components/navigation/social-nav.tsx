@@ -17,7 +17,13 @@ export default function SocialNav({ children, ...resProps }: SocialNavProps) {
           "hover:border hover:scale-95"
         )}
       >
-        <Image src="/icons/github.png" width={50} height={50} alt="github" />
+        <Image
+          src="/icons/github.png"
+          width={50}
+          height={50}
+          alt="github"
+          className="w-[50px] h-[50px]"
+        />
       </Link>
       <Link
         className={cn(

@@ -3,34 +3,33 @@
  */
 
 import { ComponentProps, PropsWithChildren, ReactElement } from "react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import Paragraph from "@/components/common/paragraph";
 interface NavItemProps extends ComponentProps<"div">, PropsWithChildren {
   Icons: React.FunctionComponent;
-  to: string;
   isActive: boolean;
 }
 export default function NavItem({
   children,
   Icons,
-  to,
   isActive,
   ...resProps
 }: NavItemProps) {
   return (
     <div
       className={cn(
-        "relative active nav-items w-[60px] h-[50px] flex flex-col justify-between items-center cursor-pointer",
-        "md:mx-4 md:h-[30px] "
+        "relative active nav-items w-[60px] h-[50px] flex flex-col justify-between items-center cursor-pointer ",
+        "md:mx-4 md:h-[30px] z-20 "
       )}
+      {...resProps}
     >
       <span className="md:hidden colors-svg ">
         <Icons />
       </span>
-      <Link href={to}>
+      <span className="cursor-pointer">
         <Paragraph.Nav>{children}</Paragraph.Nav>
-      </Link>
+      </span>
       <hr
         className={cn(
           "absolute left-0 bottom-0 h-1 w-full bg-primary-two rounded-xl",
