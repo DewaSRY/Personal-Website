@@ -1,5 +1,5 @@
 "use client";
-import { ComponentProps, PropsWithChildren } from "react";
+import { ComponentProps, PropsWithChildren, MouseEvent } from "react";
 
 import { cn } from "@/lib/utils";
 import HomeIcon from "@/components/svgs/home.svg";
@@ -17,6 +17,7 @@ interface NavItemsProps extends ComponentProps<"div">, PropsWithChildren {}
 export default function NavItems({ children, ...resProps }: NavItemsProps) {
   const activeSection = useNavActiveState();
   const { scrollTo } = useSmoothScroll();
+
   return (
     <nav
       className={cn(
