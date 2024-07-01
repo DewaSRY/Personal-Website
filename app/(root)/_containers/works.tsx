@@ -51,7 +51,7 @@ export default function Works({
     >
       <Heading.H2>Work Experience</Heading.H2>
 
-      <WorkCard.WorkCard>
+      <WorkCard.WorkCard className="work-card transition-transform scale-0 translate-x-[-100%]">
         <Heading.H3>Freelance Frontend Developer</Heading.H3>
         <Paragraph.Description>
           Angular-Base warehouse data management system
@@ -73,7 +73,7 @@ export default function Works({
         </WorkCard.WorkBody>
       </WorkCard.WorkCard>
 
-      <WorkCard.WorkCard>
+      <WorkCard.WorkCard className="work-card transition-transform scale-0 translate-x-[-100%]">
         <Heading.H3>Freelance Frontend Developer</Heading.H3>
         <Paragraph.Description>
           Angular-Base warehouse data management system
