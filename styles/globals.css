@@ -24,12 +24,12 @@ Base layer doesn't realey importent for now.
   }
 
   html {
-    --main-bg: linear-gradient(180deg, #939df9 0%, #81c3ff 70%);
+    --main-bg: linear-gradient(180deg, #939df9 30%, #81c3ff 70%);
     --hero-bg: rgba(255, 255, 255, 0.2);
   }
 
   html[date-theme="dark"] {
-    --main-bg: linear-gradient(180deg, #171522 0%, #81c3ff 70%);
+    --main-bg: linear-gradient(180deg, #171522 30%, #78a0df 70%);
     --hero-bg: rgba(0, 0, 0, 0.2);
   }
 }
