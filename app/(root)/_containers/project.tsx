@@ -7,7 +7,7 @@ interface ProjectProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Project({ children, ...resProps }: ProjectProps) {
   return (
-    <section id="projects" className="min-h-[100vh]">
+    <section id="projects" className="py-10">
       <Heading.H2>My Programming Project</Heading.H2>
       <ProjectCard.WorkContainer>
         <ProjectCard.WorkCard>

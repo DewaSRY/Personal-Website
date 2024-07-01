@@ -16,14 +16,14 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
   useGSAP(
     () => {
       const boxes = gsap.utils.toArray(".layer") as HTMLElement[];
-      boxes.forEach((layer) => {
+      boxes.forEach((layer, index) => {
         gsap.to(layer, {
-          y: 100,
+          y: 0,
           duration: 5,
           scrollTrigger: {
             trigger: layer,
             start: "top 30%",
-            end: "-200 bottom",
+            end: "top bottom",
             scrub: true,
             toggleActions: "play pause reverse complete ",
             // markers: true,
@@ -34,10 +34,7 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
     { scope: parallaxContainer }
   );
   return (
-    <div
-      ref={parallaxContainer}
-      className="max-w-[1280px] h-[800px]  mx-auto relative z-[-10]"
-    >
+    <div ref={parallaxContainer} className="h-[800px] ">
       <ParallaxImage
         imageSrc="/parallax/forest_layer_5-dark.png"
         imageAlt="five layer"
@@ -52,17 +49,17 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
       <ParallaxImage
         imageSrc="/parallax/forest_layer_3.png"
         imageAlt="five layer"
-        className="layer absolute top-0 translate-y-[20%] duration-300 "
+        className="layer absolute top-0 translate-y-[15%] duration-300 "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_2.png"
         imageAlt="five layer"
-        className="layer absolute top-0 translate-y-[30%] duration-200 "
+        className="layer absolute top-0 translate-y-[20%] duration-200 "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_1.png"
         imageAlt="five layer"
-        className="layer absolute top-0  translate-y-[40%] duration-150 "
+        className="layer absolute top-0  translate-y-[25%] duration-150 "
       />
     </div>
   );

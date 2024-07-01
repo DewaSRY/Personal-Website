@@ -19,6 +19,7 @@ const config = {
         "primary-three": "var(--primary-three)",
         "primary-four": "var(--primary-four)",
         "hero-bg": "var(--hero-bg)",
+        footer: "var(--footer)",
       },
       borderRadius: {
         lg: "var(--radius)",

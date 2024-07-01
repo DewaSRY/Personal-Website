@@ -11,13 +11,14 @@ export default function Portfolio() {
   return (
     <>
       <Headers />
-      <main className="">
+      <main className="bg-main-bg mb-[-5px]">
         <Home />
         <Works />
         <Skills />
         <Project />
         <Profile />
       </main>
+      <footer className="h-[300px] bg-footer "></footer>
     </>
   );
 }
