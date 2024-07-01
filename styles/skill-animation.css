@@ -8,3 +8,10 @@
   transform: scaleX(1);
   transform-origin: left;
 } */
+
+.skill-animation {
+  animation: 0.5s;
+}
+
+@keyframes skill-animations {
+}

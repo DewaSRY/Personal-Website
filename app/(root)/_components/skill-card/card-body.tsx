@@ -24,7 +24,7 @@ export default function CardBody({ children, ...resProps }: CardBodyProps) {
 
   return (
     <div ref={currentElement} className={cn("hidden body")}>
-      <div>{children}</div>
+      <div className="flex flex-col gap-5 md:flex-row">{children}</div>
     </div>
   );
 }

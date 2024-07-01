@@ -18,7 +18,7 @@ export default function Headers({ children, ...resProps }: HeadersProps) {
         className={cn(
           font.className,
           "text-primary-four text-[2rem]",
-          "fixed top-2 left-2"
+          "fixed top-2 left-2 z-10"
         )}
       >
         Dewa Surya

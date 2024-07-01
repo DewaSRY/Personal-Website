@@ -7,7 +7,7 @@ export default function WorkContainer({
   ...resProps
 }: WorkContainerProps) {
   return (
-    <div className="bg-primary-one-alfa mx-auto px-4 py-6 rounded-xl w-11/12 xl:w-[1200px]">
+    <div className="bg-primary-one-alfa mx-auto px-4 py-6 rounded-xl w-11/12 xl:w-[1600px]">
       {children}
     </div>
   );

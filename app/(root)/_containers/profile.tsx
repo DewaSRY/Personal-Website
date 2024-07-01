@@ -20,7 +20,7 @@ export default function Profile({
     >
       <div
         className={cn(
-          "flex flex-col md:flex-row gap-4 justify-center items-center  w-10/12 pt-6 pb-10 h-3/6 z-[3] px-4 bg-primary-one-alfa",
+          "flex flex-col md:flex-row gap-4 justify-center items-center w-10/12 pt-6 pb-10 h-5/6 md:h-4/6 xl:h-3/6 rounded-lg z-[3] px-4 bg-primary-one-alfa",
           "absolute bottom-5 left-[50%] translate-x-[-50%] "
         )}
       >
@@ -29,11 +29,11 @@ export default function Profile({
           alt="my picture"
           width={200}
           height={250}
-          className="rounded-xl"
+          className="rounded-xl w-[150px] h-[200px] md:w-[200px] md:h-[250px]"
         />
         <div>
           <Heading.H3>Dewa Surya Ariesta</Heading.H3>
-          <Paragraph.Description>
+          <Paragraph.Description className="my-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro
             magni aliquam, numquam quam maiores quo iure exercitationem minima
             accusamus obcaecati quibusdam totam nam aliquid. Placeat, quos?

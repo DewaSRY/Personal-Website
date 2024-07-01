@@ -49,7 +49,7 @@ export default function Works({
       className={cn(className)}
       {...resProps}
     >
-      <Heading.H2>Work Experience</Heading.H2>
+      <Heading.H2 className="mx-6 underline">Work Experience</Heading.H2>
 
       <WorkCard.WorkCard className="work-card transition-transform scale-0 translate-x-[-100%]">
         <Heading.H3>Freelance Frontend Developer</Heading.H3>

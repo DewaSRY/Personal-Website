@@ -11,6 +11,7 @@ import {
 } from "react";
 
 import DefaultContent from "./default-content";
+import { cn } from "@/lib/utils";
 
 const SkillProviderContext = createContext({
   setCard: (_cardElement: HTMLElement) => {},
@@ -54,16 +55,16 @@ export default function Provider({ children }: ProviderProps) {
     <SkillProviderContext.Provider
       value={{ setCard, indexActive, handleIndexActive }}
     >
-      <div className="relative mx-auto my-4 w-11/12 h-full  md:h-[400px] bg-primary-one-alfa rounded-sm ">
-        <div className="flex justify-center items-center w-11/12 h-11/12 pt-4 pb-[4rem]">
-          <div
-            className={indexActive !== -1 ? "block" : "hidden"}
-            ref={contentElement}
-          ></div>
-          <DefaultContent className={indexActive !== -1 ? "hidden" : "block"} />
-        </div>
-
-        <div className="absolute bottom-5 left-[50%] translate-x-[-50%]">
+      <div className="relative mx-auto my-4 w-11/12 h-full  md:h-[400px] pt-4 px-4 bg-primary-one-alfa rounded-sm pb-[5rem] xl:w-[1600px] ">
+        <div
+          className={cn(
+            `${indexActive !== -1 ? "block" : "hidden"}`,
+            "min-h-[300px]"
+          )}
+          ref={contentElement}
+        ></div>
+        <DefaultContent className={indexActive !== -1 ? "hidden" : "block"} />
+        <div className="absolute bottom-4 left-[50%] translate-x-[-50%]">
           {children}
         </div>
       </div>

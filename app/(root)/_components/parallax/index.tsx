@@ -17,13 +17,14 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
     () => {
       const boxes = gsap.utils.toArray(".layer") as HTMLElement[];
       boxes.forEach((layer, index) => {
+        console.log((5 - index) * 100);
         gsap.to(layer, {
           y: 0,
           duration: 5,
           scrollTrigger: {
             trigger: layer,
-            start: "top 30%",
-            end: "top bottom",
+            start: `-${(5 - index) * 40}  center`,
+            end: "bottom bottom",
             scrub: true,
             toggleActions: "play pause reverse complete ",
             // markers: true,
@@ -39,7 +40,7 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
         imageSrc="/parallax/forest_layer_5.png"
         imageAlt="five layer"
         id="five-layer"
-        className=" absolute top-0 "
+        className="layer absolute top-0 translate-y-[5%] "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_4.png"

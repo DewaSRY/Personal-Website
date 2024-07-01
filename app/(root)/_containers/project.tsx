@@ -13,7 +13,9 @@ export default function Project({
 }: ProjectProps) {
   return (
     <section id="projects" className={cn("py-10", className)} {...resProps}>
-      <Heading.H2>My Programming Project</Heading.H2>
+      <Heading.H2 className="mx-6 my-10 underline">
+        My Programming Project
+      </Heading.H2>
       <ProjectCard.WorkContainer>
         <ProjectCard.WorkCard>
           <Image

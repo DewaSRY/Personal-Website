@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("./nav-items.css");
+@import url("./skill-animation.css");
 /**
 Base layer doesn't realey importent for now.
 */
