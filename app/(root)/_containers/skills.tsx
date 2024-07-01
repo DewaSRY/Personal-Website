@@ -1,6 +1,6 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
+import Heading from "@/components/common/heading";
 
 import { cn } from "@/lib/utils";
 import SkillCard from "../_components/skill-card";
