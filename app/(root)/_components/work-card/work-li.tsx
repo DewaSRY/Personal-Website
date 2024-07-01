@@ -5,8 +5,6 @@ interface WorkLiProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function WorkLi({ children, ...resProps }: WorkLiProps) {
   return (
-    <li className="list-outside">
-      <Paragraph.List> - {children}</Paragraph.List>
-    </li>
+    <Paragraph.List className="list-outside"> - {children}</Paragraph.List>
   );
 }

@@ -9,13 +9,15 @@ import Profile from "./_containers/profile";
 
 export default function Portfolio() {
   return (
-    <main className="">
-      <Home />
+    <>
       <Headers />
-      <Works />
-      <Skills />
-      <Project />
-      <Profile />
-    </main>
+      <main className="">
+        <Home />
+        <Works />
+        <Skills />
+        <Project />
+        <Profile />
+      </main>
+    </>
   );
 }

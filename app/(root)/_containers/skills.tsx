@@ -8,13 +8,13 @@ interface SkillsProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Skills({ children, ...resProps }: SkillsProps) {
   return (
-    <section id="skills" className="h-[100vh]">
+    <section id="skills" className="min-h-[100vh]  my-4">
       <Heading.H2>My Programming Skills</Heading.H2>
       <SkillCard.SkillContainer>
         <SkillCard.Cards>
           <SkillCard.CardIcon imageSrc="/icons/figma.png" imageAlter="figma" />
           <SkillCard.CardBody>
-            <Heading.H4>I am Good with Design</Heading.H4>
+            <Heading.H3>I am Good with Design</Heading.H3>
             <Paragraph.Description>
               I am really Good at Design one
             </Paragraph.Description>
@@ -24,7 +24,7 @@ export default function Skills({ children, ...resProps }: SkillsProps) {
         <SkillCard.Cards>
           <SkillCard.CardIcon imageSrc="/icons/figma.png" imageAlter="figma" />
           <SkillCard.CardBody>
-            <Heading.H4>I am Good with Design</Heading.H4>
+            <Heading.H3>I am Good with Design</Heading.H3>
             <Paragraph.Description>
               I am really Good at Design two
             </Paragraph.Description>
@@ -34,7 +34,7 @@ export default function Skills({ children, ...resProps }: SkillsProps) {
         <SkillCard.Cards>
           <SkillCard.CardIcon imageSrc="/icons/figma.png" imageAlter="figma" />
           <SkillCard.CardBody>
-            <Heading.H4>I am Good with Design</Heading.H4>
+            <Heading.H3>I am Good with Design</Heading.H3>
             <Paragraph.Description>
               I am really Good at Design three
             </Paragraph.Description>
@@ -44,7 +44,7 @@ export default function Skills({ children, ...resProps }: SkillsProps) {
         <SkillCard.Cards>
           <SkillCard.CardIcon imageSrc="/icons/figma.png" imageAlter="figma" />
           <SkillCard.CardBody>
-            <Heading.H4>I am Good with Design</Heading.H4>
+            <Heading.H3>I am Good with Design</Heading.H3>
             <Paragraph.Description>
               I am really Good at Design four
             </Paragraph.Description>

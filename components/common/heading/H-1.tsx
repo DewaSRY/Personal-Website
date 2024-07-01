@@ -7,7 +7,7 @@ const font = Kaisei_HarunoUmi({
 });
 
 interface H1Props extends ComponentProps<"h1">, PropsWithChildren {}
-export default function H1({ children, ...resProps }: H1Props) {
+export default function H1({ children, className, ...resProps }: H1Props) {
   return (
     <h1
       className={cn(
@@ -15,7 +15,7 @@ export default function H1({ children, ...resProps }: H1Props) {
         "text-[34px] text-primary-four",
         "md:text-[44px]",
         "xl:text-[54px] ",
-        resProps.className
+        className
       )}
       {...resProps}
     >

@@ -10,7 +10,7 @@ export default function SettingsNav({
   ...resProps
 }: SettingsNavProps) {
   return (
-    <div className="fixed right-10 top-5 flex  w-[90px] justify-between  items-center">
+    <div className="fixed  z-50 right-10 top-5 flex  w-[90px] justify-between  items-center">
       <SelectLanguage />
       <button>
         <ModeButton />

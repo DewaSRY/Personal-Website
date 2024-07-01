@@ -20,7 +20,7 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
       className={cn(
         "text-primary-four flex flex-row items-center justify-between w-max rounded-lg ",
         "bg-primary-one-alfa px-4 ",
-        "fixed bottom-3 left-[50%] translate-x-[-50%]",
+        "fixed z-50 bottom-3 left-[50%] translate-x-[-50%]",
         "xl:top-3 xl:bottom-[95%] xl:bg-transparent"
       )}
     >

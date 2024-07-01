@@ -22,12 +22,12 @@ Base layer doesn't realey importent for now.
   }
 
   html {
-    --main-bg: linear-gradient(180deg, #939df9 0%, #81c3ff 100%);
+    --main-bg: linear-gradient(180deg, #939df9 0%, #81c3ff 70%);
     --hero-bg: rgba(255, 255, 255, 0.2);
   }
 
   html[date-theme="dark"] {
-    --main-bg: linear-gradient(180deg, #171522 0%, #78a0e0 100%);
+    --main-bg: linear-gradient(180deg, #171522 0%, #78a0df 70%);
     --hero-bg: rgba(0, 0, 0, 0.2);
   }
 }
@@ -41,4 +41,13 @@ body {
 
 .colors-svg {
   color: red;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
