@@ -2,8 +2,8 @@ import { ComponentProps, PropsWithChildren } from "react";
 import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
 
-import SkillCard from "../_components/skill-card";
 import { cn } from "@/lib/utils";
+import SkillCard from "../_components/skill-card";
 
 import Image from "next/image";
 
