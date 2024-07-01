@@ -21,8 +21,8 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       />
       <HeroBanner
         className={cn(
-          "absolute right-0 top-[50%] translate-y-[-50%]",
-          "xl:translate-y-[-70%] xl:translate-x-[-50%]"
+          "absolute right-6 top-[50%] translate-y-[-50%]",
+          "xl:translate-y-[-70%] "
         )}
       />
     </section>
