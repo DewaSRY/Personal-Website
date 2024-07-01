@@ -18,13 +18,13 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
       const boxes = gsap.utils.toArray(".layer") as HTMLElement[];
       boxes.forEach((layer) => {
         gsap.to(layer, {
-          y: 0,
+          y: 100,
           duration: 5,
           scrollTrigger: {
             trigger: layer,
-            start: "top 80%",
-            end: "bottom 50%",
-            scrub: false,
+            start: "top 30%",
+            end: "-200 bottom",
+            scrub: true,
             toggleActions: "play pause reverse complete ",
             // markers: true,
           },
@@ -36,33 +36,33 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
   return (
     <div
       ref={parallaxContainer}
-      className="max-w-[1280px] mx-auto relative z-[-10]"
+      className="max-w-[1280px] h-[800px]  mx-auto relative z-[-10]"
     >
       <ParallaxImage
         imageSrc="/parallax/forest_layer_5-dark.png"
         imageAlt="five layer"
         id="five-layer"
-        className=" absolute inset-0 "
+        className=" absolute top-0 "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_4.png"
         imageAlt="five layer"
-        className="layer absolute inset-0 translate-y-[20%] "
+        className="layer absolute top-0 translate-y-[10%] duration-500 "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_3.png"
         imageAlt="five layer"
-        className="layer absolute inset-0 translate-y-[30%] "
+        className="layer absolute top-0 translate-y-[20%] duration-300 "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_2.png"
         imageAlt="five layer"
-        className="layer absolute inset-0 translate-y-[40%] "
+        className="layer absolute top-0 translate-y-[30%] duration-200 "
       />
       <ParallaxImage
         imageSrc="/parallax/forest_layer_1.png"
         imageAlt="five layer"
-        className="layer absolute inset-0 translate-y-[50%]"
+        className="layer absolute top-0  translate-y-[40%] duration-150 "
       />
     </div>
   );

@@ -23,7 +23,7 @@ export default function ParallaxImage({
         width: "100%",
         height: "782px",
       }}
-      className={cn(className)}
+      className={cn(className, "transition-transform")}
     />
   );
 }

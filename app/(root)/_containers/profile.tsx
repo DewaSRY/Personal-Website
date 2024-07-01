@@ -5,7 +5,7 @@ interface ProfileProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Profile({ children, ...resProps }: ProfileProps) {
   return (
-    <section id="profile" className="min-h-[100vh]    ">
+    <section id="profile" className=" h-[100vh]  ">
       <Parallax />
     </section>
   );

@@ -25,8 +25,8 @@ export default function Works({ children, ...resProps }: WorksProps) {
           duration: 1.2,
           scrollTrigger: {
             trigger: layer,
-            start: "-200 bottom",
-            end: "-200 center",
+            start: "-100 bottom",
+            end: "-100 center",
             scrub: true,
             toggleActions: "play pause reverse complete ",
             // markers: true,
