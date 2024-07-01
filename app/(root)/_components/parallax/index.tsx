@@ -11,7 +11,7 @@ import ParallaxImage from "./parallax-image";
 interface ParallaxProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Parallax({ children, ...resProps }: ParallaxProps) {
-  const container = useRef<ElementRef<"div">>(null);
+  const parallaxContainer = useRef<ElementRef<"div">>(null);
 
   useGSAP(
     () => {
@@ -24,16 +24,20 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
             trigger: layer,
             start: "top 80%",
             end: "bottom 50%",
-            scrub: true,
+            scrub: false,
+            toggleActions: "play pause reverse complete ",
             // markers: true,
           },
         });
       });
     },
-    { scope: container }
+    { scope: parallaxContainer }
   );
   return (
-    <div ref={container} className="max-w-[1280px] mx-auto relative z-[-10]">
+    <div
+      ref={parallaxContainer}
+      className="max-w-[1280px] mx-auto relative z-[-10]"
+    >
       <ParallaxImage
         imageSrc="/parallax/forest_layer_5-dark.png"
         imageAlt="five layer"
