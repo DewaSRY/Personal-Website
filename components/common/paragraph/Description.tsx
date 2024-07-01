@@ -1,7 +1,7 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import { Sedan } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
-const font = Sedan({
+const font = Poppins({
   weight: "400",
   preload: false,
 });

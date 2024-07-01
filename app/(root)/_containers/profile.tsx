@@ -7,11 +7,16 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 interface ProfileProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function Profile({ children, ...resProps }: ProfileProps) {
+export default function Profile({
+  children,
+  className,
+  ...resProps
+}: ProfileProps) {
   return (
     <section
       id="profile"
-      className=" h-[100vh] mx-auto relative max-w-[1280px]   "
+      className={cn(" h-[100vh] mx-auto relative max-w-[1280px]  ", className)}
+      {...resProps}
     >
       <div
         className={cn(

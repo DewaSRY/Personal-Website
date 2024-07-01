@@ -36,7 +36,7 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
   return (
     <div ref={parallaxContainer} className="h-[800px] ">
       <ParallaxImage
-        imageSrc="/parallax/forest_layer_5-dark.png"
+        imageSrc="/parallax/forest_layer_5.png"
         imageAlt="five layer"
         id="five-layer"
         className=" absolute top-0 "

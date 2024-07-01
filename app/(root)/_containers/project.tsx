@@ -3,11 +3,16 @@ import Image from "next/image";
 import Heading from "@/components/common/heading";
 import ProjectCard from "../_components/project-card";
 import Paragraph from "@/components/common/paragraph";
+import { cn } from "@/lib/utils";
 interface ProjectProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function Project({ children, ...resProps }: ProjectProps) {
+export default function Project({
+  children,
+  className,
+  ...resProps
+}: ProjectProps) {
   return (
-    <section id="projects" className="py-10">
+    <section id="projects" className={cn("py-10", className)} {...resProps}>
       <Heading.H2>My Programming Project</Heading.H2>
       <ProjectCard.WorkContainer>
         <ProjectCard.WorkCard>

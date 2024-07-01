@@ -36,7 +36,6 @@ export default function CardIcon({
   return (
     <div
       ref={currentElement}
-      //   disabled={parentElementIndex.current == indexActive}
       role="button"
       className={cn(
         "flex flex-col items-center p-4 bg-primary-one-beta rounded-lg border-2 border-transparent cursor-pointer",

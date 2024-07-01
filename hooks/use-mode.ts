@@ -10,6 +10,8 @@ export default function useMode() {
       setTheme((prev) => (prev === "light" ? "dark" : "light"));
       htmlDocument.current!.setAttribute("date-theme", currentTheme);
       localStorage.setItem("date-theme", currentTheme);
+      const layerFive = document.getElementById("five-layer");
+      console.log(layerFive);
     }
   }
   useEffect(() => {

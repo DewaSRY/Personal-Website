@@ -11,9 +11,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+import { cn } from "@/lib/utils";
+
 interface WorksProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function Works({ children, ...resProps }: WorksProps) {
+export default function Works({
+  children,
+  className,
+  ...resProps
+}: WorksProps) {
   const workContainer = useRef<ElementRef<"section">>(null);
   useGSAP(
     () => {
@@ -37,7 +43,12 @@ export default function Works({ children, ...resProps }: WorksProps) {
     { scope: workContainer }
   );
   return (
-    <section ref={workContainer} id="works">
+    <section
+      ref={workContainer}
+      id="works"
+      className={cn(className)}
+      {...resProps}
+    >
       <Heading.H2>Work Experience</Heading.H2>
 
       <WorkCard.WorkCard>

@@ -27,26 +27,15 @@ export default function Provider({ children }: ProviderProps) {
   const cardMap = useRef(new Map<number, HTMLElement>());
   const contentElement = useRef<ElementRef<"div">>(null);
 
-  //   const iconList = useRef(new Map<string, string>());
-
   const [indexActive, setIndexActive] = useState(-1);
 
   function setCard(cardElement: HTMLElement) {
     const newIndex = cardMap.current.size;
     cardElement.setAttribute("card-number", newIndex.toString());
     cardMap.current.set(newIndex, cardElement);
-
-    // if (newIndex === 0) {
-    //   const body = cardElement.querySelector(".body")!;
-    //   if (contentElement.current) {
-    //     contentElement.current.innerHTML = body.innerHTML;
-    //   }
-    // }
   }
 
   function handleIndexActive(index: number) {
-    // }
-
     const elementGetClick = cardMap.current!.get(index)! as HTMLDivElement;
     const body = elementGetClick.querySelector(".body")!;
     if (contentElement.current) {
