@@ -20,7 +20,7 @@ export default function Skills({
       <SkillCard.SkillContainer>
         {/* figma */}
         <SkillCard.Cards>
-          <SkillCard.CardIcon imageSrc="/icons/figma.png" imageAlter="figma" />
+          <SkillCard.CardIcon imageSrc="/icons/figma.png" imageAlter="Figma" />
           <SkillCard.CardBody>
             <Image
               src="/skills/figma.png"
@@ -43,17 +43,17 @@ export default function Skills({
         <SkillCard.Cards>
           <SkillCard.CardIcon
             imageSrc="/icons/angular.png"
-            imageAlter="figma"
+            imageAlter="Angular"
           />
           <SkillCard.CardBody>
             <Image
               src="/skills/angular.png"
               width={300}
               height={200}
-              alt="figma image"
+              alt="Angular image"
             />
             <div>
-              <Heading.H3>I am Good with React JS and next JS</Heading.H3>
+              <Heading.H3>I am Good with Angular</Heading.H3>
               <Paragraph.Description>
                 I am really Good at Design one
               </Paragraph.Description>
@@ -65,13 +65,13 @@ export default function Skills({
         </SkillCard.Cards>
         {/* react */}
         <SkillCard.Cards>
-          <SkillCard.CardIcon imageSrc="/icons/react.png" imageAlter="figma" />
+          <SkillCard.CardIcon imageSrc="/icons/react.png" imageAlter="React" />
           <SkillCard.CardBody>
             <Image
               src="/skills/react.png"
               width={300}
               height={200}
-              alt="figma image"
+              alt="React image"
             />
             <div>
               <Heading.H3>I am Good with React JS and next JS</Heading.H3>
@@ -86,16 +86,16 @@ export default function Skills({
         </SkillCard.Cards>
         {/* vue */}
         <SkillCard.Cards>
-          <SkillCard.CardIcon imageSrc="/icons/vue.png" imageAlter="figma" />
+          <SkillCard.CardIcon imageSrc="/icons/vue.png" imageAlter="Vue" />
           <SkillCard.CardBody>
             <Image
               src="/skills/vue.png"
               width={300}
               height={200}
-              alt="figma image"
+              alt="Vue image"
             />
             <div>
-              <Heading.H3>I am Good with vue JS and next JS</Heading.H3>
+              <Heading.H3>I am Good with vue JS</Heading.H3>
               <Paragraph.Description>
                 I am really Good at Design one
               </Paragraph.Description>
@@ -109,17 +109,17 @@ export default function Skills({
         <SkillCard.Cards>
           <SkillCard.CardIcon
             imageSrc="/icons/kubernetes.png"
-            imageAlter="figma"
+            imageAlter="Kubernetes"
           />
           <SkillCard.CardBody>
             <Image
               src="/skills/kubernetes.png"
               width={300}
               height={200}
-              alt="figma image"
+              alt="Kubernetes image"
             />
             <div>
-              <Heading.H3>I am Good with kubernetes JS and next JS</Heading.H3>
+              <Heading.H3>I am Good with kubernetes</Heading.H3>
               <Paragraph.Description>
                 I am really Good at Design one
               </Paragraph.Description>
@@ -131,16 +131,16 @@ export default function Skills({
         </SkillCard.Cards>
         {/* flask */}
         <SkillCard.Cards>
-          <SkillCard.CardIcon imageSrc="/icons/flask.png" imageAlter="figma" />
+          <SkillCard.CardIcon imageSrc="/icons/flask.png" imageAlter="Flask" />
           <SkillCard.CardBody>
             <Image
               src="/skills/flask.png"
               width={300}
               height={200}
-              alt="figma image"
+              alt="Flask image"
             />
             <div>
-              <Heading.H3>I am Good with flask JS and next JS</Heading.H3>
+              <Heading.H3>I am Good with flask </Heading.H3>
               <Paragraph.Description>
                 I am really Good at Design one
               </Paragraph.Description>
@@ -152,13 +152,16 @@ export default function Skills({
         </SkillCard.Cards>
         {/* spring */}
         <SkillCard.Cards>
-          <SkillCard.CardIcon imageSrc="/icons/spring.png" imageAlter="figma" />
+          <SkillCard.CardIcon
+            imageSrc="/icons/spring.png"
+            imageAlter="Spring"
+          />
           <SkillCard.CardBody>
             <Image
               src="/skills/spring.png"
               width={300}
               height={200}
-              alt="figma image"
+              alt="Spring image"
             />
             <div>
               <Heading.H3>I am Good with Backend Technology</Heading.H3>

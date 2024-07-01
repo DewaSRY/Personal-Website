@@ -38,7 +38,7 @@ export default function CardIcon({
       ref={currentElement}
       role="button"
       className={cn(
-        "flex flex-col items-center px-2 pb-4  bg-primary-one-beta rounded-lg border-2 border-transparent cursor-pointer",
+        "flex flex-col items-center px-2 pb-4 w-[80px]  bg-primary-one-beta rounded-lg border-2 border-transparent cursor-pointer",
         "hover:border-primary-one hover:bg-transparent",
         `${
           parentElementIndex.current == indexActive &&
@@ -58,7 +58,14 @@ export default function CardIcon({
           }`
         )}
       />
-      <Paragraph.Description>{imageAlter}</Paragraph.Description>
+      <Paragraph.Description
+      // className={cn(
+      //   "scale-0 hidden",
+      //   `${parentElementIndex.current == indexActive && "block scale-100 "}`
+      // )}
+      >
+        {imageAlter}
+      </Paragraph.Description>
     </div>
   );
 }
