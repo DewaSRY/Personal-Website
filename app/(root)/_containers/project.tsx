@@ -1,6 +1,7 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import Image from "next/image";
 import Heading from "@/components/common/heading";
+
 import ProjectCard from "../_components/project-card";
 import Paragraph from "@/components/common/paragraph";
 import { cn } from "@/lib/utils";

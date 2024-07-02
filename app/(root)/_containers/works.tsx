@@ -12,7 +12,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 import { cn } from "@/lib/utils";
-
 interface WorksProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Works({
