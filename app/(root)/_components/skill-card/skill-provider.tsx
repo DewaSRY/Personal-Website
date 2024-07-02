@@ -12,6 +12,7 @@ import {
 
 import DefaultContent from "./default-content";
 import { cn } from "@/lib/utils";
+import SkillSWrapper from "./skill-wrapper";
 
 const SkillProviderContext = createContext({
   setCard: (_cardElement: HTMLElement) => {},
@@ -55,7 +56,7 @@ export default function Provider({ children }: ProviderProps) {
     <SkillProviderContext.Provider
       value={{ setCard, indexActive, handleIndexActive }}
     >
-      <div className="relative z-[5] mx-auto my-4 w-11/12 h-full  py-4 px-4 bg-primary-one-alfa rounded-sm  xl:w-[1600px]  md:min-h-[400px] ">
+      <SkillSWrapper className="relative z-[5] mx-auto my-4 w-11/12 h-full  py-4 px-4 bg-primary-one-alfa rounded-sm  xl:w-[1600px]  md:min-h-[400px] ">
         <div
           className={cn(
             `${indexActive !== -1 ? "block" : "hidden"}`,
@@ -64,7 +65,7 @@ export default function Provider({ children }: ProviderProps) {
           ref={contentElement}
         ></div>
         <DefaultContent className={indexActive !== -1 ? "hidden" : "block"} />
-      </div>
+      </SkillSWrapper>
       {children}
     </SkillProviderContext.Provider>
   );

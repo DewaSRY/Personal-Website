@@ -18,9 +18,6 @@ export default function Project({
       className={cn("py-[100px]", className)}
       {...resProps}
     >
-      <Heading.H2 className="mx-6 my-10 underline">
-        My Programming Project
-      </Heading.H2>
       <ProjectCard.WorkContainer>
         <ProjectCard.WorkCard>
           <Image
@@ -30,7 +27,7 @@ export default function Project({
             alt="my first project"
           />
           <ProjectCard.WorkBody>
-            <Heading.H3>This is my first project</Heading.H3>
+            <Heading.H2>This is my first project</Heading.H2>
             <Paragraph.Date>27-06-2004</Paragraph.Date>
 
             <Paragraph.Description>

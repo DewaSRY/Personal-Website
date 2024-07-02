@@ -44,7 +44,7 @@ export default function ParallaxImage({
           start: `top center`,
           end: "600 bottom",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
     },
