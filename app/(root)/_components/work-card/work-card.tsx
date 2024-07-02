@@ -1,5 +1,18 @@
-import { ComponentProps, PropsWithChildren } from "react";
+import {
+  ComponentProps,
+  PropsWithChildren,
+  ElementRef,
+  useRef,
+  useEffect,
+} from "react";
 import { cn } from "@/lib/utils";
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 interface WorkCardProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function WorkCard({
@@ -7,8 +20,36 @@ export default function WorkCard({
   className,
   ...resProps
 }: WorkCardProps) {
+  const workContainer = useRef<HTMLElement>();
+  const workLayer = useRef<ElementRef<"div">>(null);
+  useGSAP(
+    () => {
+      gsap.to(workLayer.current, {
+        x: 0,
+        scale: 1,
+        duration: 1.2,
+        scrollTrigger: {
+          trigger: workLayer.current,
+          start: "-100 bottom",
+          end: "-100 center",
+          scrub: true,
+          toggleActions: "play pause reverse complete ",
+          // markers: true,
+        },
+      });
+    },
+    { scope: workContainer.current! }
+  );
+
+  useEffect(() => {
+    if (workLayer.current && workLayer.current.parentElement) {
+      workContainer.current = workLayer.current.parentElement;
+    }
+  }, []);
+
   return (
     <div
+      ref={workLayer}
       className={cn(
         " h-[120vh] flex justify-center items-center flex-col  ",
         className

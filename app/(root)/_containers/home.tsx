@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 
 import HeroBanner from "../_components/home/hero-banner";
 import TextBanner from "../_components/home/text-banner";
-import Heading from "@/components/common/heading";
 
 interface HomeProps extends ComponentProps<"div">, PropsWithChildren {}
 

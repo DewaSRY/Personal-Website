@@ -5,12 +5,6 @@ import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
 import WorkCard from "../_components/work-card";
 
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
 import { cn } from "@/lib/utils";
 interface WorksProps extends ComponentProps<"div">, PropsWithChildren {}
 
@@ -19,35 +13,8 @@ export default function Works({
   className,
   ...resProps
 }: WorksProps) {
-  const workContainer = useRef<ElementRef<"section">>(null);
-  useGSAP(
-    () => {
-      const boxes = gsap.utils.toArray(".work-card") as HTMLElement[];
-      boxes.forEach((layer) => {
-        gsap.to(layer, {
-          x: 0,
-          scale: 1,
-          duration: 1.2,
-          scrollTrigger: {
-            trigger: layer,
-            start: "-100 bottom",
-            end: "-100 center",
-            scrub: true,
-            toggleActions: "play pause reverse complete ",
-            // markers: true,
-          },
-        });
-      });
-    },
-    { scope: workContainer }
-  );
   return (
-    <section
-      ref={workContainer}
-      id="works"
-      className={cn(className, "my-[100px]")}
-      {...resProps}
-    >
+    <section id="works" className={cn(className, "my-[100px]")} {...resProps}>
       <WorkCard.WorkCard className="work-card transition-transform scale-0 translate-x-[-100%]">
         <Heading.H3>Full Stack Engineer</Heading.H3>
 

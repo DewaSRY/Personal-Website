@@ -1,40 +1,11 @@
-"use client";
 import { ComponentProps, ElementRef, PropsWithChildren, useRef } from "react";
-import Image from "next/image";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 import ParallaxImage from "./parallax-image";
 interface ParallaxProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Parallax({ children, ...resProps }: ParallaxProps) {
-  const parallaxContainer = useRef<ElementRef<"div">>(null);
-
-  useGSAP(
-    () => {
-      const boxes = gsap.utils.toArray(".layer") as HTMLElement[];
-      boxes.forEach((layer, index) => {
-        gsap.to(layer, {
-          y: 0,
-          duration: 5,
-          scrollTrigger: {
-            trigger: layer,
-            start: `top  center`,
-            end: "bottom center",
-            scrub: true,
-            toggleActions: "play pause reverse complete ",
-            // markers: true,
-          },
-        });
-      });
-    },
-    { scope: parallaxContainer }
-  );
   return (
-    <div ref={parallaxContainer} className="h-[800px] ">
+    <div className="h-[800px] ">
       <ParallaxImage
         imageSrc="/parallax/forest_layer_5.png"
         imageAlt="five layer"
