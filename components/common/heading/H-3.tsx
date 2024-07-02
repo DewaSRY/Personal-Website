@@ -14,8 +14,8 @@ export default function H3({ children, className, ...resProps }: H3Props) {
         font.className,
         className,
         "text-[18px] text-primary-four",
-        "md:text-[24px]",
-        "xl:text-[34px]"
+        "md:text-[22px]",
+        "xl:text-[26px]"
       )}
       {...resProps}
     >

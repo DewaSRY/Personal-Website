@@ -18,7 +18,6 @@ export default function useMode() {
       background-image: url(${imageSrc}); background-size: cover; background-repeat: no-repeat; width: 100%; height: 782px; translate: none; rotate: none; scale: none; transform: translate(0px, 39.1px);
       `
     );
-    console.log(layerFive);
   }
 
   function toggleTheme() {

@@ -55,7 +55,7 @@ export default function Provider({ children }: ProviderProps) {
     <SkillProviderContext.Provider
       value={{ setCard, indexActive, handleIndexActive }}
     >
-      <div className="relative mx-auto my-4 w-11/12 h-full  md:h-[400px] pt-4 px-4 bg-primary-one-alfa rounded-sm pb-[5rem] xl:w-[1600px] ">
+      <div className="relative z-[5] mx-auto my-4 w-11/12 h-full  py-4 px-4 bg-primary-one-alfa rounded-sm  xl:w-[1600px]  md:min-h-[400px] ">
         <div
           className={cn(
             `${indexActive !== -1 ? "block" : "hidden"}`,
@@ -64,10 +64,8 @@ export default function Provider({ children }: ProviderProps) {
           ref={contentElement}
         ></div>
         <DefaultContent className={indexActive !== -1 ? "hidden" : "block"} />
-        <div className="absolute bottom-4 left-[50%] translate-x-[-50%]">
-          {children}
-        </div>
       </div>
+      {children}
     </SkillProviderContext.Provider>
   );
 }

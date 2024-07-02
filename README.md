@@ -12,4 +12,5 @@ dependency
 - [x] create internationalization
 - [x] specify font siz
 
-- [] animate section header
+- [x] animate section header
+- [ ] create favicons

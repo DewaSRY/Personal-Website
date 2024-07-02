@@ -34,10 +34,16 @@ export default function Profile({
         <div>
           <Heading.H3>Dewa Surya Ariesta</Heading.H3>
           <Paragraph.Description className="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro
-            magni aliquam, numquam quam maiores quo iure exercitationem minima
-            accusamus obcaecati quibusdam totam nam aliquid. Placeat, quos?
-            Obcaecati, totam quis.
+            Experienced software engineer with solid foundation in both frontend
+            and backend technologies. My journey began as a freelance frontend
+            developer, where I successfully designed and developed an
+            enterprise-level data management system using Angular. As I
+            progressed, I delved deeper into backend technologies, honing my
+            skills in programming languages such as Java, Python and Rust.
+            Looking ahead, my aim is to continuously refine my programming and
+            communication skills while eagerly sharing my knowledge and
+            expertise with teams and individuals beyond the confines of our
+            field.
           </Paragraph.Description>
           <Button variant="primary">Connect with me On Linkedin</Button>
         </div>

@@ -27,28 +27,27 @@ export default function Moon({ children, ...resProps }: MoonProps) {
     }
   }, []);
 
-  useGSAP(
-    () => {
-      gsap.to(moonElement.current, {
-        translateY: 1500,
-        rotateZ: 100,
-        scrollTrigger: {
-          trigger: moonElement.current,
-          start: "bottom bottom",
-          end: "1700 center",
-          scrub: true,
-          //   markers: true,
-        },
-      });
-    },
-    { scope: parentContainer }
-  );
+  useGSAP(() => {
+    const translateLength = ((window.innerHeight * 80) / 100) * 3;
+    console.log(translateLength);
+    gsap.to(moonElement.current, {
+      translateY: translateLength,
+      rotateZ: 100,
+      scrollTrigger: {
+        trigger: moonElement.current,
+        start: "170% center",
+        end: `${translateLength + 100} top`,
+        scrub: true,
+        // markers: true,
+      },
+    });
+  });
 
   return (
     <Image
       ref={moonElement}
       className={cn(
-        "absolute left-[5%] top-[100px]  ",
+        "absolute left-[5%] top-[10%] z-0 ",
         "w-[70vw] h-[calc(90vw - 120px)]",
         "max-w-[1000px] max-h-[900px]"
       )}

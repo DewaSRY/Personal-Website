@@ -22,8 +22,8 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
           duration: 5,
           scrollTrigger: {
             trigger: layer,
-            start: `-${(5 - index) * 40}  center`,
-            end: "bottom bottom",
+            start: `top  center`,
+            end: "bottom center",
             scrub: true,
             toggleActions: "play pause reverse complete ",
             // markers: true,
@@ -38,7 +38,7 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
       <ParallaxImage
         imageSrc="/parallax/forest_layer_5.png"
         imageAlt="five layer"
-        className="layer absolute top-0 translate-y-[5%] "
+        className="layer absolute top-0 translate-y-[-5%] "
         id="five-layer"
       />
       <ParallaxImage
