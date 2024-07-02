@@ -10,7 +10,7 @@ export default function WorkCard({
   return (
     <div
       className={cn(
-        " h-[100vh] flex justify-center items-center flex-col  ",
+        " h-[120vh] flex justify-center items-center flex-col  ",
         className
       )}
     >

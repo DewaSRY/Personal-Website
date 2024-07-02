@@ -14,8 +14,11 @@ export default function Skills({
   ...resProps
 }: SkillsProps) {
   return (
-    <section id="skills" className={cn("mt-4 mb-10", className)} {...resProps}>
-      <Heading.H2 className="mx-6 underline">My Programming Skills</Heading.H2>
+    <section
+      id="skills"
+      className={cn("mt-4 py-[100px]", className)}
+      {...resProps}
+    >
       <SkillCard.SkillContainer>
         {/* figma */}
         <SkillCard.Cards>

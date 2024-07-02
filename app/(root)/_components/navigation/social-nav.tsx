@@ -7,7 +7,7 @@ interface SocialNavProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function SocialNav({ children, ...resProps }: SocialNavProps) {
   return (
-    <div className="fixed  z-50 left-1 bottom-[50%] translate-y-[50%] flex h-[120px] flex-col justify-between   ">
+    <div className="fixed z-50 left-1 bottom-[50%] translate-y-[50%] flex h-[120px] flex-col justify-between   ">
       <Link
         href="/"
         className={cn(

@@ -39,7 +39,7 @@ export default function CardIcon({
       role="button"
       className={cn(
         "flex flex-col items-center px-2 pb-4 w-[80px]  bg-primary-one-beta rounded-lg border-2 border-transparent cursor-pointer",
-        "hover:border-primary-one hover:bg-transparent",
+        "hover:border-primary-one hover:bg-transparent shadow-xl",
         `${
           parentElementIndex.current == indexActive &&
           "border-primary-one bg-transparent "

@@ -29,14 +29,13 @@ export default function Moon({ children, ...resProps }: MoonProps) {
 
   useGSAP(() => {
     const translateLength = ((window.innerHeight * 80) / 100) * 3;
-    console.log(translateLength);
     gsap.to(moonElement.current, {
       translateY: translateLength,
       rotateZ: 100,
       scrollTrigger: {
         trigger: moonElement.current,
-        start: "170% center",
-        end: `${translateLength + 100} top`,
+        start: "150% center",
+        end: `150% top`,
         scrub: true,
         // markers: true,
       },
@@ -47,7 +46,7 @@ export default function Moon({ children, ...resProps }: MoonProps) {
     <Image
       ref={moonElement}
       className={cn(
-        "absolute left-[5%] top-[10%] z-0 ",
+        "absolute left-[5%] top-[10%] z-0 duration-300",
         "w-[70vw] h-[calc(90vw - 120px)]",
         "max-w-[1000px] max-h-[900px]"
       )}

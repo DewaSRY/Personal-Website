@@ -13,7 +13,11 @@ export default function Project({
   ...resProps
 }: ProjectProps) {
   return (
-    <section id="projects" className={cn("py-10", className)} {...resProps}>
+    <section
+      id="projects"
+      className={cn("py-[100px]", className)}
+      {...resProps}
+    >
       <Heading.H2 className="mx-6 my-10 underline">
         My Programming Project
       </Heading.H2>

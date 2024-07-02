@@ -14,7 +14,7 @@ export default function SkillContainer({
 }: SkillContainerProps) {
   return (
     <Provider>
-      <div className="min-w-min max-w-[1600px] mx-auto px-4 py-6 ">
+      <div className="min-w-min w-10/12  xl:w-[1600px] mx-auto px-4 py-6 ">
         <Heading.H3 className="my-4 underline ">My Skill List :</Heading.H3>
         <div className="flex items-center flex-wrap gap-2 ">{children}</div>
       </div>

@@ -13,9 +13,6 @@ export default function DefaultContent({
 }: DefaultContentProps) {
   return (
     <div className={cn(resProps.className, "px-6")}>
-      <Heading.H3>
-        I Am Good At broad variety of Programming Language
-      </Heading.H3>
       <div className="w-full my-5 flex flex-col md:flex-row">
         <Image
           src="/programming_image.png"
@@ -25,7 +22,9 @@ export default function DefaultContent({
           className="w-[200px] h-[150px] md:w-[400px] md:h-[250px]"
         />
         <div>
-          <Heading.H4>i am good at Frontend And backend</Heading.H4>
+          <Heading.H3 className="my-4">
+            I Am Good At broad variety of Programming Language
+          </Heading.H3>
           <Paragraph.Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi
             natus libero maiores doloremque dicta quae id provident fugiat,
