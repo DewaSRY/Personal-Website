@@ -9,7 +9,7 @@ export default function Parallax({ children, ...resProps }: ParallaxProps) {
       <ParallaxImage
         imageSrc="/parallax/forest_layer_5.png"
         imageAlt="five layer"
-        className="layer absolute top-0 translate-y-[-5%] "
+        className="layer absolute top-0 translate-y-[5%] "
         id="five-layer"
       />
       <ParallaxImage

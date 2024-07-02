@@ -8,11 +8,13 @@ import {
 } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 interface MoonProps extends ComponentProps<"img">, PropsWithChildren {}
 
 export default function Moon({ children, ...resProps }: MoonProps) {
@@ -20,10 +22,8 @@ export default function Moon({ children, ...resProps }: MoonProps) {
   const moonElement = useRef<ElementRef<"img">>(null);
 
   useEffect(() => {
-    if (moonElement.current) {
-      if (moonElement.current.parentElement) {
-        parentContainer.current = moonElement.current.parentElement;
-      }
+    if (moonElement.current && moonElement.current.parentElement) {
+      parentContainer.current = moonElement.current.parentElement;
     }
   }, []);
 

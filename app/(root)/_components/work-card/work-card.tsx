@@ -22,30 +22,27 @@ export default function WorkCard({
 }: WorkCardProps) {
   const workContainer = useRef<HTMLElement>();
   const workLayer = useRef<ElementRef<"div">>(null);
+  useEffect(() => {
+    if (workLayer.current && workLayer.current.parentElement) {
+      workContainer.current = workLayer.current.parentElement;
+    }
+  }, []);
   useGSAP(
     () => {
       gsap.to(workLayer.current, {
         x: 0,
         scale: 1,
-        duration: 1.2,
         scrollTrigger: {
           trigger: workLayer.current,
           start: "-100 bottom",
           end: "-100 center",
           scrub: true,
-          toggleActions: "play pause reverse complete ",
           // markers: true,
         },
       });
     },
     { scope: workContainer.current! }
   );
-
-  useEffect(() => {
-    if (workLayer.current && workLayer.current.parentElement) {
-      workContainer.current = workLayer.current.parentElement;
-    }
-  }, []);
 
   return (
     <div

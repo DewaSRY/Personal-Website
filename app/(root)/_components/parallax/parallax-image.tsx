@@ -29,6 +29,11 @@ export default function ParallaxImage({
 }: ParallaxImageProps) {
   const parentContainer = useRef<HTMLElement>();
   const parallaxContainer = useRef<ElementRef<"div">>(null);
+  useEffect(() => {
+    if (parallaxContainer.current && parallaxContainer.current.parentElement) {
+      parentContainer.current = parallaxContainer.current.parentElement;
+    }
+  }, []);
 
   useGSAP(
     () => {
@@ -36,22 +41,16 @@ export default function ParallaxImage({
         y: 0,
         scrollTrigger: {
           trigger: parallaxContainer.current,
-          start: `top  center`,
-          end: "bottom center",
+          start: `top center`,
+          end: "600 bottom",
           scrub: true,
-          toggleActions: "play pause reverse complete ",
-          // markers: true,
+          markers: true,
         },
       });
     },
     { scope: parallaxContainer.current! }
   );
 
-  useEffect(() => {
-    if (parallaxContainer.current && parallaxContainer.current.parentElement) {
-      parentContainer.current = parallaxContainer.current.parentElement;
-    }
-  }, []);
   return (
     <div
       ref={parallaxContainer}
@@ -62,7 +61,7 @@ export default function ParallaxImage({
         width: "100%",
         height: "782px",
       }}
-      className={cn(className, "transition-transform")}
+      className={cn(className, "")}
       {...resProps}
     />
   );
