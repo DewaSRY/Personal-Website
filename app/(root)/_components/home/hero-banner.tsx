@@ -1,4 +1,4 @@
-import { ComponentProps, PropsWithChildren } from "react";
+import { ComponentProps, PropsWithChildren, ElementRef } from "react";
 import Image from "next/image";
 
 import SkillBanner from "./skill-banner";
