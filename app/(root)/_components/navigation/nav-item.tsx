@@ -6,18 +6,22 @@ import { ComponentProps, PropsWithChildren, ReactElement } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Paragraph from "@/components/common/paragraph";
-interface NavItemProps extends ComponentProps<"div">, PropsWithChildren {
+interface NavItemProps extends ComponentProps<"a">, PropsWithChildren {
   Icons: React.FunctionComponent;
   isActive: boolean;
+  to: string;
 }
 export default function NavItem({
   children,
   Icons,
   isActive,
+  to,
   ...resProps
 }: NavItemProps) {
   return (
-    <div
+    <Link
+      href={`#${to}`}
+      scroll
       className={cn(
         "relative active nav-items w-[60px] h-[50px] flex flex-col justify-between items-center cursor-pointer ",
         "md:mx-4 md:h-[30px] z-20 "
@@ -37,6 +41,6 @@ export default function NavItem({
           `${isActive ? "scale-x-100 origin-left" : ""}`
         )}
       />
-    </div>
+    </Link>
   );
 }

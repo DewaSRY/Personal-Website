@@ -17,6 +17,7 @@ interface SmoothScrollSectionProps
 export default function SmoothScrollSection({
   children,
   sectionName,
+  className,
   ...resProps
 }: SmoothScrollSectionProps) {
   const sectionRef = useRef<ElementRef<"section">>(null);
@@ -32,7 +33,7 @@ export default function SmoothScrollSection({
     <section
       ref={sectionRef}
       id={sectionName}
-      className={cn(resProps.className)}
+      className={cn(className)}
       {...resProps}
     >
       {children}

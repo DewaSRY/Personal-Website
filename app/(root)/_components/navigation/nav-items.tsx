@@ -16,7 +16,7 @@ interface NavItemsProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function NavItems({ children, ...resProps }: NavItemsProps) {
   const activeSection = useNavActiveState();
-  const { scrollTo } = useSmoothScroll();
+  // const { scrollTo } = useSmoothScroll();
 
   return (
     <nav
@@ -29,35 +29,40 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
     >
       <NavItem
         isActive={activeSection === "home"}
-        onClick={scrollTo.bind(null, "home")}
+        to="home"
+        // onClick={scrollTo.bind(null, "home")}
         Icons={HomeIcon}
       >
         Home
       </NavItem>
       <NavItem
         isActive={activeSection === "works"}
-        onClick={scrollTo.bind(null, "works")}
+        to="works"
+        // onClick={scrollTo.bind(null, "works")}
         Icons={WorksIcon}
       >
         Works
       </NavItem>
       <NavItem
         isActive={activeSection === "skills"}
-        onClick={scrollTo.bind(null, "skills")}
+        to="skills"
+        // onClick={scrollTo.bind(null, "skills")}
         Icons={SkillsIcon}
       >
         Skills
       </NavItem>
       <NavItem
         isActive={activeSection === "projects"}
-        onClick={scrollTo.bind(null, "projects")}
+        to="projects"
+        // onClick={scrollTo.bind(null, "projects")}
         Icons={ProjectIcon}
       >
         Projects
       </NavItem>
       <NavItem
+        to="profile"
         isActive={activeSection === "profile"}
-        onClick={scrollTo.bind(null, "profile")}
+        // onClick={scrollTo.bind(null, "profile")}
         Icons={ProfileIcon}
       >
         Profile
