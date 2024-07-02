@@ -31,11 +31,11 @@ export default function Moon({ children, ...resProps }: MoonProps) {
     const translateLength = ((window.innerHeight * 80) / 100) * 3;
     gsap.to(moonElement.current, {
       translateY: translateLength,
-      rotateZ: 100,
+      rotateZ: 180,
       scrollTrigger: {
         trigger: moonElement.current,
-        start: "150% center",
-        end: `150% top`,
+        start: "170% center",
+        end: `170% top`,
         scrub: true,
         // markers: true,
       },

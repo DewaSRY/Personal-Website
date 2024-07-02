@@ -34,8 +34,8 @@ export default function WorkCard({
         scale: 1,
         scrollTrigger: {
           trigger: workLayer.current,
-          start: "-100 bottom",
-          end: "-100 center",
+          start: "-100 70%",
+          end: "-100 bottom",
           scrub: true,
           // markers: true,
         },

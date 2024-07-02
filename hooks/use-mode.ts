@@ -21,9 +21,9 @@ export default function useMode() {
   }
 
   function toggleTheme() {
-    if (htmlDocument.current !== null) {
+    if (htmlDocument.current) {
       setTheme((prev) => (prev === "light" ? "dark" : "light"));
-      htmlDocument.current!.setAttribute("date-theme", currentTheme);
+      htmlDocument.current.setAttribute("date-theme", currentTheme);
       localStorage.setItem("date-theme", currentTheme);
       setLayerImage(currentTheme);
     }
@@ -31,7 +31,6 @@ export default function useMode() {
   useEffect(() => {
     htmlDocument.current = document.documentElement;
     const getTheme = localStorage.getItem("date-theme") ?? "light";
-
     htmlDocument.current!.setAttribute("date-theme", getTheme);
     setTheme(getTheme as "light" | "dark");
     setLayerImage(getTheme as "light" | "dark");

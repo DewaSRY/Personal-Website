@@ -15,7 +15,7 @@ export default function Profile({
   return (
     <section
       id="profile"
-      className={cn(" h-[100vh] mx-auto relative max-w-[1280px]  ", className)}
+      className={cn("h-[100vh] mx-auto relative max-w-[1280px]  ", className)}
       {...resProps}
     >
       <AboutMe />

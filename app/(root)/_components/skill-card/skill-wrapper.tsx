@@ -41,7 +41,7 @@ export default function SkillSWrapper({
           start: "-100 bottom",
           end: `top center`,
           scrub: true,
-          markers: true,
+          //   markers: true,
         },
       });
     },
