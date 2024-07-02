@@ -6,20 +6,20 @@ const font = Lora({
   preload: false,
 });
 
-interface ListProps extends ComponentProps<"p">, PropsWithChildren {}
-export default function List({ children, ...resProps }: ListProps) {
+interface ListProps extends ComponentProps<"li">, PropsWithChildren {}
+export default function List({ children, className, ...resProps }: ListProps) {
   return (
-    <p
+    <li
       className={cn(
         font.className,
-        resProps.className,
-        "text-[10px] text-primary-three",
-        "text-[12px]",
-        "text-[14px]"
+        "text-[10px] text-primary-three list-disc",
+        "md:text-[12px]",
+        "xl:text-[14px] ",
+        className
       )}
       {...resProps}
     >
-      {children}
-    </p>
+      <p>{children}</p>
+    </li>
   );
 }

@@ -5,9 +5,9 @@ import Heading from "@/components/common/heading";
 import { cn } from "@/lib/utils";
 
 const skillMap = {
-  backend: "/icons/Spring.png",
-  frontend: "/icons/React.png",
-  design: "/icons/Figma.png",
+  backend: "/icons/spring.png",
+  frontend: "/icons/react.png",
+  design: "/icons/figma.png",
 };
 
 interface SkillLabelProps extends ComponentProps<"div">, PropsWithChildren {

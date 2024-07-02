@@ -7,12 +7,12 @@ const font = Kaisei_Decol({
 });
 
 interface H3Props extends ComponentProps<"h3">, PropsWithChildren {}
-export default function H3({ children, ...resProps }: H3Props) {
+export default function H3({ children, className, ...resProps }: H3Props) {
   return (
     <h3
       className={cn(
         font.className,
-        resProps.className,
+        className,
         "text-[18px] text-primary-four",
         "md:text-[24px]",
         "xl:text-[34px]"

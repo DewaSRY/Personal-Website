@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("./nav-items.css");
+@import url("./skill-animation.css");
 /**
 Base layer doesn't realey importent for now.
 */
@@ -13,20 +13,23 @@ Base layer doesn't realey importent for now.
     transition-timing-function: ease-in-out;
     --primary-one: #000000;
     --primary-one-alfa: rgba(0, 0, 0, 0.3);
+    --primary-one-beta: rgba(0, 0, 0, 0.7);
     --primary-two: #f4dfc8;
     --primary-three: #f4eae0;
     --primary-four: #faf6f0;
+
+    --footer: #162427;
 
     --radius: 10px;
   }
 
   html {
-    --main-bg: linear-gradient(180deg, #939df9 0%, #81c3ff 100%);
+    --main-bg: linear-gradient(180deg, #939df9 30%, #81c3ff 70%);
     --hero-bg: rgba(255, 255, 255, 0.2);
   }
 
   html[date-theme="dark"] {
-    --main-bg: linear-gradient(180deg, #171522 0%, #78a0e0 100%);
+    --main-bg: linear-gradient(180deg, #171522 30%, #78a0df 70%);
     --hero-bg: rgba(0, 0, 0, 0.2);
   }
 }
@@ -34,11 +37,19 @@ Base layer doesn't realey importent for now.
 html {
   scroll-behavior: smooth;
 }
-body {
+main {
   background: var(--main-bg);
-  height: 3000px;
 }
 
 .colors-svg {
   color: red;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

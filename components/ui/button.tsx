@@ -17,9 +17,9 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         primary:
-          "bg-primary-one text-primary-four capitalize border border-transparent hover:border-primary-four hover:bg-transparent",
+          "bg-primary-one text-primary-four capitalize border border-transparent hover:border-primary-four hover:bg-primary-two hover:text-primary-one",
         secondary:
-          "bg-primary-four text-primary-one capitalize border border-transparent hover:border-primary-one hover:bg-transparent",
+          "bg-primary-four text-primary-one capitalize border border-transparent hover:border-primary-four hover:bg-primary-one hover:text-primary-four",
       },
       size: {
         default: "h-10 px-4 py-2",

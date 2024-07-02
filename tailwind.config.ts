@@ -14,10 +14,12 @@ const config = {
       colors: {
         "primary-one": "var(--primary-one)",
         "primary-one-alfa": "var(--primary-one-alfa)",
+        "primary-one-beta": "var(--primary-one-beta)",
         "primary-two": "var(--primary-two)",
         "primary-three": "var(--primary-three)",
         "primary-four": "var(--primary-four)",
         "hero-bg": "var(--hero-bg)",
+        footer: "var(--footer)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -26,6 +28,7 @@ const config = {
       },
     },
   },
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar-hide")],
 } satisfies Config;
 
 export default config;

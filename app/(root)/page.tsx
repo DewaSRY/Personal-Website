@@ -6,19 +6,20 @@ import Works from "./_containers/works";
 import Skills from "./_containers/skills";
 import Project from "./_containers/project";
 import Profile from "./_containers/profile";
-
-import SmoothScroll from "@/components/smooth-scroll";
+import Moon from "./_components/moon";
 export default function Portfolio() {
   return (
-    <SmoothScroll.Provider>
+    <>
       <Headers />
-      <main>
+      <main className="bg-main-bg mb-[-5px]">
+        <Moon />
         <Home />
         <Works />
         <Skills />
         <Project />
         <Profile />
       </main>
-    </SmoothScroll.Provider>
+      <footer className="h-[300px] bg-footer "></footer>
+    </>
   );
 }
