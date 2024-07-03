@@ -10,7 +10,13 @@ interface P2BProps extends ComponentProps<"p">, PropsWithChildren {}
 
 export default function P2B({ children, className, ...resProps }: P2BProps) {
   return (
-    <p className={cn(className, font.className, "text-[14px] leading-[150%]")}>
+    <p
+      className={cn(
+        className,
+        font.className,
+        "text-[14px] leading-[150%] text-primary-four"
+      )}
+    >
       {children}
     </p>
   );

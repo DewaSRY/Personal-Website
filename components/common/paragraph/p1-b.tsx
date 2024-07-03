@@ -10,7 +10,13 @@ interface P1BProps extends ComponentProps<"p">, PropsWithChildren {}
 
 export default function P1B({ children, className, ...resProps }: P1BProps) {
   return (
-    <p className={cn(className, font.className, "text-[16px] leading-[150%]")}>
+    <p
+      className={cn(
+        className,
+        font.className,
+        "text-[16px] leading-[150%] text-primary-four"
+      )}
+    >
       {children}
     </p>
   );
