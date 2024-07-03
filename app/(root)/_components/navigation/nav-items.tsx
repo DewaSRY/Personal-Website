@@ -10,13 +10,11 @@ import ProfileIcon from "@/components/svgs/user.svg";
 import useNavActiveState from "@/hooks/use-nav-active-state";
 
 import NavItem from "./nav-item";
-import { useSmoothScroll } from "@/components/smooth-scroll";
 
 interface NavItemsProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function NavItems({ children, ...resProps }: NavItemsProps) {
   const activeSection = useNavActiveState();
-  // const { scrollTo } = useSmoothScroll();
 
   return (
     <nav
@@ -27,45 +25,22 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
         "xl:top-3 xl:bottom-[95%] xl:bg-transparent"
       )}
     >
-      <NavItem
-        isActive={activeSection === "home"}
-        to="home"
-        // onClick={scrollTo.bind(null, "home")}
-        Icons={HomeIcon}
-      >
+      <NavItem isActive={activeSection === "home"} to="home" Icons={HomeIcon}>
         Home
       </NavItem>
       <NavItem
-        isActive={activeSection === "works"}
-        to="works"
-        // onClick={scrollTo.bind(null, "works")}
-        Icons={WorksIcon}
-      >
-        Works
-      </NavItem>
-      <NavItem
-        isActive={activeSection === "skills"}
-        to="skills"
-        // onClick={scrollTo.bind(null, "skills")}
-        Icons={SkillsIcon}
-      >
-        Skills
-      </NavItem>
-      <NavItem
-        isActive={activeSection === "projects"}
-        to="projects"
-        // onClick={scrollTo.bind(null, "projects")}
-        Icons={ProjectIcon}
-      >
-        Projects
-      </NavItem>
-      <NavItem
         to="profile"
-        isActive={activeSection === "profile"}
-        // onClick={scrollTo.bind(null, "profile")}
+        isActive={activeSection === "my-profile"}
         Icons={ProfileIcon}
       >
-        Profile
+        My Profile
+      </NavItem>
+      <NavItem
+        isActive={activeSection === "works-experience"}
+        to="works"
+        Icons={WorksIcon}
+      >
+        Works Experience
       </NavItem>
     </nav>
   );
