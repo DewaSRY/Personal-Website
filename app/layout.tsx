@@ -6,8 +6,32 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "dewa-portfolio",
-  description: "full stack developer",
+  title: "DewaSRY | Personal",
+  description:
+    "DewaSRY with full name, Dewa Surya Ariesta is full stack developer with hight experience",
+  icons: {
+    icon: [
+      {
+        url: "/favicon/favicon.ico",
+        rel: "icon",
+      },
+      {
+        url: "/favicon/apple-touch-icon.png",
+        sizes: "180x180",
+        rel: "apple-touch-icon",
+      },
+      {
+        url: "/favicon/favicon-32x32.png",
+        sizes: "32x32",
+        rel: "icon",
+      },
+      {
+        url: "/favicon/favicon-16x16.png",
+        sizes: "16x16",
+        rel: "icon",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

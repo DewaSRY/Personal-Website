@@ -27,7 +27,7 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
         <TextBanner />
       </div>
 
-      <div className="absolute inset-0 bottom-[2%] z-[1]  bg-primary-four-alfa rounded-bl-[200px] blur-[10px]" />
+      <div className="absolute inset-0 bottom-[2%] z-[1]  bg-primary-three-alfa rounded-bl-[200px] " />
       <div className="absolute inset-0 z-[0]">
         <Moon />
       </div>

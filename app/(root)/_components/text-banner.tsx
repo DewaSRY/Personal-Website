@@ -11,19 +11,17 @@ export default function TextBanner({
   ...resProps
 }: TextBannerProps) {
   return (
-    <div className={cn(className, "w-11/12 md:w-8/12 ")}>
-      <span className="text-[18px] md:text-[22px] xl:text-[26px] mr-2 text-primary-one">
-        HALLO my name is
-      </span>
+    <div className={cn(className, "w-11/12 md:w-8/12 text-primary-five ")}>
       <Paragraph.Description className="text-[18px] md:text-[20px] xl:text-[24px]">
-        Dewa Surya Ariesta
+        HALLO, my name is
       </Paragraph.Description>
-      <hr className="w-8/12 h-2 p-[2px]" />
-      <span className="text-[18px] md:text-[20px] xl:text-[24px] mr-2 text-primary-one">
-        I am a
+      <span className="text-[18px] md:text-[22px] xl:text-[26px] mr-2 text-primary-one">
+        Dewa Surya Ariesta
       </span>
+      <hr className="w-8/12 h-2 p-[2px] translate-x-[-1%]" />
+      <Paragraph.Description>I am a</Paragraph.Description>
       <Heading.H1>Full Stack Web Developers</Heading.H1>
-      <hr className="h-2 p-[2px]" />
+      <hr className="h-2 p-[2px] translate-x-[-1%]" />
       <Paragraph.Description>
         Let&apos;s make miracle happen
       </Paragraph.Description>

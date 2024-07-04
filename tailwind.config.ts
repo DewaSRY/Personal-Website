@@ -18,6 +18,7 @@ const config = {
         "primary-two": "var(--primary-two)",
         "primary-two-alfa": "var(--primary-two-alfa)",
         "primary-three": "var(--primary-three)",
+        "primary-three-alfa": "var(--primary-three-alfa)",
         "primary-four": "var(--primary-four)",
         "primary-four-alfa": "var(--primary-four-alfa)",
         "primary-five": "var(--primary-five)",

@@ -4,8 +4,9 @@ import { Lora } from "next/font/google";
 import NavItems from "../_components/navigation/nav-items";
 import { cn } from "@/lib/utils";
 const font = Lora({
-  weight: "500",
+  weight: "600",
   preload: false,
+  style: "italic",
 });
 
 interface HeadersProps extends ComponentProps<"div">, PropsWithChildren {}
