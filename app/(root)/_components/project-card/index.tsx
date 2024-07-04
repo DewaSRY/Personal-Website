@@ -1,10 +1,13 @@
-import WorkBody from "./work-body";
-import WorkCard from "./work-card";
-import WorkContainer from "./work-container";
+import Body from "./body";
+import Card from "./card";
+import Container from "./container";
+import Image from "./image";
+
 const ProjectCard = {
-  WorkBody,
-  WorkCard,
-  WorkContainer,
+  Body,
+  Card,
+  Container,
+  Image,
 };
 
 export default ProjectCard;
