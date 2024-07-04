@@ -15,16 +15,18 @@ export default function ProgrammingIcon({
   ...resProps
 }: ProgrammingIconProps) {
   return (
-    <div className="w-[150px]">
+    <div className="w-[100px] xl:w-[150px] px-2 " {...resProps}>
       <Image
-        className="h-[50px]"
+        className="h-[50px] w-[50px] xl:h-[75px] xl:w-[75px] mx-auto"
         width={150}
         height={150}
         src={imageSrc}
         alt={imageAlt}
       />
       <hr />
-      <Paragraph.Description>{children}</Paragraph.Description>
+      <Paragraph.Description className="text-center">
+        {children}
+      </Paragraph.Description>
     </div>
   );
 }

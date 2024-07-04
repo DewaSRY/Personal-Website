@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren } from "react";
 
 interface SkillContainerProps
@@ -6,7 +7,12 @@ interface SkillContainerProps
 
 export default function SkillContainer({
   children,
+  className,
   ...resProps
 }: SkillContainerProps) {
-  return <div>{children}</div>;
+  return (
+    <div className={cn(className)} {...resProps}>
+      {children}
+    </div>
+  );
 }
