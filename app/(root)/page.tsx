@@ -2,7 +2,6 @@ import Headers from "./_containers/headers";
 
 import Home from "./_containers/home";
 import Works from "./_containers/works";
-import Skills from "./_containers/skills";
 import Project from "./_containers/project";
 import MyProfile from "./_containers/my-profile";
 export default function Portfolio() {
