@@ -7,11 +7,14 @@ import { useEffect, useState } from "react";
 // Custom Hook
 function useSectionObserver() {
   const [sections, setSections] = useState<string>("");
+  console.log(sections);
 
   useEffect(() => {
     const allSections = document.querySelectorAll("section");
+    console.log(allSections);
     const observer = new IntersectionObserver(
       (entries) => {
+        console.log(entries);
         const inViews = entries.find((e) => e.isIntersecting);
         if (inViews) {
           setSections(inViews.target.id);

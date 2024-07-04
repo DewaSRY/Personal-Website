@@ -1,9 +1,8 @@
 import Headers from "./_containers/headers";
 
 import Home from "./_containers/home";
-import Works from "./_containers/works";
-import Project from "./_containers/project";
 import MyProfile from "./_containers/my-profile";
+import MyExperience from "./_containers/my-experience";
 export default function Portfolio() {
   return (
     <>
@@ -11,8 +10,9 @@ export default function Portfolio() {
       <main className="bg-primary-one mb-[-5px]">
         <Home />
         <MyProfile />
+        <MyExperience />
       </main>
-      <footer className="h-[300px] bg-footer "></footer>
+      <footer className="h-[300px] bg-primary-three "></footer>
     </>
   );
 }

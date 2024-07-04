@@ -2,8 +2,8 @@ import { ComponentProps, PropsWithChildren } from "react";
 
 import AboutMe from "../_components/about-me";
 import { cn } from "@/lib/utils";
-import ProgrammingContainer from "./programming-container";
-import SkillContainer from "./skill-container";
+import ProgrammingContainer from "../_content/programming-content";
+import SkillContainer from "../_content/skill-content";
 
 import Heading from "@/components/common/heading";
 

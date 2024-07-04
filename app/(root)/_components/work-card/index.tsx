@@ -1,13 +1,15 @@
-import WorkBody from "./work-body";
-import WorkCard from "./work-card";
-import WorkUl from "./work-ul";
-import WorkLi from "./work-li";
+import Body from "./body";
+import Card from "./card";
+import Ul from "./ul";
+import Li from "./li";
+import Image from "./Image";
 
 const WorkCards = {
-  WorkCard,
-  WorkBody,
-  WorkUl,
-  WorkLi,
+  Card,
+  Body,
+  Ul,
+  Li,
+  Image,
 };
 
 export default WorkCards;

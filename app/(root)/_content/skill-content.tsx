@@ -2,15 +2,13 @@ import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren } from "react";
 import SkillCard from "../_components/skill-card";
 import Heading from "@/components/common/heading";
-interface SkillContainerProps
-  extends ComponentProps<"div">,
-    PropsWithChildren {}
+interface SkillContentProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function SkillContainer({
+export default function SkillContent({
   children,
   className,
   ...resProps
-}: SkillContainerProps) {
+}: SkillContentProps) {
   return (
     <div className={cn(className, "mt-[50px]")} {...resProps}>
       <SkillCard.Card>

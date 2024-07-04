@@ -5,19 +5,17 @@ import Heading from "@/components/common/heading";
 import ProjectCard from "../_components/project-card";
 import Paragraph from "@/components/common/paragraph";
 import { cn } from "@/lib/utils";
-interface ProjectProps extends ComponentProps<"div">, PropsWithChildren {}
+interface ProjectContentProps
+  extends ComponentProps<"div">,
+    PropsWithChildren {}
 
-export default function Project({
+export default function ProjectContent({
   children,
   className,
   ...resProps
-}: ProjectProps) {
+}: ProjectContentProps) {
   return (
-    <section
-      id="projects"
-      className={cn("py-[100px] ", className)}
-      {...resProps}
-    >
+    <div className={cn("py-[100px] ", className)} {...resProps}>
       <Heading.H2 className="underline text-center my-10">
         My Project
       </Heading.H2>
@@ -63,6 +61,6 @@ export default function Project({
           </ProjectCard.WorkBody>
         </ProjectCard.WorkCard>
       </ProjectCard.WorkContainer>
-    </section>
+    </div>
   );
 }

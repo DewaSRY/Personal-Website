@@ -6,18 +6,17 @@ import Paragraph from "@/components/common/paragraph";
 import WorkCard from "../_components/work-card";
 
 import { cn } from "@/lib/utils";
-interface WorksProps extends ComponentProps<"div">, PropsWithChildren {}
+interface WorksContentProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function Works({
+export default function WorksContent({
   children,
   className,
   ...resProps
-}: WorksProps) {
+}: WorksContentProps) {
   return (
-    <section id="works" className={cn(className, "my-[100px]")} {...resProps}>
+    <div className={cn(className, "my-[100px]")} {...resProps}>
       <WorkCard.WorkCard className="work-card transition-transform scale-0 translate-x-[-100%]">
         <Heading.H3>Full Stack Engineer</Heading.H3>
-
         <Paragraph.Date> February, 2024 - April, 2024</Paragraph.Date>
         <WorkCard.WorkBody>
           <Image
@@ -97,6 +96,6 @@ export default function Works({
           </div>
         </WorkCard.WorkBody>
       </WorkCard.WorkCard>
-    </section>
+    </div>
   );
 }
