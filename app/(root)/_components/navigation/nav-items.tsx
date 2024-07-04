@@ -18,7 +18,7 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
     <nav
       className={cn(
         "flex flex-row items-center justify-between w-max rounded-lg  z-10",
-        "bg-primary-four-alfa px-4 ",
+        "bg-primary-one-alfa  px-4 pb-[5px] ",
         "fixed z-50 bottom-3 right-[50%] translate-x-[50%]",
         "xl:bg-transparent xl:bottom-[50%] xl:translate-y-[-50%] xl:translate-x-0 xl:right-0 xl:px-2 xl:flex-col "
       )}
