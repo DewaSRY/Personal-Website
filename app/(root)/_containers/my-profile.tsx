@@ -24,9 +24,9 @@ export default function MyProfile({
       <div className="w-11/12 xl:max-w-[1200px] mx-auto py-10">
         <Heading.H2 className="my-10">Programming Tool I Use</Heading.H2>
         <hr />
-        <div className="grid grid-cols-2 ">
-          <ProgrammingContainer className="col-start-1 col-end-2" />
-          <SkillContainer className="col-start-2 col-end-3" />
+        <div className="grid  md:grid-cols-2 ">
+          <ProgrammingContainer className="md:col-start-1 md:col-end-2" />
+          <SkillContainer className="md:col-start-2 md:col-end-3" />
         </div>
       </div>
     </section>

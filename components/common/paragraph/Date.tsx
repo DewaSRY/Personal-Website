@@ -2,7 +2,7 @@ import { ComponentProps, PropsWithChildren } from "react";
 import { Maitree } from "next/font/google";
 import { cn } from "@/lib/utils";
 const font = Maitree({
-  weight: "400",
+  weight: "200",
   preload: false,
 });
 
@@ -13,9 +13,9 @@ export default function Date({ children, className, ...resProps }: DateProps) {
       className={cn(
         font.className,
         className,
-        "text-[6px] text-primary-three",
-        "md:text-[8px]",
-        "xl:text-[10px]"
+        "text-[12px] text-primary-five",
+        "md:text-[14px]",
+        "xl:text-[16px]"
       )}
       {...resProps}
     >

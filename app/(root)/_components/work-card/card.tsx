@@ -44,13 +44,11 @@ export default function Card({ children, className, ...resProps }: CardProps) {
     <div
       // ref={workLayer}
       className={cn(
-        " h-[120vh] flex justify-center items-center flex-col  ",
+        "w-11/12 xl:w-[1000px] mx-auto  px-2 py-6 grid grid-cols-auto-fit-300 ",
         className
       )}
     >
-      <div className="bg-primary-one-alfa w-11/12 p-10 rounded-xl ">
-        {children}
-      </div>
+      {children}
     </div>
   );
 }

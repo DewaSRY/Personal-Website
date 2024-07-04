@@ -11,7 +11,7 @@ export default function MyExperience({
   ...resProps
 }: MyExperienceProps) {
   return (
-    <section id="experience" className="my-10">
+    <section id="experience" className="py-10 bg-primary-two">
       <WorksContent />
       {/* <ProjectContent /> */}
     </section>

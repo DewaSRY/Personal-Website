@@ -15,7 +15,7 @@ export default function Icon({
   return (
     <Image
       {...resProps}
-      className={cn(className, "w-[50px] h-[50px] xl:w-[75px] xl:h-[75px]")}
+      className={cn(className, "w-[50px] h-[50px] xl:w-[60px] xl:h-[60px]")}
       width={150}
       height={150}
       src={imageSrc}

@@ -44,7 +44,7 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
           </Paragraph.Description>
         </div>
       </div>
-      <div className="absolute inset-0 bottom-2 z-[1]  bg-primary-two-alfa rounded-bl-[100px]" />
+      <div className="absolute inset-0 bottom-2 z-[1]  bg-primary-four-alfa rounded-bl-[100px] blur-[40px]" />
       <div className="absolute inset-0 z-[0]">
         <Moon />
       </div>

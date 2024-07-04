@@ -12,9 +12,9 @@ export default function List({ children, className, ...resProps }: ListProps) {
     <li
       className={cn(
         font.className,
-        "text-[10px] text-primary-three list-disc",
-        "md:text-[12px]",
-        "xl:text-[14px] ",
+        "text-[12px] text-primary-five list-disc",
+        "md:text-[14px]",
+        "xl:text-[16px] ",
         className
       )}
       {...resProps}

@@ -8,7 +8,7 @@ Base layer doesn't realey importent for now.
 @layer base {
   html {
     --primary-one: #222831;
-    --primary-one-alfa: rgba(34, 40, 49, 0.2);
+    --primary-one-alfa: rgba(34, 40, 49, 0.7);
     --primary-two: #31363f;
     --primary-two-alfa: rgba(49, 54, 63, 0.2);
     --primary-three: #76abae;
