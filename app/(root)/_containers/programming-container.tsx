@@ -12,7 +12,13 @@ export default function ProgrammingContainer({
   ...resProps
 }: ProgrammingContainerProps) {
   return (
-    <div className={cn("flex flex-wrap mt-10", className)} {...resProps}>
+    <div
+      className={cn(
+        "grid grid-cols-auto-fit-100 md:gap-10 my-10 max-w-[400px] max-h-[200px]",
+        className
+      )}
+      {...resProps}
+    >
       <ProgrammingIcon imageSrc="/programming-tools/java.png" imageAlt="java">
         Java
       </ProgrammingIcon>

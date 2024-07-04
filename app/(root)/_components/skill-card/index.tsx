@@ -1,13 +1,11 @@
-import SkillContainer from "./skill-container";
-import Cards from "./cards";
+import Card from "./card";
 import CardBody from "./card-body";
-import CardIcon from "./card-icons";
+import Icons from "./icon";
 
 const SkillCard = {
-  SkillContainer,
-  Cards,
+  Card,
   CardBody,
-  CardIcon,
+  Icons,
 };
 
 export default SkillCard;

@@ -15,7 +15,7 @@ export default function ProgrammingIcon({
   ...resProps
 }: ProgrammingIconProps) {
   return (
-    <div className="w-[100px] xl:w-[150px] px-2 " {...resProps}>
+    <div className="w-[100px] xl:w-[150px] px-2 h-[80px] " {...resProps}>
       <Image
         className="h-[50px] w-[50px] xl:h-[75px] xl:w-[75px] mx-auto"
         width={150}

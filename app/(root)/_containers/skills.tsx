@@ -3,7 +3,7 @@ import Paragraph from "@/components/common/paragraph";
 import Heading from "@/components/common/heading";
 
 import { cn } from "@/lib/utils";
-import SkillCard from "../_components/skill-card";
+import SkillCard from "../_components/skill-card-2";
 
 import Image from "next/image";
 interface SkillsProps extends ComponentProps<"div">, PropsWithChildren {}

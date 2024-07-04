@@ -24,6 +24,10 @@ const config = {
         "hero-bg": "var(--hero-bg)",
         footer: "var(--footer)",
       },
+      gridTemplateColumns: {
+        "auto-fill-100": "repeat(auto-fill, minmax(100px, 1fr))",
+        "auto-fit-100": "repeat(auto-fit, minmax(100px, 1fr))",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

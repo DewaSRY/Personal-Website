@@ -1,17 +1,17 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-interface ToolIconProps extends ComponentProps<"img"> {
+interface IconProps extends ComponentProps<"img"> {
   imageSrc: string;
   imageAlt: string;
 }
 
-export default function ToolIcon({
+export default function Icon({
   imageSrc,
   imageAlt,
   className,
   ...resProps
-}: ToolIconProps) {
+}: IconProps) {
   return (
     <Image
       {...resProps}
