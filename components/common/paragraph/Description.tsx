@@ -16,7 +16,7 @@ export default function Description({
     <p
       className={cn(
         font.className,
-        "text-[12px] text-primary-five",
+        "text-[12px]  text-primary-five",
         "md:text-[14px]",
         "xl:text-[16px]",
         className

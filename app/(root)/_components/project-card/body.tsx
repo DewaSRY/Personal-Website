@@ -1,7 +1,6 @@
 import { ComponentProps, PropsWithChildren } from "react";
+interface BodyProps extends ComponentProps<"div">, PropsWithChildren {}
 
-interface WorkBodyProps extends ComponentProps<"div">, PropsWithChildren {}
-
-export default function WorkBody({ children, ...resProps }: WorkBodyProps) {
-  return <div>{children}</div>;
+export default function Body({ children, ...resProps }: BodyProps) {
+  return <div className="">{children}</div>;
 }

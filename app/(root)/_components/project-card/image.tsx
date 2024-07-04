@@ -13,6 +13,7 @@ export default function Image({ imageSrc, imageAlt, ...resProps }: ImageProps) {
       width={300}
       height={150}
       alt={imageAlt}
+      className="my-[10px] mx-2 "
     />
   );
 }

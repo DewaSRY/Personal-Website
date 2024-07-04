@@ -46,11 +46,12 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
   // );
 
   return (
-    <div className={cn("bg-primary-three mt-10")}>
+    <div className={cn("bg-primary-three mt-[150px]  rounded-tl-[100px]")}>
       <div
         className={cn(
           "flex flex-col md:flex-row gap-4 justify-center items-start",
-          "w-10/12 xl:max-w-[1200px] mx-auto py-[100px]  "
+          "w-10/12 xl:max-w-[1200px] mx-auto py-[100px]  ",
+          "pb-[200px]"
         )}
       >
         <Image
@@ -58,12 +59,17 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
           alt="my picture"
           width={200}
           height={250}
-          className="rounded-xl w-[150px] h-[200px] md:w-[200px] md:h-[250px]"
+          className={cn(
+            "rounded-xl w-[150px] h-[200px] md:w-[200px] md:h-[250px] ",
+            "mr-[50px] xl:my-10"
+          )}
         />
         <div>
-          <Heading.H3 className="xl:my-10">Dewa Surya Ariesta</Heading.H3>
+          <Heading.H3 className=" text-primary-one">
+            Dewa Surya Ariesta
+          </Heading.H3>
           <hr className="h-2" />
-          <Paragraph.Description className="my-4">
+          <Paragraph.Description className="my-4 text-primary-one">
             Experienced software engineer with solid foundation in both frontend
             and backend technologies. My journey began as a freelance frontend
             developer, where I successfully designed and developed an

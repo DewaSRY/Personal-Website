@@ -48,7 +48,7 @@ export default function WorkContainer({
   return (
     <div
       // ref={layer}
-      className="bg-primary-one-alfa scale-90 translate-y-[50%]  mx-auto my-10 px-4 py-6 rounded-xl w-11/12 xl:w-[1600px]"
+      className=" mx-auto my-10 px-4 py-6 rounded-xl w-11/12 xl:w-[1600px]"
     >
       {children}
     </div>

@@ -13,7 +13,7 @@ export default function MyExperience({
   return (
     <section id="experience" className="py-10 bg-primary-two">
       <WorksContent />
-      {/* <ProjectContent /> */}
+      <ProjectContent />
     </section>
   );
 }

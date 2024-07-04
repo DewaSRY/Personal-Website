@@ -17,7 +17,7 @@ export default function MyProfile({
   return (
     <section
       id="my-profile"
-      className={cn(" mx-auto bg-primary-one ", className)}
+      className={cn(" mx-auto bg-primary-one my-10 ", className)}
       {...resProps}
     >
       <AboutMe />

@@ -15,14 +15,13 @@ export default function WorksContent({
 }: WorksContentProps) {
   return (
     <div className={cn(className, "py-[100px]")} {...resProps}>
+      <Heading.H2 className="underline text-center my-10">
+        My Works Experience
+      </Heading.H2>
       <WorkCard.Card>
         <WorkCard.Header>
           <Heading.H3>Full Stack Engineer</Heading.H3>
           <Paragraph.Date> February, 2024 - April, 2024</Paragraph.Date>
-          <WorkCard.Image
-            imageAlt="warehouse_dumy"
-            imageSrc="/works/money_exchanger_1.png"
-          />
         </WorkCard.Header>
         <WorkCard.Body>
           <Paragraph.Description className="my-4">
@@ -59,10 +58,6 @@ export default function WorksContent({
           <Heading.H3>Frontend Engineer</Heading.H3>
 
           <Paragraph.Date> January,2023 - November, 2023</Paragraph.Date>
-          <WorkCard.Image
-            imageSrc="/works/warehouse_dumy.png"
-            imageAlt="warehouse_dumy"
-          />
         </WorkCard.Header>
         <WorkCard.Body>
           <Paragraph.Description className="my-4">

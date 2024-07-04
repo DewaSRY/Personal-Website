@@ -12,10 +12,10 @@ export default function H3({ children, className, ...resProps }: H3Props) {
     <h3
       className={cn(
         font.className,
-        className,
         "text-[18px] text-primary-four",
         "md:text-[22px]",
-        "xl:text-[26px]"
+        "xl:text-[26px]",
+        className
       )}
       {...resProps}
     >

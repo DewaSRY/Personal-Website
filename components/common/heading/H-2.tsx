@@ -12,10 +12,10 @@ export default function H2({ children, className, ...resProps }: H2Props) {
     <h2
       className={cn(
         font.className,
-        className,
         "text-[20px] text-primary-four",
         "md:text-[24px]",
-        "xl:text-[28px]"
+        "xl:text-[28px]",
+        className
       )}
       {...resProps}
     >
