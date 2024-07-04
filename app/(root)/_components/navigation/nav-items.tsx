@@ -25,7 +25,7 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
         "xl:bg-transparent xl:bottom-[50%] xl:translate-y-[-50%] xl:translate-x-0 xl:right-0 xl:px-2 xl:flex-col "
       )}
     >
-      <NavItem isActive={activeSection === "home"} to="home" Icons={HomeIcon}>
+      <NavItem to="home" isActive={activeSection === "home"} Icons={HomeIcon}>
         Home
       </NavItem>
       <NavItem

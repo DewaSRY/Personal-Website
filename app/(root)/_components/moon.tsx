@@ -18,33 +18,32 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 interface MoonProps extends ComponentProps<"img">, PropsWithChildren {}
 
 export default function Moon({ children, ...resProps }: MoonProps) {
-  const parentContainer = useRef<HTMLElement>();
-  const moonElement = useRef<ElementRef<"img">>(null);
+  // const parentContainer = useRef<HTMLElement>();
+  // const moonElement = useRef<ElementRef<"img">>(null);
 
-  useEffect(() => {
-    if (moonElement.current && moonElement.current.parentElement) {
-      parentContainer.current = moonElement.current.parentElement;
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (moonElement.current && moonElement.current.parentElement) {
+  //     parentContainer.current = moonElement.current.parentElement;
+  //   }
+  // }, []);
 
-  useGSAP(() => {
-    const translateLength = ((window.innerHeight * 80) / 100) * 3;
-    gsap.to(moonElement.current, {
-      translateY: translateLength,
-      rotateZ: 180,
-      scrollTrigger: {
-        trigger: moonElement.current,
-        start: "170% center",
-        end: `170% top`,
-        scrub: true,
-        // markers: true,
-      },
-    });
-  });
+  // useGSAP(() => {
+  //   const translateLength = ((window.innerHeight * 80) / 100) * 3;
+  //   gsap.to(moonElement.current, {
+  //     translateY: translateLength,
+  //     rotateZ: 180,
+  //     scrollTrigger: {
+  //       trigger: moonElement.current,
+  //       start: "170% center",
+  //       end: `170% top`,
+  //       scrub: true,
+  //       // markers: true,
+  //     },
+  //   });
+  // });
 
   return (
     <Image
-      ref={moonElement}
       className={cn(
         "absolute left-[5%] top-[10%] z-0 duration-300",
         "w-[70vw] h-[calc(90vw - 120px)]",
