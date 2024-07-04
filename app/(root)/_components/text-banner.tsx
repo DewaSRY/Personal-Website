@@ -24,7 +24,9 @@ export default function TextBanner({
       </span>
       <Heading.H1>Full Stack Web Developers</Heading.H1>
       <hr className="h-2 p-[2px]" />
-      <Paragraph.Description>Let's make miracle happen</Paragraph.Description>
+      <Paragraph.Description>
+        Let&apos;s make miracle happen
+      </Paragraph.Description>
     </div>
   );
 }
