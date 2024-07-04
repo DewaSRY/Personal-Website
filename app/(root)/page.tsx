@@ -5,13 +5,11 @@ import Works from "./_containers/works";
 import Skills from "./_containers/skills";
 import Project from "./_containers/project";
 import Profile from "./_containers/profile";
-import Moon from "./_components/moon";
 export default function Portfolio() {
   return (
     <>
       <Headers />
-      <main className="bg-main-bg mb-[-5px]">
-        <Moon />
+      <main className="bg-primary-one mb-[-5px]">
         <Home />
         <Works />
         <Skills />

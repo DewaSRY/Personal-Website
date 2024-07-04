@@ -19,10 +19,10 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
   return (
     <nav
       className={cn(
-        "text-primary-four flex flex-row items-center justify-between w-max rounded-lg  z-10",
+        "flex flex-row items-center justify-between w-max rounded-lg  z-10",
         "bg-primary-one-alfa px-4 ",
-        "fixed z-50 bottom-3 left-[50%] translate-x-[-50%]",
-        "xl:top-3 xl:bottom-[95%] xl:bg-transparent"
+        "fixed z-50 bottom-3 right-[50%] translate-x-[50%]",
+        "xl:bg-transparent xl:bottom-[50%] xl:translate-y-[-50%] xl:translate-x-0 xl:right-0 xl:px-2 xl:flex-col "
       )}
     >
       <NavItem isActive={activeSection === "home"} to="home" Icons={HomeIcon}>

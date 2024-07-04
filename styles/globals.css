@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("./skill-animation.css");
 /**
 Base layer doesn't realey importent for now.
 */
@@ -11,34 +10,20 @@ Base layer doesn't realey importent for now.
     transition-property: color, background-color;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-    --primary-one-alfa: rgba(0, 0, 0, 0.3);
-    --primary-one-beta: rgba(0, 0, 0, 0.7);
-    --primary-one: #000000;
-    --primary-two: #f4dfc8;
-    --primary-three: #f4eae0;
-    --primary-four: #faf6f0;
+
+    --primary-one: #222831;
+    --primary-one-alfa: rgba(34, 40, 49, 0.2);
+    --primary-two: #31363f;
+    --primary-two-alfa: rgba(49, 54, 63, 0.2);
+    --primary-three: #76abae;
+    --primary-four: #eeeeee;
+    --primary-four-alfa: rgba(238, 238, 238, 0.2);
+    --primary-five: #ffffff;
 
     --footer: #162427;
 
     --radius: 10px;
   }
-
-  html {
-    --main-bg: linear-gradient(180deg, #a8b0f5 10%, #81c3ff 70%);
-    --hero-bg: rgba(0, 0, 0, 0.2);
-  }
-
-  html[date-theme="dark"] {
-    --main-bg: linear-gradient(180deg, #08081a 10%, #78a0df 70%);
-    --hero-bg: rgba(255, 255, 255, 0.2);
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-main {
-  background: var(--main-bg);
 }
 
 .colors-svg {

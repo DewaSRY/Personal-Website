@@ -13,9 +13,9 @@ export default function Nav({ children, className, ...resProps }: NavProps) {
       className={cn(
         font.className,
         className,
-        "text-[10px] text-primary-three",
-        "md:text-[16px]",
-        "xl:text-[20px]"
+        "text-[10px] text-primary-five",
+        "md:text-[12px]",
+        "xl:text-[14px]"
       )}
       {...resProps}
     >

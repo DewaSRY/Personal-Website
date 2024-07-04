@@ -3,18 +3,18 @@ import { Inter } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 const font = Inter({
-  weight: "400",
+  weight: "500",
   subsets: ["cyrillic"],
 });
-interface P2RProps extends ComponentProps<"p">, PropsWithChildren {}
+interface PBProps extends ComponentProps<"p">, PropsWithChildren {}
 
-export default function P2R({ children, className, ...resProps }: P2RProps) {
+export default function PB({ children, className, ...resProps }: PBProps) {
   return (
     <p
       className={cn(
         className,
         font.className,
-        "text-[14px] leading-[150%] text-primary-four"
+        "text-[14px] md:text-[16px]  leading-[150%] text-primary-five"
       )}
     >
       {children}

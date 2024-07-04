@@ -16,10 +16,10 @@ export default function Description({
     <p
       className={cn(
         font.className,
-        className,
-        "text-[12px] text-primary-three",
+        "text-[12px] text-primary-five",
         "md:text-[14px]",
-        "xl:text-[16px]"
+        "xl:text-[16px]",
+        className
       )}
       {...resProps}
     >

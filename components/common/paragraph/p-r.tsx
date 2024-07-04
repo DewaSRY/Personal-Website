@@ -14,7 +14,7 @@ export default function P1R({ children, className, ...resProps }: P1RProps) {
       className={cn(
         className,
         font.className,
-        "text-[16px] leading-[150%] text-primary-four"
+        "text-[14px] md:text-[16px] leading-[150%] text-primary-five"
       )}
     >
       {children}
