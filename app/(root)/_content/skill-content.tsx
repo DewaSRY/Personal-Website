@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
-import { ComponentProps, PropsWithChildren } from "react";
+import { ComponentProps, ElementRef, PropsWithChildren } from "react";
 import SkillCard from "../_components/skill-card";
 import Heading from "@/components/common/heading";
+
 interface SkillContentProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function SkillContent({
@@ -10,7 +11,10 @@ export default function SkillContent({
   ...resProps
 }: SkillContentProps) {
   return (
-    <div className={cn(className, "mt-[50px]")} {...resProps}>
+    <div
+      className={cn(className, "mt-[50px] overflow-x-hidden scrollbar-hide")}
+      {...resProps}
+    >
       <SkillCard.Card>
         <Heading.H3>Frontend Developer</Heading.H3>
         <hr />
