@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import PR from "./p-r";
 import PB from "./p-b";
 import Link from "./Link";
+import Quote from "./quot";
 
 const Paragraph = {
   Date,
@@ -15,6 +16,7 @@ const Paragraph = {
   PR,
   PB,
   Link,
+  Quote,
 };
 
 export default Paragraph;

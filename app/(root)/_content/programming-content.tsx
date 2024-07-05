@@ -14,7 +14,7 @@ export default function ProgrammingContainer({
   return (
     <div
       className={cn(
-        "grid grid-cols-auto-fit-100 md:gap-10 my-10 max-w-[400px] max-h-[200px]",
+        "grid grid-cols-auto-fit-100 md:gap-10 md:max-h-[300px]  py-10 xl:gap-[50px] pr-[20px] ",
         className
       )}
       {...resProps}

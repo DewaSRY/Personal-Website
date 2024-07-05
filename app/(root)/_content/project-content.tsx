@@ -25,17 +25,24 @@ export default function ProjectContent({
           </ProjectCard.TItle>
           <Paragraph.Date>July 5, 2024</Paragraph.Date>
           <ProjectCard.Image
-            imageSrc="/projects/project-one.png"
+            imageSrc="/projects/portfolio.png"
             imageAlt="my first project"
           />
         </ProjectCard.Header>
         <ProjectCard.Body>
           <ProjectCard.Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            facilis laudantium magni vel, quisquam ducimus, culpa, facere in
-            officiis esse commodi excepturi molestiae! Tempore, sit voluptatem!
-            Quod ipsam sapiente laudantium.
+            This app is my Portfolio. This app use to prove my capability of
+            code. I will build this app with next js because it
+            <Paragraph.Quote />s good performance on SEO and easy to work with.
           </ProjectCard.Description>
+          <ProjectCard.Ul>
+            <Paragraph.Description>
+              Several Feature this app have
+            </Paragraph.Description>
+            <Paragraph.List>Responsive</Paragraph.List>
+            <Paragraph.List>Micro-interaction</Paragraph.List>
+            <Paragraph.List>Interactive animation</Paragraph.List>
+          </ProjectCard.Ul>
 
           <ProjectCard.Tag>Next JS</ProjectCard.Tag>
           <ProjectCard.Tag>React JS</ProjectCard.Tag>

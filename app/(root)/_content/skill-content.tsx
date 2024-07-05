@@ -12,7 +12,10 @@ export default function SkillContent({
 }: SkillContentProps) {
   return (
     <div
-      className={cn(className, "mt-[50px] overflow-x-hidden scrollbar-hide")}
+      className={cn(
+        className,
+        "mt-[50px] py-[10px] overflow-hidden scrollbar-hide"
+      )}
       {...resProps}
     >
       <SkillCard.Card>
