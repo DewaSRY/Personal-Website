@@ -8,22 +8,40 @@ import {
 } from "react";
 
 import { cn } from "@/lib/utils";
-
 import Moon from "../_components/moon";
-
 import TextBanner from "../_components/text-banner";
 
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(useGSAP, ScrollTrigger);
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 interface HomeProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Home({ children, className, ...resProps }: HomeProps) {
+  const parent = useRef<ElementRef<"section">>(null);
+  const layer = useRef<ElementRef<"div">>(null);
+  useGSAP(
+    () => {
+      gsap.set(layer.current, {
+        opacity: 0,
+      });
+      gsap.to(layer.current, {
+        opacity: 1,
+        duration: 1.8,
+      });
+    },
+    {
+      scope: parent.current!,
+    }
+  );
   return (
     <section
+      ref={parent}
       id="home"
       className={cn(
-        "h-[1000px] md:min-h-[120vh] relative mb-[100px] pb-[600px]",
+        "h-[1000px] md:min-h-[150vh] relative mb-[100px] pb-[600px]",
         className
       )}
       {...resProps}
@@ -37,7 +55,10 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       >
         <TextBanner />
       </div>
-      <div className="absolute inset-0 bottom-[2%] z-[1]  bg-primary-three-alfa rounded-bl-[200px] " />
+      <div
+        ref={layer}
+        className="absolute inset-0 bottom-[20%] z-[1]  bg-primary-three-alfa rounded-bl-[200px] "
+      />
       <div className="absolute inset-0 z-[0]">
         <Moon />
       </div>

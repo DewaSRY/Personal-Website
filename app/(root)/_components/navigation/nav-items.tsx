@@ -27,7 +27,7 @@ export default function NavItems({ children, ...resProps }: NavItemsProps) {
         Home
       </NavItem>
       <NavItem
-        to="profile"
+        to="my-profile"
         isActive={activeSection === "my-profile"}
         Icons={ProfileIcon}
       >

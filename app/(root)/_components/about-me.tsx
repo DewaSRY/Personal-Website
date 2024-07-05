@@ -9,7 +9,6 @@ import {
 import Image from "next/image";
 import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 import { gsap } from "gsap";
@@ -38,12 +37,11 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
           start: "top bottom",
           end: `center 70%`,
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
       tl.set(layer.current, {
         scale: 0.8,
-
         y: 120,
       });
       tl.set(hrElement.current, {

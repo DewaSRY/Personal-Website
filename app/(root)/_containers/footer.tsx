@@ -1,4 +1,5 @@
 import { ComponentProps, PropsWithChildren } from "react";
+
 import ContactContent from "../_content/contact-content";
 
 interface FooterProps extends ComponentProps<"div">, PropsWithChildren {}
