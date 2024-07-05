@@ -56,8 +56,16 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
           end: `center 70%`,
           scrub: true,
           // markers: true,
-          // toggleActions: "play reverse reverse complete",
         },
+      });
+      tl.from(layer.current, {
+        scale: 0.9,
+        transformOrigin: "right",
+        opacity: 0.5,
+      });
+      tl.to(layer.current, {
+        scale: 1,
+        opacity: 1,
       });
     },
     { scope: parentContainer.current! }
@@ -82,25 +90,23 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
             "mr-[50px] xl:my-10"
           )}
         />
-        <div>
-          <Heading.H3 className=" text-primary-four">
+        <div ref={layer}>
+          <Heading.H3 className=" text-primary-one">
             Dewa Surya Ariesta
           </Heading.H3>
           <hr ref={hrElement} className="h-2" />
-          <div ref={layer}>
-            <Paragraph.Description className="my-4 xl:my-20 text-primary-four text-[16px] md:text-[18px] xl:text-[20px]">
-              Experienced software engineer with solid foundation in both
-              frontend and backend technologies. My journey began as a freelance
-              frontend developer, where I successfully designed and developed an
-              enterprise-level data management system using Angular. As I
-              progressed, I delved deeper into backend technologies, honing my
-              skills in programming languages such as Java, Python and Rust.
-              Looking ahead, my aim is to continuously refine my programming and
-              communication skills while eagerly sharing my knowledge and
-              expertise with teams and individuals beyond the confines of our
-              field.
-            </Paragraph.Description>
-          </div>
+          <Paragraph.Description className="my-4 xl:my-20 text-primary-one text-[16px] md:text-[18px] xl:text-[20px]">
+            Experienced software engineer with solid foundation in both frontend
+            and backend technologies. My journey began as a freelance frontend
+            developer, where I successfully designed and developed an
+            enterprise-level data management system using Angular. As I
+            progressed, I delved deeper into backend technologies, honing my
+            skills in programming languages such as Java, Python and Rust.
+            Looking ahead, my aim is to continuously refine my programming and
+            communication skills while eagerly sharing my knowledge and
+            expertise with teams and individuals beyond the confines of our
+            field.
+          </Paragraph.Description>
         </div>
       </div>
     </div>
