@@ -53,18 +53,18 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
         scrollTrigger: {
           trigger: layer.current,
           start: "top bottom",
-          end: `center 70%`,
+          end: `top 70%`,
           scrub: true,
           // markers: true,
         },
       });
       tl.from(layer.current, {
-        scale: 0.9,
+        scaleX: 0.9,
         transformOrigin: "right",
         opacity: 0.5,
       });
       tl.to(layer.current, {
-        scale: 1,
+        scaleX: 1,
         opacity: 1,
       });
     },
@@ -77,7 +77,7 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
         className={cn(
           "flex flex-col md:flex-row gap-4 justify-center items-start",
           "w-10/12 xl:max-w-[1200px] mx-auto py-[100px]  ",
-          "pb-[200px] pt-[150px]"
+          "py-[150px]"
         )}
       >
         <Image
@@ -95,7 +95,7 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
             Dewa Surya Ariesta
           </Heading.H3>
           <hr ref={hrElement} className="h-2" />
-          <Paragraph.Description className="my-4 xl:my-20 text-primary-one text-[16px] md:text-[18px] xl:text-[20px]">
+          <Paragraph.Description className="my-4 xl:my-20 text-primary-one text-[14px] md:text-[16px] xl:text-[18px]">
             Experienced software engineer with solid foundation in both frontend
             and backend technologies. My journey began as a freelance frontend
             developer, where I successfully designed and developed an

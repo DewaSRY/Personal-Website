@@ -31,6 +31,22 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
         opacity: 1,
         duration: 1.8,
       });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: parent.current,
+          start: "60% 70%",
+          end: `90% 70%`,
+          scrub: true,
+          // markers: true,
+        },
+      });
+      tl.set(layer.current, {
+        transformOrigin: "top",
+      });
+      tl.to(layer.current, {
+        scaleY: 0,
+      });
     },
     {
       scope: parent.current!,
