@@ -19,22 +19,15 @@ interface MoonProps extends ComponentProps<"img">, PropsWithChildren {}
 
 export default function Moon({ children, ...resProps }: MoonProps) {
   const moonElement = useRef<ElementRef<"img">>(null);
-  const homeSection = useRef<HTMLElement>();
-  useEffect(() => {
-    const homeSectionElement = document.getElementById("home");
-    if (homeSectionElement) {
-      homeSection.current = homeSectionElement;
-    }
-  });
 
   useGSAP(() => {
+    const homeSectionElement = document.getElementById("home");
     const activeMagneto = (event: MouseEvent) => {
       const moon = moonElement.current;
       if (moon) {
         const boundingBox = moon.getBoundingClientRect()!;
         const magnetoStrange = 100;
         const newX = (event.clientX - boundingBox?.left) / moon.offsetWidth;
-
         const newY = (event.clientY - boundingBox?.top) / moon.offsetHeight;
 
         gsap.to(moonElement.current, {
@@ -59,10 +52,8 @@ export default function Moon({ children, ...resProps }: MoonProps) {
       }
     };
 
-    if (homeSection.current) {
-      homeSection.current.addEventListener("mousemove", activeMagneto);
-      homeSection.current.addEventListener("mouseleave", resetMagneto);
-    }
+    homeSectionElement!.addEventListener("mousemove", activeMagneto);
+    homeSectionElement!.addEventListener("mouseleave", resetMagneto);
   });
 
   return (

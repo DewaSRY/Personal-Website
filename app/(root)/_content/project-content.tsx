@@ -20,9 +20,7 @@ export default function ProjectContent({
       </Heading.H2>
       <ProjectCard.Card>
         <ProjectCard.Header>
-          <ProjectCard.TItle hrfTo="">
-            This is my first project
-          </ProjectCard.TItle>
+          <ProjectCard.TItle hrfTo="">My pErsonal Portfolio</ProjectCard.TItle>
           <Paragraph.Date>July 5, 2024</Paragraph.Date>
           <ProjectCard.Image
             imageSrc="/projects/portfolio.png"

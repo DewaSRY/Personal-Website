@@ -1,10 +1,4 @@
-import {
-  ComponentProps,
-  PropsWithChildren,
-  ElementRef,
-  useRef,
-  useEffect,
-} from "react";
+import { ComponentProps, PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 
 import { gsap } from "gsap";
