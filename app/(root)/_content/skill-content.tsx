@@ -16,8 +16,8 @@ export default function SkillContent({
         <hr />
         <SkillCard.CardBody>
           <SkillCard.Icons imageAlt="angular" imageSrc="/icons/angular.png" />
-          <SkillCard.Icons imageAlt="react" imageSrc="/icons/react.png" />
           <SkillCard.Icons imageAlt="vue" imageSrc="/icons/vue.png" />
+          <SkillCard.Icons imageAlt="react" imageSrc="/icons/react_2.png" />
         </SkillCard.CardBody>
       </SkillCard.Card>
 
@@ -25,10 +25,10 @@ export default function SkillContent({
         <Heading.H3>Backend Developer</Heading.H3>
         <hr />
         <SkillCard.CardBody>
-          <SkillCard.Icons imageAlt="django" imageSrc="/icons/django.png" />
           <SkillCard.Icons imageAlt="flask" imageSrc="/icons/flask.png" />
           <SkillCard.Icons imageAlt="spring" imageSrc="/icons/spring.png" />
           <SkillCard.Icons imageAlt="express" imageSrc="/icons/express.png" />
+          <SkillCard.Icons imageAlt="django" imageSrc="/icons/django.png" />
         </SkillCard.CardBody>
       </SkillCard.Card>
 
@@ -38,7 +38,7 @@ export default function SkillContent({
         <SkillCard.CardBody>
           <SkillCard.Icons imageAlt="node" imageSrc="/icons/node.png" />
           <SkillCard.Icons imageAlt="figma" imageSrc="/icons/figma.png" />
-          <SkillCard.Icons imageAlt="docker" imageSrc="/icons/react.png" />
+          <SkillCard.Icons imageAlt="docker" imageSrc="/icons/docker.png" />
           <SkillCard.Icons
             imageAlt="kubernetes"
             imageSrc="/icons/kubernetes.png"

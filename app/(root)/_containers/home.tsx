@@ -1,10 +1,21 @@
-import { ComponentProps, PropsWithChildren } from "react";
+"use client";
+import {
+  ComponentProps,
+  ElementRef,
+  PropsWithChildren,
+  useEffect,
+  useRef,
+} from "react";
 
 import { cn } from "@/lib/utils";
 
 import Moon from "../_components/moon";
 
 import TextBanner from "../_components/text-banner";
+
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 interface HomeProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function Home({ children, className, ...resProps }: HomeProps) {
@@ -26,7 +37,6 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       >
         <TextBanner />
       </div>
-
       <div className="absolute inset-0 bottom-[2%] z-[1]  bg-primary-three-alfa rounded-bl-[200px] " />
       <div className="absolute inset-0 z-[0]">
         <Moon />
