@@ -20,8 +20,10 @@ export default function ProjectContent({
       </Heading.H2>
       <ProjectCard.Card>
         <ProjectCard.Header>
-          <Heading.H2>This is my first project</Heading.H2>
-          <Paragraph.Date>27-06-2004</Paragraph.Date>
+          <ProjectCard.TItle hrfTo="">
+            This is my first project
+          </ProjectCard.TItle>
+          <Paragraph.Date>July 5, 2024</Paragraph.Date>
           <ProjectCard.Image
             imageSrc="/projects/project-one.png"
             imageAlt="my first project"
@@ -42,23 +44,57 @@ export default function ProjectContent({
       </ProjectCard.Card>
       <ProjectCard.Card>
         <ProjectCard.Header>
-          <Heading.H2>This is my first project</Heading.H2>
-          <Paragraph.Date>27-06-2004</Paragraph.Date>
+          <ProjectCard.TItle hrfTo="https://github.com/DewaSRY/Revou-Final-Project">
+            This is my first project
+          </ProjectCard.TItle>
+          <Paragraph.Date>May 10, 2024</Paragraph.Date>
           <ProjectCard.Image
-            imageSrc="/projects/project-one.png"
-            imageAlt="my first project"
+            imageSrc="/projects/revou-final-project.png"
+            imageAlt="revou final project"
           />
         </ProjectCard.Header>
         <ProjectCard.Body>
           <ProjectCard.Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            facilis laudantium magni vel, quisquam ducimus, culpa, facere in
-            officiis esse commodi excepturi molestiae! Tempore, sit voluptatem!
-            Quod ipsam sapiente laudantium.
+            Application to connect people interest with technology, innovations
+            and Engineering is the theme of the application. I and my Team
+            create the application as Final project from
+            <Paragraph.Link hrfTo="https://revou.co/">Revou.</Paragraph.Link>
+            On the Project i Responsible to be Backend. More then be Backend i
+            am also take a charge to successful build the app.
           </ProjectCard.Description>
-          <ProjectCard.Tag>Next JS</ProjectCard.Tag>
-          <ProjectCard.Tag>React JS</ProjectCard.Tag>
-          <ProjectCard.Tag>GSUP Animation Library</ProjectCard.Tag>
+
+          <ProjectCard.Ul>
+            <Paragraph.Description>
+              There are what i do on the project:
+            </Paragraph.Description>
+            <Paragraph.List>
+              Developed a robust data sharing system. The app allows users to
+              publish and manage business profiles. It integrated with
+              Cloudinary for efficient image storage and hosting, enhancing
+              application performance.
+            </Paragraph.List>
+            <Paragraph.List>
+              Achieved nearly 80% test coverage to ensure high reliability and
+              maintainability, and documented application endpoint, to increase
+              frontend development to over 50%.
+            </Paragraph.List>
+            <Paragraph.List>
+              Designed a user-friendly data-sharing application, implementing
+              parallax company face and micro-motion user interaction.
+            </Paragraph.List>
+            <Paragraph.List>
+              Lead team to successfully develop the app.Created and explained
+              the development workflow with clear language and insightful
+              diagrams. Lead team on brainstorming to every feature the
+              application has and every edge case need to handle in both backend
+              and frontend side.
+            </Paragraph.List>
+          </ProjectCard.Ul>
+
+          <ProjectCard.Tag>Python</ProjectCard.Tag>
+          <ProjectCard.Tag>Flask</ProjectCard.Tag>
+          <ProjectCard.Tag>Docker</ProjectCard.Tag>
+          <ProjectCard.Tag>Claudinary</ProjectCard.Tag>
         </ProjectCard.Body>
       </ProjectCard.Card>
     </div>

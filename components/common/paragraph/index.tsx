@@ -5,6 +5,7 @@ import Nav from "./Nav";
 
 import PR from "./p-r";
 import PB from "./p-b";
+import Link from "./Link";
 
 const Paragraph = {
   Date,
@@ -13,6 +14,7 @@ const Paragraph = {
   Nav,
   PR,
   PB,
+  Link,
 };
 
 export default Paragraph;

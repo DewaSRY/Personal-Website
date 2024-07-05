@@ -5,6 +5,8 @@ import Image from "./image";
 import Header from "./header";
 import Tag from "./tag";
 import Description from "./description";
+import TItle from "./title";
+import Ul from "./ul";
 
 const ProjectCard = {
   Body,
@@ -14,6 +16,8 @@ const ProjectCard = {
   Header,
   Tag,
   Description,
+  TItle,
+  Ul,
 };
 
 export default ProjectCard;

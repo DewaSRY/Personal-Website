@@ -1,7 +1,9 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import { Lora } from "next/font/google";
 
-import NavItems from "../_components/navigation/nav-items";
+import NavItems from "../_content/nav-items";
+import SocialNav from "../_content/social-nav";
+
 import { cn } from "@/lib/utils";
 const font = Lora({
   weight: "600",
@@ -25,6 +27,8 @@ export default function Headers({ children, ...resProps }: HeadersProps) {
           Dewa Surya
         </span>
       </div>
+
+      <SocialNav className="fixed bottom-[80%] left-[90%] md:bottom-[50%] md:translate-y-[-50] md:left-1   " />
       <NavItems />
     </header>
   );

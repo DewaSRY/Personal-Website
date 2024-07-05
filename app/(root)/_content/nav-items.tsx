@@ -7,7 +7,7 @@ import WorksIcon from "@/components/svgs/map.svg";
 import ProfileIcon from "@/components/svgs/user.svg";
 import useNavActiveState from "@/hooks/use-nav-active-state";
 
-import NavItem from "./nav-item";
+import NavItem from "../_components/navigation/nav-item";
 
 interface NavItemsProps extends ComponentProps<"div">, PropsWithChildren {}
 
