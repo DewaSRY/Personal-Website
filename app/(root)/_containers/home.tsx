@@ -23,7 +23,7 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
     <section
       id="home"
       className={cn(
-        "h-[600px] md:min-h-[100vh] relative mb-[100px] pb-[50px]",
+        "h-[1000px] md:min-h-[120vh] relative mb-[100px] pb-[600px]",
         className
       )}
       {...resProps}
