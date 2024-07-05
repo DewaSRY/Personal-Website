@@ -10,7 +10,7 @@ interface P1RProps extends ComponentProps<"p">, PropsWithChildren {}
 
 export default function P1R({ children, className, ...resProps }: P1RProps) {
   return (
-    <p
+    <span
       className={cn(
         className,
         font.className,
@@ -18,6 +18,6 @@ export default function P1R({ children, className, ...resProps }: P1RProps) {
       )}
     >
       {children}
-    </p>
+    </span>
   );
 }

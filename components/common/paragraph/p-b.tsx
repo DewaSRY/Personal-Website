@@ -10,7 +10,7 @@ interface PBProps extends ComponentProps<"p">, PropsWithChildren {}
 
 export default function PB({ children, className, ...resProps }: PBProps) {
   return (
-    <p
+    <span
       className={cn(
         className,
         font.className,
@@ -18,6 +18,6 @@ export default function PB({ children, className, ...resProps }: PBProps) {
       )}
     >
       {children}
-    </p>
+    </span>
   );
 }

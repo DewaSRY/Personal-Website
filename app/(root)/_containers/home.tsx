@@ -57,9 +57,9 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       </div>
       <div
         ref={layer}
-        className="absolute inset-0 bottom-[20%] z-[1]  bg-primary-three-alfa rounded-bl-[200px] "
+        className="absolute inset-0 bottom-[20%] z-[0]  bg-primary-three-alfa rounded-bl-[200px] "
       />
-      <div className="absolute inset-0 z-[0]">
+      <div className="absolute inset-0 z-[1]">
         <Moon />
       </div>
     </section>
