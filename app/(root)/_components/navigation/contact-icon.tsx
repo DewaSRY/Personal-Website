@@ -25,7 +25,7 @@ export default function ContactIcon({
       title={imageAlt}
       className={cn(
         className,
-        "w-[50px] border-2 border-transparent rounded-[100%] ",
+        "w-[40px] md:w-[50px] border-2 border-transparent rounded-[100%] ",
         "hover:scale-[110%] duration-100 ease-in-out"
       )}
     >

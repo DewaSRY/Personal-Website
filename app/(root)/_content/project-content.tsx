@@ -33,10 +33,10 @@ export default function ProjectContent({
             code. I will build this app with next js because it
             <Paragraph.Quote />s good performance on SEO and easy to work with.
           </ProjectCard.Description>
+          <Paragraph.Description>
+            Several Feature this app have
+          </Paragraph.Description>
           <ProjectCard.Ul>
-            <Paragraph.Description>
-              Several Feature this app have
-            </Paragraph.Description>
             <Paragraph.List>Responsive</Paragraph.List>
             <Paragraph.List>Micro-interaction</Paragraph.List>
             <Paragraph.List>Interactive animation</Paragraph.List>
@@ -68,10 +68,10 @@ export default function ProjectContent({
             am also take a charge to successful build the app.
           </ProjectCard.Description>
 
+          <Paragraph.Description>
+            There are what i do on the project:
+          </Paragraph.Description>
           <ProjectCard.Ul>
-            <Paragraph.Description>
-              There are what i do on the project:
-            </Paragraph.Description>
             <Paragraph.List>
               Developed a robust data sharing system. The app allows users to
               publish and manage business profiles. It integrated with

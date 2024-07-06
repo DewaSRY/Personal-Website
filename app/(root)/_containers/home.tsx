@@ -29,7 +29,7 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       });
       gsap.to(layer.current, {
         opacity: 1,
-        duration: 1.8,
+        duration: 0.8,
       });
 
       const tl = gsap.timeline({
@@ -73,10 +73,10 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       </div>
       <div
         ref={layer}
-        className="absolute inset-0 bottom-[20%] z-[0]  bg-primary-three-alfa rounded-bl-[200px] "
+        className="absolute inset-0 bottom-[20%] z-[1]  bg-primary-one-alfa rounded-bl-[200px] blur-[20%] "
       />
-      <div className="absolute inset-0 z-[1]">
-        <Moon />
+      <div className="absolute inset-0 p-[100px]     z-[0]">
+        <Moon className="" />
       </div>
     </section>
   );

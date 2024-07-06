@@ -32,7 +32,7 @@ export default function TextBanner({
       clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
       opacity: 1,
       y: 0,
-      duration: 1.2,
+      duration: 1,
     });
   });
   return (
@@ -40,10 +40,10 @@ export default function TextBanner({
       ref={textBannerElement}
       className={cn(className, "w-11/12 md:w-8/12 text-primary-five ")}
     >
-      <Paragraph.Description className="text-[18px] md:text-[20px] xl:text-[24px]">
+      <Paragraph.Description className="">
         HALLO, my name is
       </Paragraph.Description>
-      <span className="text-[18px] md:text-[22px] xl:text-[26px] mr-2 text-primary-one">
+      <span className="text-[20px] md:text-[22px] xl:text-[26px] mr-2">
         Dewa Surya Ariesta
       </span>
       <hr className="w-8/12 h-2 p-[2px] translate-x-[-1%]" />

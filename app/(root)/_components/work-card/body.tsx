@@ -1,3 +1,4 @@
+"use client";
 import { ComponentProps, PropsWithChildren, ElementRef, useRef } from "react";
 
 import { gsap } from "gsap";

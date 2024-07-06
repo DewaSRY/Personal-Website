@@ -1,6 +1,4 @@
-"use client";
 import { ComponentProps, ElementRef, PropsWithChildren, useRef } from "react";
-import Image from "next/image";
 import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
 import WorkCard from "../_components/work-card";
