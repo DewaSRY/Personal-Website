@@ -4,13 +4,14 @@ import {
   ElementRef,
   PropsWithChildren,
   useEffect,
+  useMemo,
   useRef,
 } from "react";
 
 import { cn } from "@/lib/utils";
-import Moon from "../_components/moon";
+// import Moon from "../_components/moon";
 import TextBanner from "../_components/text-banner";
-
+import dynamic from "next/dynamic";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -22,6 +23,10 @@ interface HomeProps extends ComponentProps<"div">, PropsWithChildren {}
 export default function Home({ children, className, ...resProps }: HomeProps) {
   const parent = useRef<ElementRef<"section">>(null);
   const layer = useRef<ElementRef<"div">>(null);
+  const MoonElement = useMemo(
+    () => dynamic(() => import("../_components/moon")),
+    []
+  );
   useGSAP(
     () => {
       gsap.set(layer.current, {
@@ -57,7 +62,7 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       ref={parent}
       id="home"
       className={cn(
-        "h-[1000px] md:min-h-[150vh] relative mb-[100px] pb-[600px]",
+        "h-[100vh] md:min-h-[150vh] relative mb-[100px] pb-[600px]",
         className
       )}
       {...resProps}
@@ -73,10 +78,10 @@ export default function Home({ children, className, ...resProps }: HomeProps) {
       </div>
       <div
         ref={layer}
-        className="absolute inset-0 bottom-[20%] z-[1]  bg-primary-one-alfa rounded-bl-[200px] blur-[20%] "
+        className="absolute inset-0 md:bottom-[20%] z-[1]  bg-primary-one-alfa rounded-bl-[200px] blur-[20%] "
       />
-      <div className="absolute inset-0 p-[100px]     z-[0]">
-        <Moon className="" />
+      <div className="absolute inset-0 p-[100px] z-[0]">
+        <MoonElement />
       </div>
     </section>
   );

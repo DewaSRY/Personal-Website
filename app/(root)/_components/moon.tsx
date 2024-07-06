@@ -19,7 +19,7 @@ interface MoonProps extends ComponentProps<"img">, PropsWithChildren {}
 
 export default function Moon({ children, className, ...resProps }: MoonProps) {
   const moonElement = useRef<ElementRef<"img">>(null);
-
+  let mm = gsap.matchMedia();
   useGSAP(() => {
     const homeSectionElement = document.getElementById("home");
     const activeMagneto = (event: MouseEvent) => {
@@ -29,25 +29,28 @@ export default function Moon({ children, className, ...resProps }: MoonProps) {
         const magnetoStrange = 140;
         const newX = (event.clientX - boundingBox?.left) / moon.offsetWidth;
         const newY = (event.clientY - boundingBox?.top) / moon.offsetHeight;
-
-        gsap.to(moonElement.current, {
-          duration: 0.8,
-          scale: 1.2,
-          x: newX * magnetoStrange,
-          y: newY * magnetoStrange,
-          ease: "power4.out",
+        mm.add("(min-width: 600px)", () => {
+          gsap.to(moonElement.current, {
+            duration: 0.8,
+            scale: 1.2,
+            x: newX * magnetoStrange,
+            y: newY * magnetoStrange,
+            ease: "power4.out",
+          });
         });
       }
     };
     const resetMagneto = (event: MouseEvent) => {
       const moon = moonElement.current;
       if (moon) {
-        gsap.to(moonElement.current, {
-          duration: 2,
-          x: 0,
-          y: 0,
-          ease: "power4.inOut",
-          scale: 1,
+        mm.add("(min-width: 600px)", () => {
+          gsap.to(moonElement.current, {
+            duration: 2,
+            x: 0,
+            y: 0,
+            ease: "power4.inOut",
+            scale: 1,
+          });
         });
       }
     };

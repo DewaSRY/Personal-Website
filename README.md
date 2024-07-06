@@ -13,4 +13,5 @@ dependency
 - [x] specify font siz
 
 - [x] animate section header
-- [ ] create favicons
+- [x ] create favicons
+- [ ] next-seo
