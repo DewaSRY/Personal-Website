@@ -20,7 +20,7 @@ export default function ProjectContent({
       </Heading.H2>
       <ProjectCard.Card>
         <ProjectCard.Header>
-          <ProjectCard.TItle hrfTo="">My pErsonal Portfolio</ProjectCard.TItle>
+          <ProjectCard.TItle hrfTo="">My Personal Web</ProjectCard.TItle>
           <Paragraph.Date>July 5, 2024</Paragraph.Date>
           <ProjectCard.Image
             imageSrc="/projects/portfolio.png"
@@ -50,7 +50,7 @@ export default function ProjectContent({
       <ProjectCard.Card>
         <ProjectCard.Header>
           <ProjectCard.TItle hrfTo="https://github.com/DewaSRY/Revou-Final-Project">
-            This is my first project
+            Revou Final Project
           </ProjectCard.TItle>
           <Paragraph.Date>May 10, 2024</Paragraph.Date>
           <ProjectCard.Image
@@ -67,7 +67,6 @@ export default function ProjectContent({
             On the Project i Responsible to be Backend. More then be Backend i
             am also take a charge to successful build the app.
           </ProjectCard.Description>
-
           <Paragraph.Description>
             There are what i do on the project:
           </Paragraph.Description>

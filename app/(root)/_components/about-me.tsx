@@ -31,41 +31,23 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
 
   useGSAP(
     () => {
-      const tlHr = gsap.timeline({
+      const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: layer.current,
-          start: "top bottom",
-          end: `center 70%`,
+          trigger: parentContainer.current,
+          start: "20% 70%",
+          end: `bottom 70%`,
           scrub: true,
           // markers: true,
           // toggleActions: "play reverse reverse complete",
         },
       });
-      tlHr.set(hrElement.current, {
+      tl.set(hrElement.current, {
         scaleX: 0,
         transformOrigin: "left",
       });
 
-      tlHr.to(hrElement.current, {
+      tl.to(hrElement.current, {
         scaleX: 1,
-      });
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: layer.current,
-          start: "top bottom",
-          end: `top 70%`,
-          scrub: true,
-          // markers: true,
-        },
-      });
-      tl.from(layer.current, {
-        scaleX: 0.9,
-        transformOrigin: "right",
-        opacity: 0.5,
-      });
-      tl.to(layer.current, {
-        scaleX: 1,
-        opacity: 1,
       });
     },
     { scope: parentContainer.current! }
@@ -90,7 +72,7 @@ export default function AboutMe({ children, ...resProps }: AboutMeProps) {
             "mr-[50px] xl:my-10"
           )}
         />
-        <div ref={layer}>
+        <div ref={layer} className="py-6 px-4">
           <Heading.H3 className=" text-primary-one">
             Dewa Surya Ariesta
           </Heading.H3>

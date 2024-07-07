@@ -31,12 +31,12 @@ export default function Body({ children, ...resProps }: BodyProps) {
       tl.to(hrElement.current, {
         scaleX: 1,
       });
-    }
-    // { scope: workContainer.current! }
+    },
+    { scope: workBodyElement.current! }
   );
 
   return (
-    <div ref={workBodyElement} className="scale-95">
+    <div ref={workBodyElement}>
       <hr ref={hrElement} />
       {children}
     </div>

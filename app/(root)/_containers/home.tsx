@@ -23,10 +23,7 @@ interface HomeProps extends ComponentProps<"div">, PropsWithChildren {}
 export default function Home({ children, className, ...resProps }: HomeProps) {
   const parent = useRef<ElementRef<"section">>(null);
   const layer = useRef<ElementRef<"div">>(null);
-  const MoonElement = useMemo(
-    () => dynamic(() => import("../_components/moon")),
-    []
-  );
+  const MoonElement = dynamic(() => import("../_components/moon"));
   useGSAP(
     () => {
       gsap.set(layer.current, {
