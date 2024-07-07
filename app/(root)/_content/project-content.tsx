@@ -20,7 +20,9 @@ export default function ProjectContent({
       </Heading.H2>
       <ProjectCard.Card>
         <ProjectCard.Header>
-          <ProjectCard.TItle hrfTo="">My Personal Web</ProjectCard.TItle>
+          <ProjectCard.TItle hrfTo="https://github.com/DewaSRY/Personal-Website">
+            My Personal Web
+          </ProjectCard.TItle>
           <Paragraph.Date>July 5, 2024</Paragraph.Date>
           <ProjectCard.Image
             imageSrc="/projects/portfolio.png"
