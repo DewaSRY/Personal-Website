@@ -28,7 +28,7 @@ export default function Headers({ children, ...resProps }: HeadersProps) {
         </span>
       </div>
 
-      <SocialNav className="fixed bottom-[80%] left-[90%] md:bottom-[50%] md:translate-y-[-50] md:left-1   " />
+      <SocialNav className="fixed bottom-[80%] left-[85%] md:bottom-[50%] md:translate-y-[-50] md:left-1   " />
       <NavItems />
     </header>
   );

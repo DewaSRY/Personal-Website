@@ -14,7 +14,7 @@ export default function ProjectContent({
   ...resProps
 }: ProjectContentProps) {
   return (
-    <div className={cn("py-[100px] ", className)} {...resProps}>
+    <div className={cn("py-[20px] ", className)} {...resProps}>
       <Heading.H2 className="underline text-center my-10">
         My Project
       </Heading.H2>

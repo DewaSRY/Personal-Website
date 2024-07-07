@@ -12,7 +12,7 @@ export default function WorksContent({
   ...resProps
 }: WorksContentProps) {
   return (
-    <div className={cn(className, "py-[100px]")} {...resProps}>
+    <div className={cn(className, "py-[20px]")} {...resProps}>
       <Heading.H2 className="underline text-center my-10">
         My Works Experience
       </Heading.H2>
