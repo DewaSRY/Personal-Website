@@ -23,18 +23,14 @@ export default function ContactIcon({
       target="_blank"
       rel="noopener noreferrer"
       title={imageAlt}
-      className={cn(
-        className,
-        "w-[40px] md:w-[50px] border-2 border-transparent rounded-[100%] ",
-        "hover:scale-[110%] duration-100 ease-in-out"
-      )}
+      className={cn(className, "w-[40px]")}
     >
       <Image
+        className="hover:rotate-12 duration-300 ease-in-out"
         src={imageSrc}
         alt={imageAlt}
         width={50}
         height={50}
-        className="w-full h-full "
       />
     </Link>
   );

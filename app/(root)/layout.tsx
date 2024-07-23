@@ -1,3 +1,5 @@
+import Headers from "./_containers/headers";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,9 +7,9 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <header></header>
+      <Headers />
       <main>{children}</main>
-      <footer></footer>
+      <footer>this is footer</footer>
     </>
   );
 }

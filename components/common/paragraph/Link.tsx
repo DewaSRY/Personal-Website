@@ -1,6 +1,5 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import NextLink from "next/link";
-import Heading from "../heading";
 import { cn } from "@/lib/utils";
 
 interface LinkProps extends ComponentProps<"a">, PropsWithChildren {

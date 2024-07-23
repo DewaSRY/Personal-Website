@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={cn(inter.className, "max-w-[2000px] mx-auto")}
+        className={cn(inter.className, "max-w-[2000px] mx-auto bg-primary-one")}
       >
         {children}
       </body>

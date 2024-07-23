@@ -7,19 +7,8 @@ Base layer doesn't realey importent for now.
 */
 @layer base {
   html {
-    --primary-one: #222831;
-    --primary-one-alfa: rgba(34, 40, 49, 0.7);
-    --primary-two: #31363f;
-    --primary-two-alfa: rgba(49, 54, 63, 0.2);
-    --primary-three: #76abae;
-    --primary-three-alfa: rgba(118, 171, 174, 0.2);
-    --primary-four: #eeeeee;
-    --primary-four-alfa: rgba(238, 238, 238, 0.2);
-    --primary-five: #ffffff;
-
-    --footer: #162427;
-
-    --radius: 10px;
+    color: rgba(110, 110, 110, 0.504);
+    /* transform: translateX(); */
   }
 }
 

@@ -5,16 +5,6 @@ import MyProfile from "./_containers/my-profile";
 import MyExperience from "./_containers/my-experience";
 import Footer from "./_containers/footer";
 
-export default function Portfolio() {
-  return (
-    <>
-      <Headers />
-      <main className="bg-primary-one">
-        <Home />
-        <MyProfile />
-        <MyExperience />
-      </main>
-      <Footer />
-    </>
-  );
+export default function HomeRoute() {
+  return <>Home Route</>;
 }

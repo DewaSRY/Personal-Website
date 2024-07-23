@@ -2,12 +2,15 @@ import { Junge as _Junge, Poppins as _Poppins } from "next/font/google";
 
 const junge = _Junge({
   weight: "400",
+  preload: false,
 });
 const popinsRegular = _Poppins({
   weight: "400",
+  preload: false,
 });
 const popinsBold = _Poppins({
   weight: "900",
+  preload: false,
 });
 
 export const HEADING = {
@@ -23,5 +26,5 @@ export const PARA = {
   DATE: `${popinsRegular.className} text-[10px] md:text-[12px]`,
   QUOTE: `${popinsRegular.className} text-[20px] md:text-[24px]`,
   BOLD: `${junge.className} text-[14px] md:text-[16px]`,
-  NAV: `${junge.className} text-[16px] md:text-[18px]`,
+  NAV: `${junge.className} text-[18px] `,
 };

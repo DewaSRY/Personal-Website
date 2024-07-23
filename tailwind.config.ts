@@ -22,6 +22,7 @@ const config = {
         "white-one": "#B1F2FF",
         "white-two": "#F2F7FF",
         "white-three": "#F2F7FF",
+        "white-alfa": "rgba(110, 110, 110, 0.504)",
       },
       gridTemplateColumns: {
         "auto-fill-100": "repeat(auto-fill, minmax(100px, 1fr))",
