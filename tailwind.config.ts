@@ -21,7 +21,7 @@ const config = {
         "black-two": "#0F1726",
         "white-one": "#B1F2FF",
         "white-two": "#F2F7FF",
-        "white-three": "#F2F7FF",
+        "white-three": "#ADFBFF",
         "white-alfa": "rgba(0, 0, 0, 0.704)",
       },
       gridTemplateColumns: {

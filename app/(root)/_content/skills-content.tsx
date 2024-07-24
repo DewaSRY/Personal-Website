@@ -5,13 +5,16 @@ interface SkillsContentProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function SkillsContent({
   children,
+  className,
   ...resProps
 }: SkillsContentProps) {
   return (
     <div
       className={cn(
-        "grid grid-cols-auto-fit-350 md:grid-cols-auto-fit-750 xl:grid-cols-auto-fit-350",
-        "px-2 xl:px-8"
+        "grid grid-cols-auto-fit-350 md:grid-cols-auto-fit-750 xl:grid-cols-auto-fit-350 gap-2",
+        "px-2 xl:px-8 my-[64px]",
+        "pt-[180px] pb-[300px] rounded-br-[500px] bg-primary-two",
+        className
       )}
     >
       <SkillCard.Card>

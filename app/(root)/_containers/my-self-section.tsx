@@ -39,7 +39,7 @@ export default function MySelfSection({
         <div
           className={cn(
             "xl:row-start-1 text-white-two text-left px-[8px]",
-            "py-[10%] xl:py-[30%]"
+            "py-[10%] xl:py-[30%] md:px-[5%] xl:px-[10%]"
           )}
         >
           <hr className="my-2" />
