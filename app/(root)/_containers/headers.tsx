@@ -3,10 +3,10 @@ import { Lora } from "next/font/google";
 
 import Image from "next/image";
 
-import NavItems from "../_content/nav-items";
 import SocialCTA from "../_content/social-cta";
+import RouteNavigation from "../_content/route-navigation";
 
-import SmallNav from "../_content/rout-navigations/small-nav";
+import NavigationSmall from "./navigation-small";
 
 import { cn } from "@/lib/utils";
 const font = Lora({
@@ -27,15 +27,13 @@ export default function Headers({ children, ...resProps }: HeadersProps) {
         alt="dewa surya logo"
         className="my-auto fixed top-4 left-2 z-10"
       />
+
       <div className="hidden fixed top-4 right-2  w-[calc(60vw)]  xl:flex justify-between items-center  ">
-        <SmallNav className="flex gap-[32px]" />
+        <RouteNavigation className="flex gap-[32px]" />
         <SocialCTA className="flex gap-[16px]" />
       </div>
 
-      <div className="fixed inset-0 xl:hidden bg-white-alfa flex text-center items-center">
-        <SocialCTA className="absolute  grid grid-rows-3 gap-8  " />
-        <SmallNav className="w-[200px] translate-x-[calc(50vw-50%)] gap-6" />
-      </div>
+      <NavigationSmall />
     </header>
   );
 }

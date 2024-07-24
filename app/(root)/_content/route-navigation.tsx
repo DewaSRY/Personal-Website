@@ -1,16 +1,18 @@
 import { ComponentProps, PropsWithChildren } from "react";
 
 // import Link from "next/link";
-import NavItem from "../../_components/navigation/nav-item";
+import NavItem from "../_components/navigation/nav-item";
 import { User, HomeIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-interface SmallNavProps extends ComponentProps<"div">, PropsWithChildren {}
+interface RouteNavigationProps
+  extends ComponentProps<"div">,
+    PropsWithChildren {}
 
-export default function SmallNav({
+export default function RouteNavigation({
   children,
   className,
   ...resProps
-}: SmallNavProps) {
+}: RouteNavigationProps) {
   return (
     <div className={cn(className)}>
       <NavItem isActive={true} to="/">

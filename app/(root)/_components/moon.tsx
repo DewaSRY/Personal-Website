@@ -12,7 +12,6 @@ import { cn } from "@/lib/utils";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 interface MoonProps extends ComponentProps<"img">, PropsWithChildren {}
