@@ -1,5 +1,9 @@
 import Headers from "./_containers/headers";
 
+import Image from "next/image";
+import NavigationSmall from "./_containers/navigation-small";
+import NavigationLarge from "./_containers/navigation-large";
+
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +11,18 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <Headers />
+      <header className=" ">
+        <Image
+          src="/logos/logo.png"
+          width={50}
+          height={50}
+          alt="dewa surya logo"
+          className="my-auto fixed top-4 left-2 z-10"
+        />
+
+        <NavigationLarge />
+        <NavigationSmall />
+      </header>
       <main>{children}</main>
       <footer>this is footer</footer>
     </>
