@@ -1,15 +1,7 @@
 "use client";
-import {
-  ComponentProps,
-  ElementRef,
-  PropsWithChildren,
-  useEffect,
-  useMemo,
-  useRef,
-} from "react";
+import { ComponentProps, ElementRef, PropsWithChildren, useRef } from "react";
 
 import { cn } from "@/lib/utils";
-// import Moon from "../_components/moon";
 import TextBanner from "../_components/text-banner";
 import dynamic from "next/dynamic";
 import { gsap } from "gsap";

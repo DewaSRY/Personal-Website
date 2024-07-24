@@ -1,3 +1,4 @@
+"use client";
 /**
  * This component use to make reusable style from nav items
  */
@@ -18,15 +19,25 @@ export default function NavItem({
   to,
   ...resProps
 }: NavItemProps) {
-  function handleMouseIn() {}
   return (
     <Link
       href={to}
       scroll
-      className={cn("cursor-pointer text-white-three")}
+      className={cn(
+        "duration-200 ease-in-out",
+        `${isActive ? "hidden" : ""}`,
+        "cursor-pointer text-white-three"
+      )}
       {...resProps}
     >
-      <p className={PARA.NAV}>{children}</p>
+      <p
+        className={cn(
+          PARA.NAV,
+          "duration-150 ease-in-out transition-transform hover:scale-95 "
+        )}
+      >
+        {children}
+      </p>
     </Link>
   );
 }

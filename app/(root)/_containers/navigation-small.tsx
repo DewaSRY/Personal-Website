@@ -16,7 +16,6 @@ import { useGSAP } from "@gsap/react";
 
 import SocialCTA from "../_content/social-cta";
 import RouteNavigation from "../_content/route-navigation";
-import { cn } from "@/lib/utils";
 
 interface NavigationSmallProps
   extends ComponentProps<"div">,
@@ -49,6 +48,13 @@ export default function NavigationSmall({
         scaleY: isActive ? 1 : 0,
         ease: "power4.inOut",
       });
+
+      tl.to(".route-navigation", {
+        opacity: isActive ? 1 : 0,
+      });
+      tl.to(".social-cta", {
+        opacity: isActive ? 1 : 0,
+      });
     },
     {
       dependencies: [isActive],
@@ -66,8 +72,8 @@ export default function NavigationSmall({
         ref={overLayElement}
         className="origin-top fixed inset-0 z-[9]  xl:hidden bg-white-alfa flex text-center items-center"
       >
-        <SocialCTA className="absolute  grid grid-rows-3 gap-8  " />
-        <RouteNavigation className="w-[200px] translate-x-[calc(50vw-50%)] flex flex-col gap-8" />
+        <SocialCTA className="social-cta absolute  grid grid-rows-3 gap-8  " />
+        <RouteNavigation className="route-navigation w-[200px] translate-x-[calc(50vw-50%)] flex flex-col gap-8" />
       </div>
     </>
   );
