@@ -1,3 +1,4 @@
+"use client";
 import { ComponentProps, ElementRef, PropsWithChildren, useRef } from "react";
 import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
@@ -15,26 +16,24 @@ export default function TextBanner({
 }: TextBannerProps) {
   const textBannerElement = useRef<ElementRef<"div">>(null);
 
-  // useGSAP(() => {
-  //   const tl = gsap.timeline({
-  //     defaults: {
-  //       ease: "power4.inOut",
-  //       duration: 2,
-  //     },
-  //   });
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      defaults: {
+        ease: "power4.inOut",
+      },
+    });
 
-  //   tl.from(textBannerElement.current, {
-  //     clipPath: "polygon(0% 100%, 100% 100%, 100% 100%,0% 100%)",
-  //     opacity: 0,
-  //     y: 100,
-  //   });
-  //   tl.to(textBannerElement.current, {
-  //     clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-  //     opacity: 1,
-  //     y: 0,
-  //     duration: 1,
-  //   });
-  // });
+    tl.from(textBannerElement.current, {
+      clipPath: "polygon(0% 100%, 100% 100%, 100% 100%,0% 100%)",
+      opacity: 0,
+      y: 100,
+    });
+    tl.to(textBannerElement.current, {
+      clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+      opacity: 1,
+      y: 0,
+    });
+  });
 
   return (
     <div

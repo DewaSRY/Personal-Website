@@ -16,6 +16,7 @@ import { useGSAP } from "@gsap/react";
 
 import SocialCTA from "../_content/social-cta";
 import RouteNavigation from "../_content/route-navigation";
+import { cn } from "@/lib/utils";
 
 interface NavigationSmallProps
   extends ComponentProps<"div">,
@@ -23,6 +24,7 @@ interface NavigationSmallProps
 
 export default function NavigationSmall({
   children,
+  className,
   ...resProps
 }: NavigationSmallProps) {
   const [isActive, setIsActive] = useState(false);
@@ -62,7 +64,7 @@ export default function NavigationSmall({
   );
   return (
     <>
-      <div className="xl:hidden fixed top-4 right-2 z-10 ">
+      <div className={cn(className, "xl:hidden fixed top-4 right-2")}>
         <HamburgerButton
           isActive={isActive}
           onClick={setIsActive.bind(null, !isActive)}

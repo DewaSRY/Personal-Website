@@ -5,16 +5,6 @@
 /**
 Base layer doesn't realey importent for now.
 */
-@layer base {
-  html {
-    color: rgba(110, 110, 110, 0.504);
-    /* transform: translateX(); */
-  }
-}
-
-.colors-svg {
-  color: red;
-}
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

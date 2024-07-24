@@ -11,7 +11,7 @@ export default function Description({
     <p
       className={cn(
         className,
-        `${popinsRegular.className} text-[14px] md:text-[16px]`
+        ` ${popinsRegular.className} text-[14px] md:text-[16px]`
       )}
       {...resProps}
     >

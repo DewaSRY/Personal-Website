@@ -17,8 +17,8 @@ export default function RootLayout({
           alt="dewa surya logo"
           className="my-auto fixed top-4 left-2 z-10"
         />
-        <NavigationLarge />
-        <NavigationSmall />
+        <NavigationLarge className="z-10" />
+        <NavigationSmall className="z-10" />
       </header>
 
       <main className="py-8">{children}</main>
