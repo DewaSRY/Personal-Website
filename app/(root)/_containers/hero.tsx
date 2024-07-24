@@ -12,8 +12,8 @@ export default function Hero({ children, className, ...resProps }: HeroProps) {
   return (
     <section
       id="home"
-      className={cn("h-[800px] md:h-[1000px] relative", className)}
       {...resProps}
+      className={cn("h-[900px] md:h-[1000px] relative", className)}
     >
       <TextBanner
         className={cn(
@@ -21,7 +21,6 @@ export default function Hero({ children, className, ...resProps }: HeroProps) {
           "xl:w-[60vw]"
         )}
       />
-
       <MoonElement className="absolute inset-0 w-full  z-[0]" />
     </section>
   );
