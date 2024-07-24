@@ -50,28 +50,20 @@ export default function Hero({ children, className, ...resProps }: HeroProps) {
     <section
       ref={parent}
       id="home"
-      className={cn(
-        "h-[100vh] md:min-h-[150vh] relative mb-[100px] pb-[600px]",
-        className
-      )}
+      className={cn("h-[800px] md:h-[1000px]  relative ", className)}
       {...resProps}
     >
-      <div
+      <TextBanner
         className={cn(
-          "absolute inset-0 z-[2] ",
-          "w-11/12 md:w-8/12 xl:w-[1000px] mx-auto ",
-          "py-[200px] "
+          "absolute inset-0 z-[2] py-[30%] px-[5%] xl:py-[10%]",
+          "xl:w-[60vw]"
         )}
-      >
-        <TextBanner />
-      </div>
-      <div
+      />
+      {/* <div
         ref={layer}
         className="absolute inset-0 md:bottom-[20%] z-[1]  bg-primary-one-alfa rounded-bl-[200px] blur-[20%] "
-      />
-      <div className="absolute inset-0 p-[100px] z-[0]">
-        <MoonElement />
-      </div>
+      /> */}
+      <MoonElement className="absolute inset-0 w-full  z-[0]" />
     </section>
   );
 }
