@@ -1,22 +1,11 @@
-import Date from "./Date";
-import Description from "./Description";
-import List from "./List";
-import Nav from "./Nav";
-
-import PR from "./p-r";
-import PB from "./p-b";
-import Link from "./Link";
-import Quote from "./quot";
+import Date from "./date";
+import Description from "./description";
+import Bold from "./bold";
 
 const Paragraph = {
   Date,
   Description,
-  List,
-  Nav,
-  PR,
-  PB,
-  Link,
-  Quote,
+  Bold,
 };
 
 export default Paragraph;

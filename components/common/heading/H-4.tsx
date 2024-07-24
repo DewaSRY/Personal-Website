@@ -1,23 +1,15 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import { Halant } from "next/font/google";
 import { cn } from "@/lib/utils";
-const font = Halant({
-  weight: "500",
-  preload: false,
-});
-
+import { junge } from "./utils";
 interface H4Props extends ComponentProps<"h4">, PropsWithChildren {}
 export default function H4({ children, className, ...resProps }: H4Props) {
   return (
     <h4
+      {...resProps}
       className={cn(
-        font.className,
-        "text-[16px] text-primary-four",
-        "md:text-[20px]",
-        "xl:text-[24px]",
+        `${junge.className} text-[24px] md:text-[25px] xl:text-[31px]`,
         className
       )}
-      {...resProps}
     >
       {children}
     </h4>

@@ -1,23 +1,12 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import { Lustria } from "next/font/google";
 import { cn } from "@/lib/utils";
-const font = Lustria({
-  weight: "400",
-  preload: false,
-});
-
+import { junge } from "./utils";
 interface NavProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function Nav({ children, className, ...resProps }: NavProps) {
   return (
     <p
-      className={cn(
-        font.className,
-        className,
-        "text-[10px] text-primary-five",
-        "md:text-[12px]",
-        "xl:text-[14px]"
-      )}
       {...resProps}
+      className={cn(`${junge.className} text-[18px] `, className)}
     >
       {children}
     </p>

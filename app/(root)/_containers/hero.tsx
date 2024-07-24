@@ -10,9 +10,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-interface HomeProps extends ComponentProps<"div">, PropsWithChildren {}
+interface HeroProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function Home({ children, className, ...resProps }: HomeProps) {
+export default function Hero({ children, className, ...resProps }: HeroProps) {
   const parent = useRef<ElementRef<"section">>(null);
   const layer = useRef<ElementRef<"div">>(null);
   const MoonElement = dynamic(() => import("../_components/moon"));

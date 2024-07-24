@@ -1,5 +1,9 @@
-import Headers from "./_containers/headers";
+import Hero from "./_containers/hero";
 
 export default function HomeRoute() {
-  return <>Home Route</>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }

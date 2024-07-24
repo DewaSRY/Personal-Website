@@ -1,23 +1,15 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import { Karma } from "next/font/google";
 import { cn } from "@/lib/utils";
-const font = Karma({
-  weight: "500",
-  preload: false,
-});
-
+import { junge } from "./utils";
 interface H2Props extends ComponentProps<"h2">, PropsWithChildren {}
 export default function H2({ children, className, ...resProps }: H2Props) {
   return (
     <h2
+      {...resProps}
       className={cn(
-        font.className,
-        "text-[20px] text-primary-four",
-        "md:text-[24px]",
-        "xl:text-[28px]",
+        `${junge.className} text-[35px] md:text-[38px] xl:text-[48px]`,
         className
       )}
-      {...resProps}
     >
       {children}
     </h2>

@@ -1,11 +1,6 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
-const font = Poppins({
-  weight: "400",
-  preload: false,
-});
-
+import { popinsRegular } from "./utils";
 interface DescriptionProps extends ComponentProps<"p">, PropsWithChildren {}
 export default function Description({
   children,
@@ -15,11 +10,8 @@ export default function Description({
   return (
     <p
       className={cn(
-        font.className,
-        "text-[12px]  text-primary-five",
-        "md:text-[14px]",
-        "xl:text-[16px]",
-        className
+        className,
+        `${popinsRegular.className} text-[14px] md:text-[16px]`
       )}
       {...resProps}
     >

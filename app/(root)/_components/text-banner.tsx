@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import { Button } from "@/components/ui/button";
 interface TextBannerProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function TextBanner({
@@ -38,21 +38,27 @@ export default function TextBanner({
   return (
     <div
       ref={textBannerElement}
-      className={cn(className, "w-11/12 md:w-8/12 text-primary-five ")}
+      className={cn(className, "w-11/12 xl:w-8/12 text-primary-five ")}
     >
-      <Paragraph.Description className="">
-        HALLO, my name is
-      </Paragraph.Description>
-      <span className="text-[20px] md:text-[22px] xl:text-[26px] mr-2">
-        Dewa Surya Ariesta
-      </span>
-      <hr className="w-8/12 h-2 p-[2px] translate-x-[-1%]" />
-      <Paragraph.Description>I am a</Paragraph.Description>
-      <Heading.H1>Full Stack Web Developers</Heading.H1>
+      <Paragraph.Bold className={cn("text-white-two")}>
+        Hy There, My Name Is Dewa
+      </Paragraph.Bold>
+      <Heading.H1 className={cn("text-white-one")}>
+        I am Full Stack Software Developer
+      </Heading.H1>
       <hr className="h-2 p-[2px] translate-x-[-1%]" />
-      <Paragraph.Description>
-        Let&apos;s make miracle happen
-      </Paragraph.Description>
+      <Heading.Quote className={cn("text-white-three")}>
+        I will help you to build a beautiful and cool website and if you want to
+        have someone to make something done, let's talk!.It might me.
+      </Heading.Quote>
+      <div className="flex w-full gap-8 my-8">
+        <Button className="text-white-two bg-gradient-three ">
+          <Paragraph.Description>Read More About ME</Paragraph.Description>
+        </Button>
+        <Button className="text-white-two bg-gradient-two">
+          <Paragraph.Description>Contact Me</Paragraph.Description>
+        </Button>
+      </div>
     </div>
   );
 }
