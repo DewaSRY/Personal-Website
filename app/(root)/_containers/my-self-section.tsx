@@ -12,7 +12,7 @@ export default function MySelfSection({
   ...resProps
 }: MySelfSectionProps) {
   return (
-    <section>
+    <section className="my-[128px]">
       <Heading.H2 className="text-white-one px-[8px]">
         Let me introduction my self
       </Heading.H2>

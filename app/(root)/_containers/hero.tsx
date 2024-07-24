@@ -12,7 +12,7 @@ export default function Hero({ children, className, ...resProps }: HeroProps) {
   return (
     <section
       id="home"
-      className={cn("h-[800px] md:h-[1000px]  relative ", className)}
+      className={cn("h-[800px] md:h-[1000px] relative", className)}
       {...resProps}
     >
       <TextBanner

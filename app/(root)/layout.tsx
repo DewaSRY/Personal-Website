@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavigationSmall from "./_containers/navigation-small";
 import NavigationLarge from "./_containers/navigation-large";
-
+import Footer from "./_containers/footer";
 export default function RootLayout({
   children,
 }: {
@@ -22,7 +22,7 @@ export default function RootLayout({
       </header>
 
       <main className="py-8">{children}</main>
-      <footer>this is footer</footer>
+      <Footer />
     </>
   );
 }
