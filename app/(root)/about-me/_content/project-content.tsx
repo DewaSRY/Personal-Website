@@ -33,15 +33,17 @@ export default function ProjectContent({
           <ProjectCard.Description>
             This app is my Portfolio. This app use to prove my capability of
             code. I will build this app with next js because it
-            <Paragraph.Quote />s good performance on SEO and easy to work with.
+            <Heading.Quote>
+              s good performance on SEO and easy to work with.
+            </Heading.Quote>
           </ProjectCard.Description>
           <Paragraph.Description>
             Several Feature this app have
           </Paragraph.Description>
           <ProjectCard.Ul>
-            <Paragraph.List>Responsive</Paragraph.List>
-            <Paragraph.List>Micro-interaction</Paragraph.List>
-            <Paragraph.List>Interactive animation</Paragraph.List>
+            <li>Responsive</li>
+            <li>Micro-interaction</li>
+            <li>Interactive animation</li>
           </ProjectCard.Ul>
 
           <ProjectCard.Tag>Next JS</ProjectCard.Tag>
@@ -73,28 +75,28 @@ export default function ProjectContent({
             There are what i do on the project:
           </Paragraph.Description>
           <ProjectCard.Ul>
-            <Paragraph.List>
+            <li>
               Developed a robust data sharing system. The app allows users to
               publish and manage business profiles. It integrated with
               Cloudinary for efficient image storage and hosting, enhancing
               application performance.
-            </Paragraph.List>
-            <Paragraph.List>
+            </li>
+            <li>
               Achieved nearly 80% test coverage to ensure high reliability and
               maintainability, and documented application endpoint, to increase
               frontend development to over 50%.
-            </Paragraph.List>
-            <Paragraph.List>
+            </li>
+            <li>
               Designed a user-friendly data-sharing application, implementing
               parallax company face and micro-motion user interaction.
-            </Paragraph.List>
-            <Paragraph.List>
+            </li>
+            <li>
               Lead team to successfully develop the app.Created and explained
               the development workflow with clear language and insightful
               diagrams. Lead team on brainstorming to every feature the
               application has and every edge case need to handle in both backend
               and frontend side.
-            </Paragraph.List>
+            </li>
           </ProjectCard.Ul>
 
           <ProjectCard.Tag>Python</ProjectCard.Tag>

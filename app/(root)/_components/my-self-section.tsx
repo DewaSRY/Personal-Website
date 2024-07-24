@@ -42,13 +42,13 @@ export default function MySelfSection({
             "py-[10%] xl:py-[30%]"
           )}
         >
-          <hr className="my-[8px]" />
-          <Paragraph.Description>
+          <hr className="my-2" />
+          <Paragraph.Description className="mb-2">
             My name is Dewa Surya Ariesta, I was born in 2004 and I am gen-Z. If
             you want to know my MBTI, I am an ENTP. and for my star sign, I am
             Ariest.
           </Paragraph.Description>
-          <Paragraph.Description className="text-left">
+          <Paragraph.Description className="mb-2">
             Someone can stereotype me, it might be good judgment or bad, but I
             focus more on what I can do : )
           </Paragraph.Description>
