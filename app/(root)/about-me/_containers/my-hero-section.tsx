@@ -16,7 +16,7 @@ export default function MyHeroSection({
       <div
         className={cn(
           "col-start-1 col-span-6 row-start-1 row-span-4 ",
-          "md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-3",
+          "md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-6",
           "xl:col-start-1 xl:col-span-2 xl:row-start-2 xl:row-span-10"
         )}
       >
@@ -31,15 +31,15 @@ export default function MyHeroSection({
       <HeroParaOne
         className={cn(
           "col-start-1 col-span-6 row-start-5 row-span-4",
-          "md:col-start-1 md:col-span-3 md:row-start-4 md:row-span-3",
-          "xl:col-start-3 xl:col-span-2 xl:row-start-2 xl:row-span-3"
+          "md:col-start-1 md:col-span-3 md:row-start-7 md:row-span-6",
+          "xl:col-start-3 xl:col-span-2 xl:row-start-2 xl:row-span-8"
         )}
       />
       <HeroParaTwo
         className={cn(
           "col-start-1 col-span-6 row-start-7 row-span-6",
-          "md:col-start-4 md:col-span-3 md:row-start-2 md:row-span-4",
-          "xl:col-start-5 xl:col-span-2 xl:row-start-2 xl:row-span-4"
+          "md:col-start-4 md:col-span-3 md:row-start-2 md:row-span-8",
+          "xl:col-start-5 xl:col-span-2 xl:row-start-2 xl:row-span-10"
         )}
       />
     </section>

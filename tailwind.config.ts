@@ -27,6 +27,7 @@ const config = {
       gridTemplateColumns: {
         "auto-fill-100": "repeat(auto-fill, minmax(100px, 1fr))",
         "auto-fit-100": "repeat(auto-fit, minmax(100px, 1fr))",
+        "auto-fit-150": "repeat(auto-fit, minmax(150px, 1fr))",
         "auto-fit-300": "repeat(auto-fit, minmax(300px, 1fr))",
         "auto-fit-350": "repeat(auto-fit, minmax(350px, 1fr))",
         "auto-fit-750": "repeat(auto-fit, minmax(750px, 1fr))",

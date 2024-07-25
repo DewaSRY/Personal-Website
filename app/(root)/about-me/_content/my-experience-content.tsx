@@ -1,5 +1,5 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import ProgrammingContainer from "./programming-content";
+import ProgrammingContainer from "./tool-content";
 import SkillContainer from "./skill-content";
 
 import Heading from "@/components/common/heading";

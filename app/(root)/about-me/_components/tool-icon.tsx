@@ -1,31 +1,29 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import Image from "next/image";
 import Paragraph from "@/components/common/paragraph";
-interface ProgrammingIconProps
-  extends ComponentProps<"div">,
-    PropsWithChildren {
+import Heading from "@/components/common/heading";
+interface ToolIconProps extends ComponentProps<"div">, PropsWithChildren {
   imageSrc: string;
   imageAlt: string;
 }
 
-export default function ProgrammingIcon({
+export default function ToolIcon({
   children,
   imageSrc,
   imageAlt,
   ...resProps
-}: ProgrammingIconProps) {
+}: ToolIconProps) {
   return (
-    <div className="w-[100px] xl:w-[150px] px-2 h-[80px] " {...resProps}>
+    <div className="w-[100px] xl:w-[150px]  px-2 " {...resProps}>
       <Image
-        className="h-[50px] w-[50px] xl:h-[75px] xl:w-[75px] mx-auto"
+        className=" mx-auto"
         width={150}
         height={150}
         src={imageSrc}
         alt={imageAlt}
       />
-      <hr />
-      <Paragraph.Description className="text-center">
-        {children}
+      <Paragraph.Description className="text-center text-white-one">
+        {imageAlt}
       </Paragraph.Description>
     </div>
   );
