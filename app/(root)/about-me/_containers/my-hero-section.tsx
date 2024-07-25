@@ -2,8 +2,8 @@ import { ComponentProps, PropsWithChildren } from "react";
 import Image from "next/image";
 import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
-import HeroParaOne from "../_content/hero-para-one";
-import HeroParaTwo from "../_content/hero-para-two";
+import HeroParaOne from "../_contents/hero-para-one";
+import HeroParaTwo from "../_contents/hero-para-two";
 import { cn } from "@/lib/utils";
 interface MyHeroSectionProps extends ComponentProps<"div">, PropsWithChildren {}
 

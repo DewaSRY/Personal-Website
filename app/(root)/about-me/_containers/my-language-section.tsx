@@ -1,5 +1,5 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import LanguageContent from "../_content/language-content";
+import LanguageContent from "../_contents/language-content";
 import Heading from "@/components/common/heading";
 interface MyLanguageSectionProps
   extends ComponentProps<"div">,

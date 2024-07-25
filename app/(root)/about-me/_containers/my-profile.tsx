@@ -3,7 +3,7 @@ import { ComponentProps, PropsWithChildren } from "react";
 import AboutMe from "../_components/about-me";
 import { cn } from "@/lib/utils";
 
-import MyExperienceContent from "../_content/my-experience-content";
+import MyExperienceContent from "../_contents/my-experience-content";
 interface MyProfileProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function MyProfile({

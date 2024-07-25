@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren } from "react";
-import WorkContent from "../_content/work-content";
+import WorkContent from "../_contents/work-content";
 import Heading from "@/components/common/heading";
 interface MyWorkSectionProps extends ComponentProps<"div">, PropsWithChildren {}
 

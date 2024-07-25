@@ -1,5 +1,5 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import ToolsContent from "../_content/tool-content";
+import ToolsContent from "../_contents/tool-content";
 import Heading from "@/components/common/heading";
 interface MyToolsSectionProps
   extends ComponentProps<"div">,

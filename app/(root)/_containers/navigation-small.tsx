@@ -14,8 +14,8 @@ import HamburgerButton from "../_components/hamburger-button";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import SocialCTA from "../_content/social-cta";
-import RouteNavigation from "../_content/route-navigation";
+import SocialCTA from "../_contents/social-cta";
+import RouteNavigation from "../_contents/route-navigation";
 import { cn } from "@/lib/utils";
 
 interface NavigationSmallProps

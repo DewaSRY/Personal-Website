@@ -1,7 +1,7 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import Heading from "@/components/common/heading";
 
-import SkillsContent from "../_content/skills-content";
+import SkillsContent from "../_contents/skills-content";
 interface MySkillSectionProps
   extends ComponentProps<"div">,
     PropsWithChildren {}

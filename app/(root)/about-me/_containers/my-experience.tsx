@@ -1,6 +1,6 @@
 import { ComponentProps, PropsWithChildren } from "react";
-import ProjectContent from "../_content/project-content";
-import WorksContent from "../_content/works-content";
+import ProjectContent from "../_contents/project-content";
+import WorksContent from "../_contents/works-content";
 
 interface MyExperienceProps
   extends ComponentProps<"section">,
