@@ -12,8 +12,9 @@ interface CardProps extends ComponentProps<"div">, PropsWithChildren {
 
 export default function Card({ children, value, ...resProps }: CardProps) {
   return (
-    <AccordionItem value={value} className="my-4">
+    <AccordionItem value={value} className="">
       {children}
+      <hr className="w-11/12" />
     </AccordionItem>
   );
 }

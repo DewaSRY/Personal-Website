@@ -11,7 +11,7 @@ interface bodyProps extends ComponentProps<"div">, PropsWithChildren {}
 export default function body({ children, ...resProps }: bodyProps) {
   return (
     <AccordionContent>
-      <Paragraph.Description className="text-white-two">
+      <Paragraph.Description className="text-white-two px-2">
         {children}
       </Paragraph.Description>
     </AccordionContent>

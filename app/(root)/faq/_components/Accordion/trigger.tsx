@@ -11,8 +11,8 @@ interface triggerProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function trigger({ children, ...resProps }: triggerProps) {
   return (
-    <AccordionTrigger className="text-white-two text-left">
-      <Heading.H4>{children}</Heading.H4>
+    <AccordionTrigger className="text-white-two text-left duration-300 transition-transform ease-in-out hover:translate-x-[1%]">
+      <Paragraph.Bold>{children}</Paragraph.Bold>
     </AccordionTrigger>
   );
 }

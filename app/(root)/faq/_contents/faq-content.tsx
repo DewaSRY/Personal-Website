@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren } from "react";
 
 import AccordionCard from "../_components/Accordion";
+import Heading from "@/components/common/heading";
 
 interface FAQContentProps extends ComponentProps<"div">, PropsWithChildren {}
 
@@ -12,6 +13,14 @@ export default function FAQContent({
 }: FAQContentProps) {
   return (
     <div className={cn(className)} {...resProps}>
+      <div className="px-4 pt-4">
+        <Heading.H3 className="text-white-one">
+          Frequently Asking Question
+        </Heading.H3>
+        <Heading.Quote className="text-white-three">
+          Just click the question text, the answer will show bellow it.
+        </Heading.Quote>
+      </div>
       <AccordionCard.Container className="w-11/12 pt-[64px] pb-[96px] mx-auto">
         <AccordionCard.Card value="q-1">
           <AccordionCard.trigger>

@@ -11,7 +11,7 @@ export default function HeroBanner({
   ...resProps
 }: HeroBannerProps) {
   return (
-    <div className={cn(className, "px-2")} {...resProps}>
+    <div className={cn(className, "px-2 md:px-4 xl:px-6")} {...resProps}>
       <Heading.H1 className="text-white-one">
         I&apos;m currently available for Freelance and Full Time Work.
       </Heading.H1>

@@ -7,7 +7,7 @@ export default function Bold({ children, className, ...resProps }: BoldProps) {
     <p
       className={cn(
         className,
-        `${popinsBold.className} text-[14px] md:text-[16px]`
+        `${popinsBold.className} text-[14px] md:text-[16px] tracking-wide `
       )}
       {...resProps}
     >
