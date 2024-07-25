@@ -68,7 +68,8 @@ export default function Moon({ children, className, ...resProps }: MoonProps) {
       <Image
         ref={moonElement}
         className={cn(
-          "col-start-1 col-span-3 md:col-start-2 md:col-span-2 xl:col-start-3 xl:col-span-1"
+          "col-start-1 col-span-3 md:col-start-2 md:col-span-2 xl:col-start-3 xl:col-span-1",
+          "w-[min(70vw,600px)]"
         )}
         src="/hero/moon.png"
         alt="moon"
