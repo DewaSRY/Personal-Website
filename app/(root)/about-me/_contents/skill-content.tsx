@@ -16,7 +16,6 @@ export default function SkillContent({
         className,
         "mt-[50px] py-[10px] overflow-hidden scrollbar-hide"
       )}
-      {...resProps}
     >
       <SkillCard.Card>
         <Heading.H3>Frontend Developer</Heading.H3>

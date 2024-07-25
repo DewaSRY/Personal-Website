@@ -49,7 +49,7 @@ export default function TextBanner({
       <hr className="h-2 p-[2px] translate-x-[-1%]" />
       <Heading.Quote className={cn("text-white-three")}>
         I will help you to build a beautiful and cool website and if you want to
-        have someone to make something done, let's talk!.It might me.
+        have someone to make something done, let&apos;s talk!.It might me.
       </Heading.Quote>
       <div className="flex w-full gap-8 my-8">
         <Button className="text-white-two bg-gradient-three ">

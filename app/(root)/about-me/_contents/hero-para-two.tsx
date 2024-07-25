@@ -10,7 +10,7 @@ export default function HeroParaTwo({
   ...resProps
 }: HeroParaTwoProps) {
   return (
-    <div {...resProps} className={cn(className, "px-4 md:border-l-2")}>
+    <div className={cn(className, "px-4 md:border-l-2")}>
       <Paragraph.Description className="py-4 text-white-two">
         My first job was filled with challenges. I had to conduct meetings
         entirely in English, which was difficult since English is not my first

@@ -38,8 +38,9 @@ export default function SkillsContent({
         <SkillCard.Body>
           I am pretty good with the backend. I am still sharpening my backend
           skills. The hardest project I have on the backend is to make email
-          manager system where I need to do validation via email. I don't have a
-          professional job on the backend, but I will do my best if I have one.
+          manager system where I need to do validation via email. I don&apos;t
+          have a professional job on the backend, but I will do my best if I
+          have one.
         </SkillCard.Body>
       </SkillCard.Card>
       <SkillCard.Card>

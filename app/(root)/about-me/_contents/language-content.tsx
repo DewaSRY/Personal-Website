@@ -16,11 +16,11 @@ export default function LanguageContent({
           imgSrc="/programming-language/java.png"
         />
         <LanguageCard.Body>
-          Java is my first language, and I absolutely love coding with it! It's
-          such a fun language, filled with cool concepts that make every project
-          exciting. I get genuinely thrilled learning Java principles like
-          SOLID, OOP, and design patterns. They make me feel sharp and
-          intellectually engaged, and I enjoy every moment of it.
+          Java is my first language, and I absolutely love coding with it!
+          It&apos;s such a fun language, filled with cool concepts that make
+          every project exciting. I get genuinely thrilled learning Java
+          principles like SOLID, OOP, and design patterns. They make me feel
+          sharp and intellectually engaged, and I enjoy every moment of it.
         </LanguageCard.Body>
       </LanguageCard.Card>
 
@@ -31,10 +31,10 @@ export default function LanguageContent({
         />
         <LanguageCard.Body>
           I absolutely love Python because it makes writing code feel like
-          writing English! It's so intuitive and fun to use. I get a real kick
-          out of solving LeetCode problems with Python, and I'm excited to dive
-          into machine learning with it soon. The possibilities with Python are
-          endless, and I can't wait to explore them all!
+          writing English! It&apos;s so intuitive and fun to use. I get a real
+          kick out of solving LeetCode problems with Python, and I&apos;m
+          excited to dive into machine learning with it soon. The possibilities
+          with Python are endless, and I can&apos;t wait to explore them all!
         </LanguageCard.Body>
       </LanguageCard.Card>
 
@@ -45,10 +45,10 @@ export default function LanguageContent({
         />
         <LanguageCard.Body>
           Rust has an amazing community and is incredibly exciting to learn! The
-          documentation is one of my favorites—it's so clear and helpful. Rust
-          brings fresh, innovative rules to writing code, and I find that
-          thrilling. I've had the opportunity to create tools with Rust, and I
-          absolutely love it. Every project with Rust feels like a new
+          documentation is one of my favorites—it&apos;s so clear and helpful.
+          Rust brings fresh, innovative rules to writing code, and I find that
+          thrilling. I&apos;ve had the opportunity to create tools with Rust,
+          and I absolutely love it. Every project with Rust feels like a new
           adventure!
         </LanguageCard.Body>
       </LanguageCard.Card>

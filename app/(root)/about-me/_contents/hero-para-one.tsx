@@ -10,7 +10,7 @@ export default function HeroParaOne({
   ...resProps
 }: HeroParaOneProps) {
   return (
-    <div {...resProps} className={cn(className, "px-4 xl:border-l-2")}>
+    <div className={cn(className, "px-4 xl:border-l-2")}>
       <Heading.H1 className="text-white-one">Dewa Surya Ariesta</Heading.H1>
       <hr />
       <Paragraph.Description className="py-4 text-white-two">

@@ -15,7 +15,6 @@ export default function ToolsContent({
         "grid grid-cols-auto-fit-100 xl:grid-cols-auto-fit-150 gap-2 md:gap-4 xl:gap-8 px-2",
         className
       )}
-      {...resProps}
     >
       <ProgrammingIcon imageSrc="/tools/angular.png" imageAlt="Angular" />
       <ProgrammingIcon imageSrc="/tools/django.png" imageAlt="Django" />

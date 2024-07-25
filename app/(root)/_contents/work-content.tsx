@@ -47,9 +47,9 @@ export default function WorkContent({
           I work as a front-end developer to develop a warehouse management
           system. The system I developed is an enterprise level application. My
           friend asked me to join them on their team to work on their project,
-          it's a big project so I joined to help and learn what they do on their
-          business. It's a cool experience and it really expands my skill to the
-          next level.
+          it&apos;s a big project so I joined to help and learn what they do on
+          their business. It&apos;s a cool experience and it really expands my
+          skill to the next level.
         </WorkCard.Body>
       </WorkCard.Card>
     </div>
