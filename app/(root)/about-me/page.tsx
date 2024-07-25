@@ -1,6 +1,7 @@
 import { ComponentProps, PropsWithChildren } from "react";
 
 import AboutMeBg from "./_components/about-me-bg";
+import MyHeroSection from "./_containers/my-hero-section";
 interface AboutMeRouteProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function AboutMeRoute({
@@ -8,9 +9,11 @@ export default function AboutMeRoute({
   ...resProps
 }: AboutMeRouteProps) {
   return (
-    <div>
+    <>
       <AboutMeBg />
-      about me page
-    </div>
+      <div className="relative z-[1]">
+        <MyHeroSection />
+      </div>
+    </>
   );
 }

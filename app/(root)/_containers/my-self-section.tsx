@@ -30,7 +30,7 @@ export default function MySelfSection({
           )}
         >
           <Image
-            src="/my-self/my_one.png"
+            src="/my-self/me_one.png"
             width={300}
             height={500}
             alt="me two"
