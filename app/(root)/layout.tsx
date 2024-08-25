@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Header from "@container/header";
 
 import Footer from "../../containers/footer";
 export default function RootLayout({
@@ -9,13 +10,7 @@ export default function RootLayout({
   return (
     <>
       <header className=" ">
-        <Image
-          src="/logos/logo.png"
-          width={50}
-          height={50}
-          alt="dewa surya logo"
-          className="my-auto fixed top-4 left-2 z-10"
-        />
+        <Header />
       </header>
       <main className="py-8">{children}</main>
       <Footer />

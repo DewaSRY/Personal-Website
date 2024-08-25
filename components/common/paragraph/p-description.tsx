@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import { popinsRegular, popinsBold } from "./utils";
 
 const paraType = {
-  description: ` text-[16px] md:text-[16px]`,
-  date: ` text-[10px] md:text-[12px]`,
-  quote: ` text-[24px] md:text-[24px]`,
+  description: ` text-[16px] md:text-[16px] `,
+  date: ` text-[10px] md:text-[12px] `,
+  quote: ` text-[24px] md:text-[24px] `,
 };
 
 interface DescriptionProps extends ComponentProps<"p">, PropsWithChildren {
@@ -22,9 +22,13 @@ export default function Description({
   return (
     <p
       className={cn(
-        className,
         paraType[type],
-        bold ? popinsBold.className + "tracking-wide" : popinsRegular.className
+        `${
+          bold
+            ? popinsBold.className + "tracking-wide"
+            : popinsRegular.className
+        } `,
+        className
       )}
       {...resProps}
     >
