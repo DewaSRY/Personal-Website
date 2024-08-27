@@ -1,0 +1,31 @@
+.header {
+  transition: transform 0.5s ease-in-out;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  transform: translateY(50%);
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navigation {
+  border: 0.5px transparent;
+  border-radius: 32px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+
+  transition: color 1.5s ease-in-out;
+}
+
+.fixed-header > .navigation {
+  border: solid white;
+  background-color: var(--white-one);
+  /* color: var(--white-one); */
+}

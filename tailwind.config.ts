@@ -12,19 +12,48 @@ const config = {
   ],
   prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
-        footer: "var(--footer)",
-        "primary-one": "#222831",
-        "primary-two": "#31363F",
-        "primary-three": "#567D80",
-        "primary-four": "#399966",
-        "black-one": "#222426",
-        "black-two": "#0F1726",
-        "white-one": "#B1F2FF",
-        "white-two": "#F2F7FF",
-        "white-three": "#ADFBFF",
-        "white-alfa": "rgba(0, 0, 0, 0.704)",
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
+        },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        destructive: {
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
+        },
+        popover: {
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
+        },
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
       },
       gridTemplateColumns: {
         "auto-fill-100": "repeat(auto-fill, minmax(100px, 1fr))",
@@ -35,7 +64,6 @@ const config = {
         "auto-fit-750": "repeat(auto-fit, minmax(750px, 1fr))",
         "auto-fit-max-600": "repeat(auto-fit, minmax(1fr, 600px))",
       },
-
       borderRadius: {
         lg: "8px",
         md: "6px",

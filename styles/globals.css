@@ -2,15 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/**
-Base layer doesn't realey importent for now.
-*/
+:root {
+  --white-one: #f2f7ff;
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+  /*primary*/
+  --primary: #bc63ba;
+  --primary-foreground: #cc7470;
+  /*secondary*/
+  --secondary: #735dc5;
+  --secondary-foreground: #ea6662;
+
+  /*destructive*/
+  --destructive: #b0213a;
+  --destructive-foreground: #ef7187;
+  /*popover*/
+  --popover: #f7c39f;
+  --popover-foreground: #6c9408;
+  /*muted*/
+  --muted: #453b78;
+  --muted-foreground: #1a152e;
+
+  /*background*/
+  --background: #5778a9;
+  --foreground: #222831;
+
+  /*input*/
+  --input: #f0f0f0;
+
+  /* Note Have Color */
+
+  /*accent*/
+  --accent: hsl(210 40% 96.1%);
+  --accent-foreground: hsl(222.2 47.4% 11.2%);
+
+  /*card*/
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222.2 47.4% 11.2%);
+  /*border*/
+  --border: hsl(214.3 31.8% 91.4%);
+
+  /*input*/
+  --ring: hsl(215 20.2% 65.1%);
+  /*radius*/
+  --radius: 0.5rem;
 }
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+
+.test {
+  /* transform: translateX(); */
+  transition: 0.1s ease-in-out;
 }

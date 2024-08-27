@@ -9,20 +9,11 @@ import {
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-interface MoonProps extends ComponentProps<"div">, PropsWithChildren {}
+interface MoonProps extends ComponentProps<"img">, PropsWithChildren {}
 
 export default function Moon({ children, className, ...resProps }: MoonProps) {
   const moonElement = useRef<ElementRef<"img">>(null);
-
-  useGSAP(() => {
-    // let mm = gsap.matchMedia();
-    const homeSectionElement = document.getElementById("home");
+  useEffect(() => {
     function activeMagneto(event: MouseEvent) {
       const moon = moonElement.current;
       if (moon) {
@@ -30,52 +21,37 @@ export default function Moon({ children, className, ...resProps }: MoonProps) {
         const magnetoStrange = 140;
         const newX = (event.clientX - boundingBox?.left) / moon.offsetWidth;
         const newY = (event.clientY - boundingBox?.top) / moon.offsetHeight;
-
-        gsap.to(moonElement.current, {
-          duration: 0.8,
-          scale: 1.2,
-          translateX: newX * magnetoStrange,
-          translateY: newY * magnetoStrange,
-          ease: "power4.out",
-        });
+        const translateX = newX * magnetoStrange;
+        const translateY = newY * magnetoStrange;
+        moon.style.transform = `translate(${translateX}px,${translateY}px)`;
+        moon.style.transition = ` 0.1s ease-in-out`;
       }
     }
     function resetMagneto(event: MouseEvent) {
       const moon = moonElement.current;
       if (moon) {
-        gsap.to(moonElement.current, {
-          duration: 2,
-          translateX: 0,
-          translateY: 0,
-          ease: "power4.inOut",
-          scale: 1,
-        });
+        moon.style.transform = `translate(0px,0px)`;
+        moon.style.transition = ` 1s ease-in-out`;
       }
     }
-    homeSectionElement!.addEventListener("mousemove", activeMagneto);
-    homeSectionElement!.addEventListener("mouseleave", resetMagneto);
-  });
+    document.documentElement.addEventListener("mousemove", activeMagneto);
+    document.documentElement.addEventListener("mouseleave", resetMagneto);
+    return () => {
+      document.documentElement.removeEventListener("mousemove", activeMagneto);
+      document.documentElement.removeEventListener("mouseleave", resetMagneto);
+    };
+  }, []);
 
   return (
-    <div
+    <Image
       {...resProps}
-      className={cn(
-        className,
-        "py-[100px] px-50px grid grid-cols-3 overflow-hidden"
-      )}
-    >
-      <Image
-        ref={moonElement}
-        className={cn(
-          "col-start-1 col-span-3 md:col-start-2 md:col-span-2 xl:col-start-3 xl:col-span-1",
-          "w-[min(70vw,600px)]"
-        )}
-        src="/hero/moon.png"
-        alt="moon"
-        width={900}
-        height={900}
-        loading="lazy"
-      />
-    </div>
+      ref={moonElement}
+      src="/hero/moon.png"
+      alt="moon"
+      width={600}
+      height={600}
+      loading="lazy"
+      className={cn(className)}
+    />
   );
 }

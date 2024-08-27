@@ -9,11 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <header className=" ">
-        <Header />
-      </header>
       <main className="py-8">{children}</main>
-      <Footer />
     </>
   );
 }
