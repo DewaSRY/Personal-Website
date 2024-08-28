@@ -45,7 +45,12 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true} className={cn(inter.className, "")}>
         <Header />
-        <main className={cn("bg-background", "pt-14 min-h-[100vh]")}>
+        <main
+          className={cn(
+            "bg-background",
+            "pt-14 min-h-[100vh] overflow-x-hidden"
+          )}
+        >
           {children}
         </main>
         <Footer />

@@ -7,7 +7,6 @@ import HomeImage from "@/containers/home-image";
 import HomeText from "@/containers/home-text";
 import { Button } from "@/components/ui/button";
 export default function HomeRoute() {
-  const MoonElement = dynamic(() => import("@/components/moon"));
   return (
     <div id="home" className="h-[100vh] grid grid-cols-12 ">
       <HomeImage
