@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
+import Header from "@container/header";
+import Footer from "@container/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,11 +43,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        suppressHydrationWarning={true}
-        className={cn(inter.className, "max-w-[2000px] mx-auto bg-primary-one")}
-      >
-        {children}
+      <body suppressHydrationWarning={true} className={cn(inter.className, "")}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

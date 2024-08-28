@@ -1,6 +1,7 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 import { junge } from "./utils";
+
 interface H4Props extends ComponentProps<"h4">, PropsWithChildren {}
 export default function H4({ children, className, ...resProps }: H4Props) {
   return (

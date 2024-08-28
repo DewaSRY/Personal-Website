@@ -1,7 +1,7 @@
 import Paragraph from "@/components/common/paragraph";
 import dynamic from "next/dynamic";
 export default function HomeRoute() {
-  const MoonElement = dynamic(() => import("@/components/Moon"));
+  const MoonElement = dynamic(() => import("@/components/moon"));
   return (
     <div id="home">
       <MoonElement />

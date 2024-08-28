@@ -1,11 +1,14 @@
 import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren } from "react";
 import { junge } from "./utils";
-interface QuoteProps extends PropsWithChildren, ComponentProps<"p"> {}
+interface QuoteProps extends PropsWithChildren, ComponentProps<"p"> {
+  quote?: boolean;
+}
 
 export default function Quote({
   children,
   className,
+  quote = false,
   ...resProps
 }: QuoteProps) {
   return (
@@ -13,7 +16,7 @@ export default function Quote({
       {...resProps}
       className={cn(className, `${junge.className} text-[20px] md:text-[24px]`)}
     >
-      &apos;&apos;{children}&apos;&apos;
+      {quote ? <> &apos;&apos;{children}&apos;&apos;</> : children}
     </p>
   );
 }
