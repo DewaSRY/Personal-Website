@@ -8,7 +8,7 @@ interface ExperienceCardsProps
 const experience = [
   {
     title: "I am REVOU associate ",
-    dec: "I Learn on Software engineer boot camp to hone my skill and make connections in the field and It&apos;s pretty cool, i love the boot camp ",
+    dec: "I Learn on Software engineer boot camp to hone my skill and make connections in the field and It's pretty cool, i love the boot camp ",
     date: "October 2023 to May 2024",
   },
   {

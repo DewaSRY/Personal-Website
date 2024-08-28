@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 import Brain from "@/components/brain";
 import ExperienceCards from "@/containers/experience-cards";
 import SkillCards from "@/containers/skill-containers";
+import Paragraph from "@/components/common/paragraph";
 interface pageProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function AboutMe({ children, ...resProps }: pageProps) {
@@ -25,14 +26,35 @@ export default function AboutMe({ children, ...resProps }: pageProps) {
       <div
         ref={containerRef}
         className={cn(
-          "w-full lg:w-2/3 xl:w-1/2 mx-2 overflow-y-auto no-scrollbar"
+          "w-full lg:w-2/3 xl:w-1/2 mx-2 overflow-y-auto no-scrollbar",
+          "px-4"
         )}
       >
-        <div className="text-white-one mt-12">
-          <Heading.H1>Dewa Surya Ariesta</Heading.H1>
-        </div>
-        <AboutMeText className="mt-12" />
-        <SkillCards />
+        <Wrapper className="text-white-one  lg:mt-[10vh]">
+          <Heading.H1 className=" mb-8 ">Dewa Surya Ariesta</Heading.H1>
+          <Heading.Quote setQuote>
+            I am an Extrovert person, it&apos;s might be more fun if we makes
+            schedule to talk
+          </Heading.Quote>
+          <Paragraph.Description>
+            My name is Dewa Surya Ariesta, I was born in 2004 and I am gen-Z. If
+            you want to know my MBTI, I am an ENTP. and for my star sign, I am
+            Ariest.
+          </Paragraph.Description>
+        </Wrapper>
+        {/* My Biography */}
+        <Wrapper>
+          <Heading.H2 className="text-white-one mb-8 ">My Biography</Heading.H2>
+          <AboutMeText className="" />
+        </Wrapper>
+        {/* My Skill */}
+        <Wrapper>
+          <Heading.H2 className="text-white-one mb-8 ">My Skill</Heading.H2>
+          <SkillCards />
+        </Wrapper>
+        <Heading.H2 className="text-white-one mb-8">
+          MY Work Experience
+        </Heading.H2>
         <ExperienceCards />
       </div>
 
@@ -45,6 +67,17 @@ export default function AboutMe({ children, ...resProps }: pageProps) {
       >
         <Brain scrollYProgress={scrollYProgress} />
       </div>
+    </div>
+  );
+}
+
+function Wrapper({
+  children,
+  className,
+}: PropsWithChildren & ComponentProps<"div">) {
+  return (
+    <div className={cn("mb-24 lg:mb-[20vh] xl:mb-[40vh] ", className)}>
+      {children}
     </div>
   );
 }
