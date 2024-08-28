@@ -7,21 +7,20 @@ import {
   useRef,
   useEffect,
 } from "react";
-import dynamic from "next/dynamic";
 import { motion, useScroll } from "framer-motion";
 import AboutMeText from "@/containers/aboutme-text";
-import Paragraph from "@/components/common/paragraph";
 import Heading from "@/components/common/heading";
 import { cn } from "@/lib/utils";
 import Brain from "@/components/brain";
+import ExperienceCards from "@/containers/experience-cards";
+import SkillCards from "@/containers/skill-containers";
 interface pageProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function AboutMe({ children, ...resProps }: pageProps) {
-  const MoonElement = dynamic(() => import("@/components/moon"));
   const containerRef = useRef<ComponentRef<"div">>(null);
   const { scrollYProgress } = useScroll({ container: containerRef });
   return (
-    <div className="flex h-screen relative">
+    <div className="lg:flex h-auto lg:h-screen  relative">
       {/* main container */}
       <div
         ref={containerRef}
@@ -33,6 +32,8 @@ export default function AboutMe({ children, ...resProps }: pageProps) {
           <Heading.H1>Dewa Surya Ariesta</Heading.H1>
         </div>
         <AboutMeText className="mt-12" />
+        <SkillCards />
+        <ExperienceCards />
       </div>
 
       {/* Brain Component */}

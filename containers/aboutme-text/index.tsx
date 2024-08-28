@@ -30,7 +30,9 @@ export default function AboutMeText({
     >
       {aboutMeTexts.map((aboutMe, id) => (
         <AccordionItem key={id} value={`value-${id}`}>
-          <AccordionContent>{aboutMe}</AccordionContent>
+          <AccordionContent>
+            <Paragraph.Description>{aboutMe}</Paragraph.Description>
+          </AccordionContent>
           <AccordionTrigger />
         </AccordionItem>
       ))}
