@@ -21,6 +21,7 @@ const config = {
     },
     extend: {
       colors: {
+        "white-one": "var(--white-one)",
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",

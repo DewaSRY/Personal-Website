@@ -45,7 +45,14 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true} className={cn(inter.className, "")}>
         <Header />
-        <main>{children}</main>
+        <main
+          className={cn(
+            "bg-gradient-to-t from-background to-gray-200 ",
+            "pt-14 min-h-[100vh]"
+          )}
+        >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

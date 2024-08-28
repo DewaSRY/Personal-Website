@@ -4,7 +4,8 @@ export default function HomeRoute() {
   const MoonElement = dynamic(() => import("@/components/moon"));
   return (
     <div id="home">
-      <MoonElement />
+      home
+      {/* <MoonElement /> */}
     </div>
   );
 }

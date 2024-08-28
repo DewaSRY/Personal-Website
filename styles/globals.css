@@ -46,8 +46,3 @@
   /*radius*/
   --radius: 0.5rem;
 }
-
-.test {
-  /* transform: translateX(); */
-  transition: 0.1s ease-in-out;
-}

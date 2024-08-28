@@ -10,11 +10,11 @@ import React, {
 
 import "./sticky-header.css";
 import Paragraph from "@/components/common/paragraph";
-import { cn } from "@/lib/utils";
 
-import "@/components/common/paragraph";
+import NavContainer from "./nav-container";
+import SocialContainer from "./social-container";
 
-export default function index() {
+export default function Header() {
   const headerElement = useRef<ComponentRef<"header">>(null);
 
   useEffect(() => {
@@ -22,11 +22,13 @@ export default function index() {
       if (headerElement.current) {
         const { offsetTop, classList } = headerElement.current;
         if (window.scrollY > offsetTop) {
-          classList.add("fixed-header");
-          classList.remove("sticky-header");
+          console.log("hallo");
+          // classList.add("fixed-header");
+          // classList.remove("sticky-header");
         } else {
-          classList.remove("fixed-header");
-          classList.add("sticky-header");
+          console.log("hy");
+          // classList.remove("fixed-header");
+          // classList.add("sticky-header");
         }
       }
     }
@@ -40,25 +42,17 @@ export default function index() {
     <header
       ref={headerElement}
       id="header"
-      className="header min-w-max  py-4 h-[64px]  sticky-header "
+      className="w-full max-h-max fixed top-0"
     >
-      <div className="navigation  flex justify-evenly">
-        <Paragraph.Description
-          id="header-logo"
-          type="quote"
-          className="text-white"
-        >
-          Dewa Surya Ariesta
-        </Paragraph.Description>
-
-        <div className="flex gap-4">
-          <Paragraph.Description className="text-white">
-            Home
-          </Paragraph.Description>
-          <Paragraph.Description className="text-white">
-            Contact
+      <div className="h-12  flex justify-between max-w-[1200px] px-2  mx-auto items-center my-2 ">
+        {/* nav item */}
+        <NavContainer className="" />
+        <div className=" bg-foreground text-white py-1 px-2">
+          <Paragraph.Description type="quote" className="">
+            Dewa
           </Paragraph.Description>
         </div>
+        <SocialContainer className="" />
       </div>
     </header>
   );
