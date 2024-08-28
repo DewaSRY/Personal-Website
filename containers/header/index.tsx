@@ -23,17 +23,16 @@ export default function Header() {
   useEffect(() => {
     let prevScrollY = window.scrollY;
     function handlerHeaderSticky(event: Event) {
-      const { current } = headerElement;
       const headerEl = headerElement.current;
       const navContainerEl = navigationContainer.current;
       /**This code use to hide header when window get scroll down */
-      if (headerEl) {
+      if (navContainerEl) {
         if (prevScrollY < window.scrollY) {
-          headerEl.style.transition = "transform 0.8 ease-in";
-          headerEl.style.transform = "translateY(-100%)";
+          navContainerEl.style.transition = "transform 0.8 ease-in";
+          navContainerEl.style.transform = "translateY(-150%)";
         } else {
-          headerEl.style.transition = "transform 0.3 ease-in";
-          headerEl.style.transform = "translateY(0)";
+          navContainerEl.style.transition = "transform 0.3 ease-in";
+          navContainerEl.style.transform = "translateY(0)";
         }
         prevScrollY = window.scrollY;
       }
@@ -57,11 +56,12 @@ export default function Header() {
     <header
       ref={headerElement}
       id="header"
-      className={cn("w-full max-h-max fixed top-0", "duration-300 ")}
+      className={cn("w-full max-h-max ", " fixed top-0")}
     >
       <div
         ref={navigationContainer}
         className={cn(
+          "duration-300  ",
           "h-12  flex justify-between max-w-[1200px] px-2  mx-auto items-center my-2 ",
           "rounded-md "
         )}

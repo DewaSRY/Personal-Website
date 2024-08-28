@@ -1,6 +1,6 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
-import { junge } from "./utils";
+import { Montagu_Slab } from "./utils";
 
 interface H1Props extends ComponentProps<"div">, PropsWithChildren {}
 export default function H1({ children, className, ...resProps }: H1Props) {
@@ -8,8 +8,7 @@ export default function H1({ children, className, ...resProps }: H1Props) {
     <h1
       {...resProps}
       className={cn(
-        junge.className,
-        `${junge.className} text-[41px] md:text-[48px] xl:text-[61px]`,
+        `${Montagu_Slab.className} text-3xL md:text-7xl xl:text-9xl `,
         className
       )}
     >
