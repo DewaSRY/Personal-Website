@@ -8,7 +8,7 @@ export default function H1({ children, className, ...resProps }: H1Props) {
     <h1
       {...resProps}
       className={cn(
-        `${Montagu_Slab.className} text-3xL md:text-7xl xl:text-9xl `,
+        `${Montagu_Slab.className} text-5xl sm:text-7xl xl:text-9xl `,
         className
       )}
     >

@@ -8,19 +8,25 @@ interface SocialContainerProps
 
 const socialLink = [
   {
-    imageAlt: "github",
-    imageSrc: "/socials-icons/github.png",
-    socialLink: "/",
-  },
-  {
-    imageAlt: "gmail",
-    imageSrc: "/socials-icons/gmail.png",
-    socialLink: "/",
+    imageAlt: "what app",
+    imageSrc: "/socials-icons/whatsapp-logo.png",
+    socialLink: "https://wa.me/0812 6811 1563",
   },
   {
     imageAlt: "linkedin",
     imageSrc: "/socials-icons/linkedin.png",
-    socialLink: "/",
+    socialLink: "https://www.linkedin.com/in/dewa-surya/",
+  },
+  {
+    imageAlt: "gmail",
+    imageSrc: "/socials-icons/gmail.png",
+    socialLink: "sdewa6645@gmail.com",
+  },
+
+  {
+    imageAlt: "github",
+    imageSrc: "/socials-icons/github.png",
+    socialLink: "https://github.com/DewaSRY",
   },
 ];
 
