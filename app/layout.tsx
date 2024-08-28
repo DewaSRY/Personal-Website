@@ -47,7 +47,7 @@ export default function RootLayout({
         <Header />
         <main
           className={cn(
-            "bg-gradient-to-t from-background to-gray-200 ",
+            "bg-gradient-to-r from-background to-gray-200 ",
             "pt-14 min-h-[100vh]"
           )}
         >

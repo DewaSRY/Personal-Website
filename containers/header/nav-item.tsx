@@ -18,20 +18,21 @@ export default function NavItem({
   const currentPhatName = phatName.length > 0 ? phatName : "Home";
 
   return (
-    <Heading.Nav
+    <div
       className={cn(
-        "duration-300 transition-colors border-b-2 border-transparent  origin-right",
-        `${currentPhatName === phatTo ? "text-muted" : "text-white-one"} `,
-        `${
-          currentPhatName === phatTo && "hover:border-b-2 hover:border-muted"
-        } `,
-        `${
-          currentPhatName !== phatTo &&
-          "hover:border-b-2 hover:border-white-one"
-        } `
+        "group",
+        `${currentPhatName === phatTo ? "text-muted" : "text-white-one"} `
       )}
     >
-      <Link href={phatTo}>{children}</Link>
-    </Heading.Nav>
+      <Link href={phatTo}>
+        <Heading.Nav>{children}</Heading.Nav>
+      </Link>
+      <hr
+        className={cn(
+          "h-1 duration-300 ease-in border-0  w-0 group-hover:w-full ",
+          `${currentPhatName === phatTo ? "bg-muted" : "bg-white"} `
+        )}
+      />
+    </div>
   );
 }

@@ -46,3 +46,10 @@
   /*radius*/
   --radius: 0.5rem;
 }
+
+.test {
+  transition: transform 0.8 ease-in;
+
+  background-color: #5778a9b6;
+  background-color: transparent;
+}
