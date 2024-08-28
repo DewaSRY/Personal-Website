@@ -23,11 +23,7 @@ export default function Description({
     <p
       className={cn(
         paraType[type],
-        `${
-          bold
-            ? popinsBold.className + "tracking-wide"
-            : popinsRegular.className
-        } `,
+        `${bold ? popinsBold.className + "  " : popinsRegular.className} `,
         className
       )}
       {...resProps}
