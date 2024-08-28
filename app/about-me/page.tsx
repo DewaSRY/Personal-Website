@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  ComponentProps,
-  PropsWithChildren,
-  ComponentRef,
-  useRef,
-  useEffect,
-} from "react";
+import { ComponentProps, PropsWithChildren, ComponentRef, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import AboutMeText from "@/containers/aboutme-text";
 import Heading from "@/components/common/heading";
@@ -15,6 +9,8 @@ import Brain from "@/components/brain";
 import ExperienceCards from "@/containers/experience-cards";
 import SkillCards from "@/containers/skill-containers";
 import Paragraph from "@/components/common/paragraph";
+import MouseSvg from "@/components/svg/mouse";
+import HandSignSvg from "@/components/svg/hand-sign";
 interface pageProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function AboutMe({ children, ...resProps }: pageProps) {
@@ -30,7 +26,7 @@ export default function AboutMe({ children, ...resProps }: pageProps) {
           "px-4"
         )}
       >
-        <Wrapper className="text-white-one  lg:mt-[10vh]">
+        <Wrapper className="text-white-one lg:mt-[10vh]">
           <Heading.H1 className=" mb-8 ">Dewa Surya Ariesta</Heading.H1>
           <Heading.Quote setQuote>
             I am an Extrovert person, it&apos;s might be more fun if we makes
@@ -41,6 +37,9 @@ export default function AboutMe({ children, ...resProps }: pageProps) {
             you want to know my MBTI, I am an ENTP. and for my star sign, I am
             Ariest.
           </Paragraph.Description>
+          <div className="absolute right-4 bottom-0 text-white-one border-b border-white-one">
+            <HandSignSvg />
+          </div>
         </Wrapper>
         {/* My Biography */}
         <Wrapper>
@@ -76,8 +75,17 @@ function Wrapper({
   className,
 }: PropsWithChildren & ComponentProps<"div">) {
   return (
-    <div className={cn("mb-24 lg:mb-[20vh] xl:mb-[40vh] ", className)}>
+    <div
+      className={cn(
+        "mb-24 lg:mb-[30vh] xl:mb-[40vh] relative ",
+        "pb-[20vh]",
+        className
+      )}
+    >
       {children}
+      <div className="absolute left-0 bottom-0 text-white-one">
+        <MouseSvg />
+      </div>
     </div>
   );
 }
