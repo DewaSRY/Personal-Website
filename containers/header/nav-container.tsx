@@ -24,7 +24,7 @@ export default function NavContainer({
   ...resProps
 }: NavContainerProps) {
   return (
-    <div className={cn("flex gap-4", className)}>
+    <div className={cn(className)}>
       {links.map((phat, id) => (
         <NavItem key={id} phatTo={phat.url}>
           {phat.title}

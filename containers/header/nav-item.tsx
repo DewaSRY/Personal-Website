@@ -21,7 +21,7 @@ export default function NavItem({
     <div
       className={cn(
         "group",
-        `${currentPhatName === phatTo ? "text-muted" : "text-white-one"} `
+        `${currentPhatName === phatTo ? "text-popover" : "text-white-one"} `
       )}
     >
       <Link href={phatTo}>
@@ -30,7 +30,7 @@ export default function NavItem({
       <hr
         className={cn(
           "h-1 duration-300 ease-in border-0  w-0 group-hover:w-full ",
-          `${currentPhatName === phatTo ? "bg-muted" : "bg-white"} `
+          `${currentPhatName === phatTo ? "bg-popover" : "bg-white"} `
         )}
       />
     </div>

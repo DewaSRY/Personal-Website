@@ -52,4 +52,5 @@
 
   background-color: #5778a9b6;
   background-color: transparent;
+  border-color: var(--input);
 }
