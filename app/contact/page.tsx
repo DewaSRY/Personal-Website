@@ -4,9 +4,7 @@ import { ComponentProps, PropsWithChildren } from "react";
 import ContactForm from "@/containers/contact-form";
 import { cn } from "@/lib/utils";
 
-interface pageProps extends ComponentProps<"div">, PropsWithChildren {}
-
-export default function Contact({ children, ...resProps }: pageProps) {
+export default function Contact() {
   return (
     <div className="flex flex-col lg:flex-row">
       <div

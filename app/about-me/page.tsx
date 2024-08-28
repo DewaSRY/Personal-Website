@@ -11,9 +11,8 @@ import SkillCards from "@/containers/skill-containers";
 import Paragraph from "@/components/common/paragraph";
 import MouseSvg from "@/components/svg/mouse";
 import HandSignSvg from "@/components/svg/hand-sign";
-interface pageProps extends ComponentProps<"div">, PropsWithChildren {}
 
-export default function AboutMe({ children, ...resProps }: pageProps) {
+export default function AboutMe() {
   const containerRef = useRef<ComponentRef<"div">>(null);
   const { scrollYProgress } = useScroll({ container: containerRef });
   return (

@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@container/header";
 import Footer from "@container/footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DewaSRY | Personal",
@@ -43,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={cn(inter.className, "")}>
+      <body suppressHydrationWarning={true}>
         <Header />
         <main
           className={cn(
