@@ -1,3 +1,4 @@
+"use client";
 import { ComponentProps, PropsWithChildren, useState } from "react";
 
 import {
@@ -18,6 +19,7 @@ import { cn } from "@/lib/utils";
 import Hamburger from "./hamburger";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 interface HeaderSmallProps extends ComponentProps<"div">, PropsWithChildren {}
 
@@ -25,13 +27,9 @@ export default function HeaderSmall({
   children,
   ...resProps
 }: HeaderSmallProps) {
-  const [goal, setGoal] = useState(350);
-
-  function onClick(adjustment: number) {
-    setGoal(Math.max(200, Math.min(400, goal + adjustment)));
-  }
+  const phatName = usePathname() + "10";
   return (
-    <Drawer>
+    <Drawer key={phatName}>
       <div className="fixed top-2 right-2 z-50">
         <DrawerTrigger>
           <Hamburger className="lg:hidden" />

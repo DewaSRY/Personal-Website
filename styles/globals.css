@@ -45,6 +45,11 @@
   --ring: hsl(215 20.2% 65.1%);
   /*radius*/
   --radius: 0.5rem;
+
+  --def-transition-duration: 0.3s;
+  --loader-text-color: #f6e9fe;
+  --loader-dot-color: #a51ff6;
+  --loader-bg: #100319;
 }
 
 .test {

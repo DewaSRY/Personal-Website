@@ -31,7 +31,7 @@ export default function ExperienceCards({
   return (
     <div>
       {experience.map((exp, id) => (
-        <ExperienceCard.Card>
+        <ExperienceCard.Card key={id}>
           <ExperienceCard.Side sides={(id + 1) % 2 === 0 ? "left" : "right"}>
             <ExperienceCard.Body.Date>{exp.date}</ExperienceCard.Body.Date>
             <ExperienceCard.Body.Title>{exp.title}</ExperienceCard.Body.Title>

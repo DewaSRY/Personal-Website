@@ -1,6 +1,8 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import MyIllustrationIMg from "../../public/hero/my-illustration.png";
+
 interface HomeImageProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function HomeImage({
@@ -15,6 +17,8 @@ export default function HomeImage({
         fill
         className="object-cover h-full hidden lg:block"
         alt="my-illustration"
+        placeholder="blur"
+        blurDataURL="/blure/hero.txt"
       />
 
       {/* Text Logo */}

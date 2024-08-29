@@ -49,7 +49,7 @@ export default function SkillContainer({
       )}
     >
       {skills.map((skill, id) => (
-        <SkillIcon key={id} text={skill} />
+        <SkillIcon key={id + skill} text={skill} />
       ))}
     </div>
   );

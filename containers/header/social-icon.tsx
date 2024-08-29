@@ -19,15 +19,14 @@ export default function SocialIcon({
   return (
     <Paragraph.Link
       hrfTo={socialLink}
-      className={cn("w-12 h-12 py-2 ", className)}
+      className={cn(
+        "w-12 h-12 py-2 relative ",
+        className,
+        "border-2 border-transparent rounded-full transition-colors duration-300 ease-in-out",
+        "hover:border-primary"
+      )}
     >
-      <Image
-        className=" my-auto "
-        src={imageSrc}
-        alt={imageAlt}
-        width={40}
-        height={40}
-      />
+      <Image className=" my-auto " src={imageSrc} alt={imageAlt} fill />
     </Paragraph.Link>
   );
 }
