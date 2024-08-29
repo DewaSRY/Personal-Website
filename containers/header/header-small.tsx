@@ -16,6 +16,8 @@ import NavContainer from "./nav-container";
 import SocialContainer from "./social-container";
 import { cn } from "@/lib/utils";
 import Hamburger from "./hamburger";
+import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
 
 interface HeaderSmallProps extends ComponentProps<"div">, PropsWithChildren {}
 
@@ -35,10 +37,20 @@ export default function HeaderSmall({
           <Hamburger className="lg:hidden" />
         </DrawerTrigger>
       </div>
-      <DrawerContent>
-        <DrawerHeader className="mx-auto w-full max-w-sm text-white-one">
-          <DrawerTitle>Dewa Surya Ariesta</DrawerTitle>
-          <DrawerDescription className="text-white">
+      <DrawerContent className="">
+        <DrawerClose className="absolute right-2 top-7 sm:hidden">
+          <Button variant="primary" className="text-white">
+            <X />
+          </Button>
+        </DrawerClose>
+        <DrawerHeader
+          className={cn(
+            "mx-auto w-full max-w-sm text-white-one",
+            " py-4 px-6 "
+          )}
+        >
+          <DrawerTitle className="text-left">Dewa Surya Ariesta</DrawerTitle>
+          <DrawerDescription className="text-white text-left">
             I will help you to build a beautiful and cool website
           </DrawerDescription>
         </DrawerHeader>

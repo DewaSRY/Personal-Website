@@ -19,7 +19,7 @@ const buttonVariants = cva(
         primary:
           "bg-primary-one text-primary-four capitalize border border-transparent hover:border-primary-four hover:bg-primary-two hover:text-primary-one",
         secondary:
-          "bg-primary-four text-primary-one capitalize border border-transparent hover:border-primary-four hover:bg-primary-one hover:text-primary-four",
+          "bg-secondary  hover:bg-secondary-foreground text-primary-one capitalize border border-transparent   ",
       },
       size: {
         default: "h-10 px-4 py-2",

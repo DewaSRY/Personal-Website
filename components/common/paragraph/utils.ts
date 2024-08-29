@@ -5,6 +5,6 @@ export const popinsRegular = _Poppins({
   preload: false,
 });
 export const popinsBold = _Poppins({
-  weight: "900",
+  weight: "600",
   preload: false,
 });

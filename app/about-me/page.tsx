@@ -42,15 +42,19 @@ export default function AboutMe() {
         </Wrapper>
         {/* My Biography */}
         <Wrapper>
-          <Heading.H2 className="text-white-one mb-8 ">My Biography</Heading.H2>
+          <Heading.H2 className="text-center  text-white-one mb-8 ">
+            Brief About Me
+          </Heading.H2>
           <AboutMeText className="" />
         </Wrapper>
         {/* My Skill */}
         <Wrapper>
-          <Heading.H2 className="text-white-one mb-8 ">My Skill</Heading.H2>
-          <SkillCards />
+          <Heading.H2 className="text-center  text-white-one mb-8 ">
+            My Skill
+          </Heading.H2>
+          <SkillCards className="lg:mt-24" />
         </Wrapper>
-        <Heading.H2 className="text-white-one mb-8">
+        <Heading.H2 className="text-center  text-white-one mb-8 ">
           MY Work Experience
         </Heading.H2>
         <ExperienceCards />

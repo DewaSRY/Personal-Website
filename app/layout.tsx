@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@container/header";
 import Footer from "@container/footer";
+import TransitionProvider from "@/components/TransitionProvider";
 
 export const metadata: Metadata = {
   title: "DewaSRY | Personal",
@@ -42,14 +43,16 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <Header />
-        <main
-          className={cn(
-            "bg-background",
-            "pt-14 min-h-[100vh] overflow-x-hidden"
-          )}
-        >
-          {children}
-        </main>
+        <TransitionProvider>
+          <main
+            className={cn(
+              "bg-background",
+              "pt-14 min-h-[100vh] overflow-x-hidden"
+            )}
+          >
+            {children}
+          </main>
+        </TransitionProvider>
         <Footer />
       </body>
     </html>

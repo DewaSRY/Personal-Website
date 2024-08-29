@@ -1,7 +1,10 @@
 import { ComponentProps, PropsWithChildren } from "react";
 import SkillIcon from "./skill-icon";
+import { cn } from "@/lib/utils";
 
 const skills = [
+  "java",
+  "python",
   "JavaScript",
   "TypeScript",
   "React.js",
@@ -34,10 +37,17 @@ interface SkillContainerProps
 
 export default function SkillContainer({
   children,
+  className,
   ...resProps
 }: SkillContainerProps) {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div
+      className={cn(
+        className,
+
+        "flex flex-wrap gap-4"
+      )}
+    >
       {skills.map((skill, id) => (
         <SkillIcon key={id} text={skill} />
       ))}

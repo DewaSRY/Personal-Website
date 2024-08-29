@@ -22,19 +22,14 @@ export default function AboutMeText({
   ...resProps
 }: AboutMeTextProps) {
   return (
-    <Accordion
-      type="single"
-      defaultValue="value-0"
-      className={cn(className, " text-white")}
-    >
-      {aboutMeTexts.map((aboutMe, id) => (
-        <AccordionItem key={id} value={`value-${id}`}>
-          <AccordionTrigger />
-          <AccordionContent>
-            <Paragraph.Description>{aboutMe}</Paragraph.Description>
-          </AccordionContent>
-        </AccordionItem>
-      ))}
-    </Accordion>
+    <>
+      <div className="text-white">
+        {aboutMeTexts.map((aboutMe, id) => (
+          <Paragraph.Description className=" px-14 py-6">
+            <span className="inline-block mr-4"></span> {aboutMe}
+          </Paragraph.Description>
+        ))}
+      </div>
+    </>
   );
 }

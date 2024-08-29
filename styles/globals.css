@@ -13,8 +13,8 @@
   --secondary-foreground: #ea6662;
 
   /*destructive*/
-  --destructive: #b0213a;
-  --destructive-foreground: #ef7187;
+  --destructive: #f40a31;
+  --destructive-foreground: #000000;
   /*popover*/
   --popover: #f7c39f;
   --popover-foreground: #6c9408;
