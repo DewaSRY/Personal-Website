@@ -1,8 +1,17 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import { ComponentProps, PropsWithChildren } from "react";
+import { ComponentProps, PropsWithChildren, useState } from "react";
 import Heading from "@/components/common/heading";
 import Paragraph from "@/components/common/paragraph";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import style from "./masked.module.css";
+
+import Text from "./text";
+import Buttons from "./buttons";
+
+import useMousePosition from "@/hooks/use-mouse-position";
 
 interface HomeTextProps extends ComponentProps<"div">, PropsWithChildren {}
 
@@ -11,39 +20,33 @@ export default function HomeText({
   className,
   ...resProps
 }: HomeTextProps) {
+  const { x, y } = useMousePosition();
+  const [isHovered, setIsHovered] = useState(false);
+  const size = isHovered ? 400 : 40;
   return (
-    <div className={cn("mx-4 ", className)}>
-      <Heading.H1
-        className={cn("mt-24 md:mt-6", "text-white-one  xl:text-left mb-8")}
-      >
-        Full Stack Developer
-      </Heading.H1>
-      <Paragraph.Description
-        bold
-        className=" text-white-one  xl:text-left"
-        type="quote"
-      >
-        I will help you to build a beautiful and cool website
-      </Paragraph.Description>
-
-      <Heading.Quote setQuote className="mb-8 text-white-one  xl:text-left">
-        if you want to have someone to make something done,
-        <br />
-        let&apos;s talk !, it might me.
-      </Heading.Quote>
+    <>
       <div
-        className={cn(
-          "mt-40 lg:mt-12 ",
-          "flex flex-col lg:flex-row gap-4 w-full   xl:justify-start"
-        )}
+        onMouseEnter={setIsHovered.bind(null, true)}
+        onMouseLeave={setIsHovered.bind(null, false)}
+        className={cn(className, "")}
       >
-        <Button className="lg:w-1/2">
-          <Paragraph.Link hrfTo="/about-me">About me</Paragraph.Link>
-        </Button>
-        <Button className="lg:w-1/2" variant="outline">
-          <Paragraph.Link hrfTo="/contact">Contact Me</Paragraph.Link>
-        </Button>
+        <motion.div
+          animate={{
+            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
+            WebkitMaskSize: `${size}px`,
+            opacity: isHovered ? 1 : 0,
+          }}
+          className={style.mask}
+          transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+        />
+        <Text
+          className="w-full sticky top-0  z-2 "
+          onMouseEnter={setIsHovered.bind(null, true)}
+          onMouseLeave={setIsHovered.bind(null, false)}
+        />
+
+        <Buttons />
       </div>
-    </div>
+    </>
   );
 }
