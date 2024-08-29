@@ -47,7 +47,7 @@ export default function ContactForm({
       ref={form}
       className={cn(
         className,
-        " bg-primary-foreground rounded-lg text-xl flex flex-col gap-8 justify-center ",
+        " bg-white-one rounded-lg text-xl flex flex-col gap-8 justify-center ",
         "px-14 py-20"
       )}
     >

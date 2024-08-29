@@ -4,8 +4,8 @@ interface decProps extends ComponentProps<"div">, PropsWithChildren {}
 
 export default function dec({ children, ...resProps }: decProps) {
   return (
-    <Paragraph.Description className="py-4 text-primary-foreground">
-      {children}
+    <Paragraph.Description className="py-4 text-white-one">
+      <span className="inline-block mr-2"></span> {children}
     </Paragraph.Description>
   );
 }

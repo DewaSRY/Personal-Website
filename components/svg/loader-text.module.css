@@ -11,7 +11,7 @@
 }
 
 .textBody {
-  stroke: var(--primary-foreground);
+  stroke: var(--primary);
   /* stroke: red; */
   animation: 1s infinite alternate animate-stroke;
 }
@@ -19,19 +19,19 @@
 @keyframes animate-stroke {
   0% {
     fill: transparent;
-    stroke: var(--primary-foreground);
+    stroke: var(--primary);
     stroke-width: 3;
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 32%;
   }
   50% {
     fill: transparent;
-    stroke: var(--primary-foreground);
+    stroke: var(--primary);
     stroke-width: 3;
   }
   80%,
   100% {
-    fill: var(--primary-foreground);
+    fill: var(--primary);
     stroke: transparent;
     stroke-width: 0;
 
