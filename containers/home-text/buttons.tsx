@@ -10,7 +10,7 @@ export default function buttons({ children, ...resProps }: buttonsProps) {
     <div
       className={cn(
         "mt-40 lg:mt-12 ",
-        "flex flex-col lg:flex-row gap-4 w-full   xl:justify-start"
+        "flex flex-col lg:flex-row gap-4 w-full  xl:justify-start"
       )}
     >
       <Button className="lg:w-1/2">

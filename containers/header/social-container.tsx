@@ -20,7 +20,8 @@ const socialLink = [
   {
     imageAlt: "gmail",
     imageSrc: "/socials-icons/gmail.png",
-    socialLink: "sdewa6645@gmail.com",
+    socialLink:
+      "https://mail.google.com/mail/?view=cm&fs=1&to=sdewa6645@gmail.com",
   },
 
   {

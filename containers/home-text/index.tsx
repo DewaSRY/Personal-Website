@@ -1,5 +1,5 @@
 "use client";
-
+import { useRef, ComponentRef } from "react";
 import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren, useState } from "react";
 import Heading from "@/components/common/heading";
@@ -7,7 +7,7 @@ import Paragraph from "@/components/common/paragraph";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import style from "./masked.module.css";
-
+import { createPortal } from "react-dom";
 import Text from "./text";
 import Buttons from "./buttons";
 
@@ -36,16 +36,18 @@ export default function HomeText({
             WebkitMaskSize: `${size}px`,
             opacity: isHovered ? 1 : 0,
           }}
-          className={style.mask}
+          className={cn(style.mask, "z-0")}
           transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
         />
+
         <Text
-          className="w-full sticky top-0  z-2 "
+          className="w-full  "
           onMouseEnter={setIsHovered.bind(null, true)}
           onMouseLeave={setIsHovered.bind(null, false)}
         />
-
-        <Buttons />
+        {/* <div>
+          <Buttons className="sticky top-0 z-[2]" />
+        </div> */}
       </div>
     </>
   );
