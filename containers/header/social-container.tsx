@@ -10,7 +10,7 @@ const socialLink = [
   {
     imageAlt: "what app",
     imageSrc: "/socials-icons/whatsapp-logo.png",
-    socialLink: "https://wa.me/0812 6811 1563",
+    socialLink: "https://wa.me/6281268111563",
   },
   {
     imageAlt: "linkedin",

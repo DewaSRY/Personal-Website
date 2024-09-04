@@ -1,10 +1,10 @@
 "use client";
-import { useRef, ComponentRef } from "react";
+// import { useRef, ComponentRef } from "react";
 import { cn } from "@/lib/utils";
 import { ComponentProps, PropsWithChildren, useState } from "react";
-import Heading from "@/components/common/heading";
-import Paragraph from "@/components/common/paragraph";
-import { Button } from "@/components/ui/button";
+// import Heading from "@/components/common/heading";
+// import Paragraph from "@/components/common/paragraph";
+// import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import style from "./masked.module.css";
 import { createPortal } from "react-dom";
